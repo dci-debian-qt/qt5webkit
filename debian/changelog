@@ -1,0 +1,5 @@
+qtwebkit-opensource-src (5.0.2-1) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #697509)
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 16 May 2013 15:46:22 -0300
