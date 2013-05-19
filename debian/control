@@ -44,11 +44,10 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qt5webkit.git;a=summ
 Package: libqt5webkit5-dev
 Section: libdevel
 Architecture: any
-Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Pre-Depends: dpkg (>= 1.15.6~)
 Depends: qtbase5-dev (>= 5),
          libqt5webkit5 (= ${binary:Version}),
          ${misc:Depends},
-         ${shlibs:Depends}
 Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
