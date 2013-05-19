@@ -38,8 +38,8 @@ Build-Depends: debhelper (>= 9.0.0),
 Standards-Version: 3.9.4
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
-Vcs-Git: git://git.debian.org/pkg-kde/qt/qt5webkit.git
-Vcs-Browser: http://git.debian.org/?p=pkg-kde/qt/qt5webkit.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qt5webkit.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qt5webkit.git;a=summary
 
 Package: libqt5webkit5-dev
 Section: libdevel
