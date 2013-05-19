@@ -48,7 +48,6 @@ Architecture: any
 Pre-Depends: dpkg (>= 1.15.6~)
 Depends: qtbase5-dev,
          libqt5webkit5 (= ${binary:Version}),
-         libqt5webkitwidgets5 (= ${binary:Version}),
          ${misc:Depends},
 Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content
@@ -66,19 +65,7 @@ Description: Web content engine library for Qt
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
  .
- This package contains the main QtWebKit library.
-
-Package: libqt5webkitwidgets5
-Architecture: any
-Multi-Arch: same
-Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends},
- libqt5webkit5 (= ${binary:Version})
-Description: Web content engine library for Qt - GUI library
- QtWebKit provides a Web browser engine that makes it easy to embed content
- from the World Wide Web into your Qt application.
- .
- This package contains the widgets library for QtWebKit.
+ This package contains the QtWebKit libraries.
 
 Package: libqt5webkit5-qmlwebkitplugin
 Architecture: any
