@@ -53,7 +53,7 @@ Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
  .
- This package contains the development files needed to build Qt 4 applications
+ This package contains the development files needed to build Qt 5 applications
  using QtWebKit library.
 
 Package: libqt5webkit5
