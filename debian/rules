@@ -31,11 +31,11 @@ override_dh_auto_install:
 	make install INSTALL_ROOT=$(CURDIR)/debian/tmp
 	
 	# Remove rpath from the offending binaries
-	chrpath -d $(CURDIR)/debian/tmp/usr/lib/*/qt5/libexec/QtWebProcess
-	chrpath -d $(CURDIR)/debian/tmp/usr/lib/*/qt5/libexec/QtWebPluginProcess
+	chrpath -d $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/libexec/QtWebProcess
+	chrpath -d $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/libexec/QtWebPluginProcess
 	
 	# Fix wrong path in pkgconfig files
-	find $(CURDIR)/debian/tmp/usr/lib/*/pkgconfig -type f -name '*.pc' \
+	find $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig -type f -name '*.pc' \
 	-exec sed -i -e 's/$(DEB_HOST_MULTIARCH)\/$(DEB_HOST_MULTIARCH)/$(DEB_HOST_MULTIARCH)/g' {} \;
 	
 	# Remove private headers
