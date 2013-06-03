@@ -49,6 +49,11 @@ Pre-Depends: dpkg (>= 1.15.6~)
 Depends: qtbase5-dev,
          libqt5webkit5 (= ${binary:Version}),
          ${misc:Depends},
+         libgl1-mesa-dev [!armel !armhf] | libgl-dev [!armel !armhf],
+         libgles2-mesa-dev [armel armhf] | libgles2-dev [armel armhf],
+         libgstreamer-plugins-base0.10-dev,
+         libqt5opengl5-dev,
+         libxslt1-dev
 Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
