@@ -49,10 +49,6 @@ Pre-Depends: dpkg (>= 1.15.6~)
 Depends: qtbase5-dev,
          libqt5webkit5 (= ${binary:Version}),
          ${misc:Depends},
-         libgstreamer-plugins-base0.10-dev,
-         libqt5opengl5-dev,
-         libxslt1-dev,
-         libsqlite3-dev
 Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
