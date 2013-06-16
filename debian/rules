@@ -28,7 +28,16 @@ endif
 override_dh_auto_configure:
 	qmake
 
-override_dh_auto_install:
+override_dh_auto_build-arch:
+	# This override may seem futile, but it helps us make sure that the tools
+	# needed for building the docs are built before calling them.
+	# If there's a better way, do not heasitate to tell us.
+	dh_auto_build
+
+override_dh_auto_build-indep:
+	dh_auto_build -Smakefile -- docs
+
+override_dh_auto_install-arch:
 	make install INSTALL_ROOT=$(CURDIR)/debian/tmp
 	
 	# Remove rpath from the offending binaries
@@ -45,6 +54,9 @@ override_dh_auto_install:
 	
 	# Remove libtool-like files
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
+
+override_dh_auto_install-indep:
+	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
 override_dh_install:
 	dh_install --fail-missing

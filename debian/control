@@ -90,3 +90,26 @@ Description: Web content engine library for Qt - debugging symbols
  from the World Wide Web into your Qt application.
  .
  This package contains the debugging symbols for the Qt WebKit library.
+
+Package: qtwebkit5-doc
+Priority: extra
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Qt 5 webkit documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the documentation for the Qt 5 webkit libraries.
+
+Package: qtwebkit5-doc-html
+Priority: extra
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Qt 5 webkit HTML documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the HTML documentation for the Qt 5 webkit
+ libraries.
