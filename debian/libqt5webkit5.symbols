@@ -1289,8 +1289,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN14QtPrintContextC2EP8QPainterRK5QRectP16QWebFrameAdapter@Base 5.0.2
  _ZN14QtPrintContextD1Ev@Base 5.0.2
  _ZN14QtPrintContextD2Ev@Base 5.0.2
- (arch=!amd64 !armhf)_ZN15QLinearGradientD1Ev@Base 5.0.2
- (arch=!amd64 !armhf)_ZN15QLinearGradientD2Ev@Base 5.0.2
  _ZN15QWebHistoryItem11setUserDataERK8QVariant@Base 5.0.2
  _ZN15QWebHistoryItemC1EP22QWebHistoryItemPrivate@Base 5.0.2
  _ZN15QWebHistoryItemC1ERKS_@Base 5.0.2
@@ -1321,10 +1319,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN15QWebPageAdapter14dragLeaveEventEv@Base 5.0.2
  _ZN15QWebPageAdapter14handleKeyEventEP9QKeyEvent@Base 5.0.2
  _ZN15QWebPageAdapter14mouseMoveEventEP11QMouseEvent@Base 5.0.2
- (arch=!amd64 !armhf)_ZN15QWebPageAdapter15ErrorPageOptionD1Ev@Base 5.0.2
- (arch=!amd64 !armhf)_ZN15QWebPageAdapter15ErrorPageOptionD2Ev@Base 5.0.2
- (arch=!amd64 !armhf)_ZN15QWebPageAdapter15ErrorPageReturnD1Ev@Base 5.0.2
- (arch=!amd64 !armhf)_ZN15QWebPageAdapter15ErrorPageReturnD2Ev@Base 5.0.2
  _ZN15QWebPageAdapter15handleScrollingEP9QKeyEvent@Base 5.0.2
  _ZN15QWebPageAdapter15mousePressEventEP11QMouseEvent@Base 5.0.2
  _ZN15QWebPageAdapter16didShowInspectorEv@Base 5.0.2
@@ -2438,6 +2432,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF9xlinkAtomE@Base 5.0.2
  _ZN3WTF9xmlnsAtomE@Base 5.0.2
  _ZN3WTFeqERKNS_7CStringES2_@Base 5.0.2
+ (arch=i386)_ZN6QRectFC1ERK5QRect@Base 5.0.2
+ (arch=i386)_ZN6QRectFC2ERK5QRect@Base 5.0.2
  _ZN6WebKit16WebProcessMainQtEP15QGuiApplication@Base 5.0.2
  _ZN6WebKit17PluginProcessMainEiPPc@Base 5.0.2
  _ZN6WebKit18initializeWebKitQtEv@Base 5.0.2
@@ -2816,10 +2812,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=armhf)_ZNK8QVariant5valueI7QStringEET_v@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNK8QVariant5valueIS_EET_v@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNKSbIcSt11char_traitsIcE14pool_allocatorIcEE7compareEjjPKc@Base 5.0.2
- (optional=templinst|arch=!amd64 !armhf|subst)_ZNKSt6vectorIiSaIiEE12_M_check_lenE{size_t}PKc@Base 5.0.2
  (optional=templinst|arch=!armhf)_ZNKSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSbIcSt11char_traitsIcE14pool_allocatorIcEE12_S_constructIPKcEEPcT_S8_RKS2_St20forward_iterator_tag@Base 5.0.2
- (optional=templinst|arch=!amd64 !armhf)_ZNSbIcSt11char_traitsIcE14pool_allocatorIcEE12_S_constructIPcEES5_T_S6_RKS2_St20forward_iterator_tag@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZNSbIcSt11char_traitsIcE14pool_allocatorIcEE12_S_constructIPKcEEPcT_S8_RKS2_St20forward_iterator_tag@Base 5.0.2
  (arch=armhf)_ZNSbIcSt11char_traitsIcE14pool_allocatorIcEE4_Rep20_S_empty_rep_storageE@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSbIcSt11char_traitsIcE14pool_allocatorIcEE4_Rep8_M_cloneERKS2_j@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSbIcSt11char_traitsIcE14pool_allocatorIcEE4_Rep9_S_createEjjRKS2_@Base 5.0.2
@@ -2849,7 +2843,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=armhf)_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mIPKN3JSC15StringJumpTableEPS4_EET0_T_S9_S8_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mIPKN7WebCore10UserScriptEPS4_EET0_T_S9_S8_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mIPKN7WebCore14UserStyleSheetEPS4_EET0_T_S9_S8_@Base 5.0.2
- (optional=templinst|arch=!amd64 !armhf)_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIiEEPT_PKS3_S6_S4_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt15basic_stringbufIcSt11char_traitsIcE14pool_allocatorIcEE6setbufEPci@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt15basic_stringbufIcSt11char_traitsIcE14pool_allocatorIcEE7_M_syncEPcjj@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt15basic_stringbufIcSt11char_traitsIcE14pool_allocatorIcEE7seekoffExSt12_Ios_SeekdirSt13_Ios_Openmode@Base 5.0.2
@@ -2901,14 +2894,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst)_ZNSt6vectorISsSaISsEEaSERKS1_@Base 5.0.2
  (optional=templinst)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS9_SB_EERKS9_@Base 5.0.2
  (optional=templinst)_ZNSt6vectorIiSaIiEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPiS1_EERKi@Base 5.0.2
- (optional=templinst|arch=armhf)_ZNSt6vectorIiSaIiEE7reserveEj@Base 5.0.2
+ (optional=templinst|arch=armhf i386)_ZNSt6vectorIiSaIiEE7reserveEj@Base 5.0.2
  (optional=templinst|arch=amd64)_ZNSt6vectorIiSaIiEE7reserveEm@Base 5.0.2
- (optional=templinst|arch=!amd64 !armhf)_ZNSt6vectorIiSaIiEE9push_backERKi@Base 5.0.2
  (optional=templinst)_ZNSt6vectorIiSaIiEEaSERKS1_@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE16_M_insert_uniqueERKS4_@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE16_M_insert_uniqueERKS4_@Base 5.0.2
  (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 5.0.2
- (optional=templinst|arch=amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE24_M_get_insert_unique_posERS2_@Base 5.0.2
+ (optional=templinst|arch=amd64 i386)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE24_M_get_insert_unique_posERS2_@Base 5.0.2
  (optional=templinst|arch=amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS2_@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE7_M_copyEPKSt13_Rb_tree_nodeIS4_EPSC_@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 5.0.2
@@ -2927,23 +2919,23 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeISbIcSt11char_traitsIcE14pool_allocatorIcEESt4pairIKS4_P7TSymbolESt10_Select1stIS9_ESt4lessIS4_ES2_IS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS9_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeISbIcSt11char_traitsIcE14pool_allocatorIcEESt4pairIKS4_P7TSymbolESt10_Select1stIS9_ESt4lessIS4_ES2_IS9_EE16_M_insert_uniqueERKS9_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeISbIcSt11char_traitsIcE14pool_allocatorIcEESt4pairIKS4_P7TSymbolESt10_Select1stIS9_ESt4lessIS4_ES2_IS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE10_M_insert_EPKSt18_Rb_tree_node_baseS8_RKSs@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE10_M_insert_EPKSt18_Rb_tree_node_baseS8_RKSs@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE16_M_insert_uniqueERKSs@Base 5.0.2
  (optional=templinst|arch=!armhf)_ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE4findERKSs@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE8_M_eraseEPSt13_Rb_tree_nodeISsE@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE10_M_insert_EPKSt18_Rb_tree_node_baseSC_RKS3_@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE16_M_insert_uniqueERKS3_@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE10_M_insert_EPKSt18_Rb_tree_node_baseSC_RKS3_@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE16_M_insert_uniqueERKS3_@Base 5.0.2
  (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS3_ERKS3_@Base 5.0.2
- (optional=templinst|arch=amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE24_M_get_insert_unique_posERS1_@Base 5.0.2
+ (optional=templinst|arch=amd64 i386)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE24_M_get_insert_unique_posERS1_@Base 5.0.2
  (optional=templinst|arch=amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS3_ERS1_@Base 5.0.2
- (optional=templinst|arch=!armhf)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 5.0.2
+ (optional=templinst|arch=!armhf !i386)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeISsSt4pairIKSsN2pp5MacroEESt10_Select1stIS4_ESt4lessISsESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeISsSt4pairIKSsN2pp5MacroEESt10_Select1stIS4_ESt4lessISsESaIS4_EE16_M_insert_uniqueERKS4_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeISsSt4pairIKSsN2pp5MacroEESt10_Select1stIS4_ESt4lessISsESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeISsSt4pairIKSsN2pp5MacroEESt10_Select1stIS4_ESt4lessISsESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS2_@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE16_M_insert_uniqueERKS2_@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS2_@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE16_M_insert_uniqueERKS2_@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeIiSt4pairIKiP12TGraphSymbolESt10_Select1stIS4_ESt4lessIiE14pool_allocatorIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS4_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZNSt8_Rb_treeIiSt4pairIKiP12TGraphSymbolESt10_Select1stIS4_ESt4lessIiE14pool_allocatorIS4_EE16_M_insert_uniqueERKS4_@Base 5.0.2
@@ -3120,7 +3112,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst)_ZSt3minIfERKT_S2_S2_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZSt4sortIPPKN7WebCore8RuleDataEPFbS3_S3_EEvT_S7_T0_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZSt4sortIPPN7WebCore15RenderTableCellEPFbS2_S2_EEvT_S6_T0_@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZSt4sortIPjEvT_S1_@Base 5.0.2
+ (optional=templinst|arch=!amd64 !i386)_ZSt4sortIPjEvT_S1_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZSt5mergeIPKN7WebCore17ExclusionIntervalES3_PS1_NS0_20IntervalX1ComparatorEET1_T_S7_T0_S8_S6_T2_@Base 5.0.2
  (optional=templinst)_ZSt6__findIN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEESsET_S8_S8_RKT0_St26random_access_iterator_tag@Base 5.0.2
  (optional=templinst|arch=armhf)_ZSt6__findIPKN3WTF6StringES1_ET_S4_S4_RKT0_St26random_access_iterator_tag@Base 5.0.2
@@ -3139,8 +3131,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=armhf)_ZSt9make_heapIPN7WebCore16CSSImageSetValue14ImageWithScaleEPFbS2_S2_EEvT_S6_T0_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZSt9make_heapIPN7WebCore8SVGGlyphEPFbRKS1_S4_EEvT_S7_T0_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZSt9make_heapIPSt4pairIPN3WTF16AtomicStringImplENS1_12AtomicStringEEPFbRKS5_S8_EEvT_SB_T0_@Base 5.0.2
- (optional=templinst|arch=!amd64 !armhf)_ZSt9make_heapIPjEvT_S1_@Base 5.0.2
- (optional=templinst|arch=!amd64 !armhf)_ZSt9sort_heapIPjEvT_S1_@Base 5.0.2
  (optional=templinst)_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZSteqIcSt11char_traitsIcE14pool_allocatorIcEEbRKSbIT_T0_T1_EPKS4_@Base 5.0.2
  (optional=templinst|arch=armhf)_ZStplIcSt11char_traitsIcE14pool_allocatorIcEESbIT_T0_T1_EPKS4_RKS7_@Base 5.0.2
