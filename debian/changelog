@@ -1,9 +1,8 @@
-qtwebkit-opensource-src (5.0.2-3) UNRELEASED; urgency=low
+qtwebkit-opensource-src (5.0.2-3) experimental; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Update symbols file.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 26 Jun 2013 22:03:42 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 26 Jun 2013 22:10:41 -0300
 
 qtwebkit-opensource-src (5.0.2-2) experimental; urgency=low
 
