@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.0.2 amd64 armhf i386
+# SymbolsHelper-Confirmed: 5.1.0 amd64
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -1176,6 +1176,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN12QWebSettings14globalSettingsEv@Base 5.0.2
  _ZN12QWebSettings14resetAttributeENS_12WebAttributeE@Base 5.0.2
  _ZN12QWebSettings15resetFontFamilyENS_10FontFamilyE@Base 5.0.2
+ _ZN12QWebSettings15setCSSMediaTypeERK7QString@Base 5.1.0
  _ZN12QWebSettings16iconDatabasePathEv@Base 5.0.2
  _ZN12QWebSettings17clearIconDatabaseEv@Base 5.0.2
  _ZN12QWebSettings17clearMemoryCachesEv@Base 5.0.2
@@ -1676,6 +1677,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN23DumpRenderTreeSupportQt25dumpVisitedLinksCallbacksEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt25pauseTransitionOfPropertyEP16QWebFrameAdapterRK7QStringdS4_@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt25setFrameFlatteningEnabledEP15QWebPageAdapterb@Base 5.0.2
+ _ZN23DumpRenderTreeSupportQt25setShouldUseFontSmoothingEb@Base 5.1.0
  _ZN23DumpRenderTreeSupportQt25webInspectorExecuteScriptEP15QWebPageAdapterlRK7QString@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt25whiteListAccessFromOriginERK7QStringS2_S2_b@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt26firstRectForCharacterRangeEP15QWebPageAdapterii@Base 5.0.2
@@ -1701,6 +1703,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN23DumpRenderTreeSupportQt31removeWhiteListAccessFromOriginERK7QStringS2_S2_b@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt32simulateDesktopNotificationClickERK7QString@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt33computedStyleIncludingVisitedInfoERK11QWebElement@Base 5.0.2
+ _ZN23DumpRenderTreeSupportQt33disableDefaultTypesettingFeaturesEv@Base 5.1.0
  _ZN23DumpRenderTreeSupportQt34setSelectTrailingWhitespaceEnabledEP15QWebPageAdapterb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt35setInteractiveFormValidationEnabledEP15QWebPageAdapterb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt35setWindowsBehaviorAsEditingBehaviorEP15QWebPageAdapter@Base 5.0.2
@@ -2514,6 +2517,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK12QWebDatabase6originEv@Base 5.0.2
  _ZNK12QWebDatabase8fileNameEv@Base 5.0.2
  _ZNK12QWebSettings10fontFamilyENS_10FontFamilyE@Base 5.0.2
+ _ZNK12QWebSettings12cssMediaTypeEv@Base 5.1.0
  _ZNK12QWebSettings13testAttributeENS_12WebAttributeE@Base 5.0.2
  _ZNK12QWebSettings16localStoragePathEv@Base 5.0.2
  _ZNK12QWebSettings17userStyleSheetUrlEv@Base 5.0.2
