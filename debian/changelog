@@ -1,6 +1,5 @@
-qtwebkit-opensource-src (5.1.0-1) UNRELEASED; urgency=low
+qtwebkit-opensource-src (5.1.0-1) experimental; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Fix watch file.
   * Bump Qt build depends to 5.1.0~.
@@ -8,7 +7,7 @@ qtwebkit-opensource-src (5.1.0-1) UNRELEASED; urgency=low
   * Update symbols file.
   * Update install files.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 14 Jul 2013 23:02:20 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 15 Jul 2013 12:16:00 -0300
 
 qtwebkit-opensource-src (5.0.2-3) experimental; urgency=low
 
