@@ -1,5 +1,8 @@
 qtwebkit-opensource-src (5.1.0-1) UNRELEASED; urgency=low
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 14 Jul 2013 23:02:20 -0300
 
 qtwebkit-opensource-src (5.0.2-3) experimental; urgency=low
