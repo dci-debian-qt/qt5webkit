@@ -4,6 +4,7 @@ qtwebkit-opensource-src (5.1.0-1) UNRELEASED; urgency=low
   * New upstream release.
   * Fix watch file.
   * Bump Qt build depends to 5.1.0~.
+  * Refresh pacthes.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 14 Jul 2013 23:02:20 -0300
 
