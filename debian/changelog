@@ -6,6 +6,7 @@ qtwebkit-opensource-src (5.1.0-1) UNRELEASED; urgency=low
   * Bump Qt build depends to 5.1.0~.
   * Refresh pacthes.
   * Update symbols file.
+  * Update install files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 14 Jul 2013 23:02:20 -0300
 
