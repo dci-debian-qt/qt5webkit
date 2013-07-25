@@ -1,3 +1,7 @@
+qtwebkit-opensource-src (5.1.0-2) UNRELEASED; urgency=low
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 25 Jul 2013 16:40:45 -0300
+
 qtwebkit-opensource-src (5.1.0-1) experimental; urgency=low
 
   * New upstream release.
