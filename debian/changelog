@@ -1,5 +1,8 @@
 qtwebkit-opensource-src (5.1.0-2) UNRELEASED; urgency=low
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Make i386 and m68k build with -gstabs instead of -g (Closes: #717686).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 25 Jul 2013 16:40:45 -0300
 
 qtwebkit-opensource-src (5.1.0-1) experimental; urgency=low

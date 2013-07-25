@@ -12,7 +12,7 @@ export QT_SELECT := qt5
 # See also: stabs_format_debug_info.diff
 DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel armhf mips mipsel))
+ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel armhf mips mipsel i386 m68k))
     export DEB_CFLAGS_MAINT_STRIP := -g
     export DEB_CFLAGS_MAINT_APPEND := -gstabs
     export DEB_CXXFLAGS_MAINT_STRIP := -g
