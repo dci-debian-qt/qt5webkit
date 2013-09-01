@@ -23,11 +23,11 @@ Build-Depends: debhelper (>= 9.0.0),
                libglu1-mesa-dev [!armel !armhf] | libglu-dev [!armel !armhf],
                libxrender-dev,
                libxslt1-dev,
-               libqt5xmlpatterns5-private-dev (>= 5.1.0~),
-               qtbase5-private-dev (>= 5.1.0~),
-               libqt5opengl5-dev (>= 5.1.0~),
-               qtscript5-private-dev (>= 5.1.0~),
-               qtdeclarative5-private-dev (>= 5.1.0~),
+               libqt5xmlpatterns5-private-dev (>= 5.1.1~),
+               qtbase5-private-dev (>= 5.1.1+dfsg-2~),
+               libqt5opengl5-dev (>= 5.1.1+dsfg-2~),
+               qtscript5-private-dev (>= 5.1.1~),
+               qtdeclarative5-private-dev (>= 5.1.1~),
                pkg-config,
                pkg-kde-tools (>= 0.6.4),
                chrpath,
@@ -37,7 +37,7 @@ Build-Depends: debhelper (>= 9.0.0),
                libwebp-dev,
                libxcomposite-dev
 Build-Depends-Indep: libqt5sql5-sqlite,
-                     qttools5-dev-tools (>= 5.1.0~)
+                     qttools5-dev-tools (>= 5.1.1~)
 Standards-Version: 3.9.4
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
