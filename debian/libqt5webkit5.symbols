@@ -1140,18 +1140,15 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN11QWebHistoryC2Ev@Base 5.0.2
  _ZN11QWebHistoryD1Ev@Base 5.0.2
  _ZN11QWebHistoryD2Ev@Base 5.0.2
- (subst)_ZN11QWebKitTest10wheelEventEP7QObject{qreal}{qreal}iN2Qt11OrientationE@Base 5.0.2
  _ZN11QWebKitTest11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.0.2
  _ZN11QWebKitTest11qt_metacastEPKc@Base 5.0.2
  _ZN11QWebKitTest14sendTouchEventEP13QQuickWebViewN6QEvent4TypeERK5QListIN11QTouchEvent10TouchPointEEm@Base 5.0.2
- (subst)_ZN11QWebKitTest14touchDoubleTapEP7QObject{qreal}{qreal}i@Base 5.0.2
  _ZN11QWebKitTest15viewportChangedEv@Base 5.0.2
  _ZN11QWebKitTest16staticMetaObjectE@Base 5.0.2
  _ZN11QWebKitTest19contentsSizeChangedEv@Base 5.0.2
  _ZN11QWebKitTest20contentsScaleChangedEv@Base 5.0.2
  _ZN11QWebKitTest22contentsScaleCommittedEv@Base 5.0.2
  _ZN11QWebKitTest23devicePixelRatioChangedEv@Base 5.0.2
- (subst)_ZN11QWebKitTest8touchTapEP7QObject{qreal}{qreal}i@Base 5.0.2
  _ZN11QWebKitTestC1EP20QQuickWebViewPrivateP7QObject@Base 5.0.2
  _ZN11QWebKitTestC2EP20QQuickWebViewPrivateP7QObject@Base 5.0.2
  _ZN11QWebKitTestD0Ev@Base 5.0.2
@@ -1207,7 +1204,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN13QQuickWebPage11qt_metacastEPKc@Base 5.0.2
  _ZN13QQuickWebPage15setContentsSizeERK6QSizeF@Base 5.0.2
  _ZN13QQuickWebPage15updatePaintNodeEP7QSGNodePN10QQuickItem19UpdatePaintNodeDataE@Base 5.0.2
- (subst)_ZN13QQuickWebPage16setContentsScaleE{qreal}@Base 5.0.2
  _ZN13QQuickWebPage16staticMetaObjectE@Base 5.0.2
  _ZN13QQuickWebPageC1EP13QQuickWebView@Base 5.0.2
  _ZN13QQuickWebPageC2EP13QQuickWebView@Base 5.0.2
@@ -1227,7 +1223,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN13QQuickWebView13dragMoveEventEP14QDragMoveEvent@Base 5.0.2
  _ZN13QQuickWebView13keyPressEventEP9QKeyEvent@Base 5.0.2
  _ZN13QQuickWebView13setContentPosERK7QPointF@Base 5.0.2
- (subst)_ZN13QQuickWebView13setZoomFactorE{qreal}@Base 5.0.2
  _ZN13QQuickWebView14dragEnterEventEP15QDragEnterEvent@Base 5.0.2
  _ZN13QQuickWebView14dragLeaveEventEP15QDragLeaveEvent@Base 5.0.2
  _ZN13QQuickWebView14hoverMoveEventEP11QHoverEvent@Base 5.0.2
@@ -1439,7 +1434,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN16QWebDownloadItemD2Ev@Base 5.0.2
  _ZN16QWebFrameAdapter10cancelLoadEv@Base 5.0.2
  _ZN16QWebFrameAdapter10setContentERK10QByteArrayRK7QStringRK4QUrl@Base 5.0.2
- (subst)_ZN16QWebFrameAdapter13setZoomFactorE{qreal}@Base 5.0.2
  _ZN16QWebFrameAdapter14clearCoreFrameEv@Base 5.0.2
  _ZN16QWebFrameAdapter14scrollToAnchorERK7QString@Base 5.0.2
  _ZN16QWebFrameAdapter15setViewportSizeERK5QSize@Base 5.0.2
@@ -1453,7 +1447,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN16QWebFrameAdapter20renderRelativeCoordsEP8QPainteriRK7QRegion@Base 5.0.2
  _ZN16QWebFrameAdapter21_q_orientationChangedEv@Base 5.0.2
  _ZN16QWebFrameAdapter21setDelegatesScrollingEb@Base 5.0.2
- (subst)_ZN16QWebFrameAdapter21setTextSizeMultiplierE{qreal}@Base 5.0.2
  _ZN16QWebFrameAdapter22renderCompositedLayersEPN7WebCore15GraphicsContextERKNS0_7IntRectE@Base 5.0.2
  _ZN16QWebFrameAdapter23setPaintsEntireContentsEb@Base 5.0.2
  _ZN16QWebFrameAdapter26setFixedVisibleContentRectERK5QRect@Base 5.0.2
@@ -2968,7 +2961,6 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN16QGraphicsWebView13focusOutEventEP11QFocusEvent@Base 5.0.2
  _ZN16QGraphicsWebView13keyPressEventEP9QKeyEvent@Base 5.0.2
  _ZN16QGraphicsWebView13setRenderHintEN8QPainter10RenderHintEb@Base 5.0.2
- (subst)_ZN16QGraphicsWebView13setZoomFactorE{qreal}@Base 5.0.2
  _ZN16QGraphicsWebView14dragEnterEventEP27QGraphicsSceneDragDropEvent@Base 5.0.2
  _ZN16QGraphicsWebView14dragLeaveEventEP27QGraphicsSceneDragDropEvent@Base 5.0.2
  _ZN16QGraphicsWebView14hoverMoveEventEP24QGraphicsSceneHoverEvent@Base 5.0.2
@@ -3103,7 +3095,6 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN8QWebView13focusOutEventEP11QFocusEvent@Base 5.0.2
  _ZN8QWebView13keyPressEventEP9QKeyEvent@Base 5.0.2
  _ZN8QWebView13setRenderHintEN8QPainter10RenderHintEb@Base 5.0.2
- (subst)_ZN8QWebView13setZoomFactorE{qreal}@Base 5.0.2
  _ZN8QWebView14dragEnterEventEP15QDragEnterEvent@Base 5.0.2
  _ZN8QWebView14dragLeaveEventEP15QDragLeaveEvent@Base 5.0.2
  _ZN8QWebView14mouseMoveEventEP11QMouseEvent@Base 5.0.2
@@ -3119,7 +3110,6 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN8QWebView17triggerPageActionEN8QWebPage9WebActionEb@Base 5.0.2
  _ZN8QWebView18focusNextPrevChildEb@Base 5.0.2
  _ZN8QWebView21mouseDoubleClickEventEP11QMouseEvent@Base 5.0.2
- (subst)_ZN8QWebView21setTextSizeMultiplierE{qreal}@Base 5.0.2
  _ZN8QWebView4backEv@Base 5.0.2
  _ZN8QWebView4loadERK15QNetworkRequestN21QNetworkAccessManager9OperationERK10QByteArray@Base 5.0.2
  _ZN8QWebView4loadERK4QUrl@Base 5.0.2
@@ -3146,7 +3136,6 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN9QWebFrame11qt_metacastEPKc@Base 5.0.2
  _ZN9QWebFrame12loadFinishedEb@Base 5.0.2
  _ZN9QWebFrame12titleChangedERK7QString@Base 5.0.2
- (subst)_ZN9QWebFrame13setZoomFactorE{qreal}@Base 5.0.2
  _ZN9QWebFrame14scrollToAnchorERK7QString@Base 5.0.2
  _ZN9QWebFrame15provisionalLoadEv@Base 5.0.2
  _ZN9QWebFrame16staticMetaObjectE@Base 5.0.2
@@ -3155,7 +3144,6 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN9QWebFrame18evaluateJavaScriptERK7QString@Base 5.0.2
  _ZN9QWebFrame18setScrollBarPolicyEN2Qt11OrientationENS0_15ScrollBarPolicyE@Base 5.0.2
  _ZN9QWebFrame19contentsSizeChangedERK5QSize@Base 5.0.2
- (subst)_ZN9QWebFrame21setTextSizeMultiplierE{qreal}@Base 5.0.2
  _ZN9QWebFrame22initialLayoutCompletedEv@Base 5.0.2
  _ZN9QWebFrame27addToJavaScriptWindowObjectERK7QStringP7QObjectNS_14ValueOwnershipE@Base 5.0.2
  _ZN9QWebFrame29javaScriptWindowObjectClearedEv@Base 5.0.2
