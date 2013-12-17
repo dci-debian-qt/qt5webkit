@@ -3,6 +3,7 @@ qtwebkit-opensource-src (5.2.0-1) UNRELEASED; urgency=low
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Bump Qt build dependencies.
+  * Refresh 05_sparc_unaligned_access.diff.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Dec 2013 11:23:02 -0300
 
