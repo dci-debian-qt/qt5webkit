@@ -5,6 +5,7 @@ qtwebkit-opensource-src (5.2.0-1) UNRELEASED; urgency=low
   * Bump Qt build dependencies.
   * Refresh 05_sparc_unaligned_access.diff, no_gc_sections.diff and hurd.diff.
   * Remove new private stuff we are not shipping.
+  * Update symbols files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Dec 2013 11:23:02 -0300
 

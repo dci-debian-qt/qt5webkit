@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.1.0 amd64
+# SymbolsHelper-Confirmed: 5.2.0 amd64
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -8,9 +8,11 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSContextGetGlobalContext@Base 5.0.2
  JSContextGetGlobalObject@Base 5.0.2
  JSContextGetGroup@Base 5.0.2
+ JSContextGroupClearExecutionTimeLimit@Base 5.2.0
  JSContextGroupCreate@Base 5.0.2
  JSContextGroupRelease@Base 5.0.2
  JSContextGroupRetain@Base 5.0.2
+ JSContextGroupSetExecutionTimeLimit@Base 5.2.0
  JSEvaluateScript@Base 5.0.2
  JSGarbageCollect@Base 5.0.2
  JSGlobalContextCreate@Base 5.0.2
@@ -49,7 +51,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSPropertyNameArrayRelease@Base 5.0.2
  JSPropertyNameArrayRetain@Base 5.0.2
  JSReportExtraMemoryCost@Base 5.0.2
+ JSScriptCreateFromString@Base 5.2.0
+ JSScriptCreateReferencingImmortalASCIIText@Base 5.2.0
+ JSScriptEvaluate@Base 5.2.0
+ JSScriptRelease@Base 5.2.0
+ JSScriptRetain@Base 5.2.0
  JSStringCreateWithCharacters@Base 5.0.2
+ JSStringCreateWithCharactersNoCopy@Base 5.2.0
  JSStringCreateWithUTF8CString@Base 5.0.2
  JSStringGetCharactersPtr@Base 5.0.2
  JSStringGetLength@Base 5.0.2
@@ -59,6 +67,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSStringIsEqualToUTF8CString@Base 5.0.2
  JSStringRelease@Base 5.0.2
  JSStringRetain@Base 5.0.2
+ JSSynchronousGarbageCollectForDebugging@Base 5.2.0
  JSValueCreateJSONString@Base 5.0.2
  JSValueGetType@Base 5.0.2
  JSValueIsBoolean@Base 5.0.2
@@ -143,6 +152,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleBackForwardListItemCopyTitle@Base 5.0.2
  WKBundleBackForwardListItemCopyURL@Base 5.0.2
  WKBundleBackForwardListItemGetTypeID@Base 5.0.2
+ WKBundleBackForwardListItemHasCachedPageExpired@Base 5.2.0
  WKBundleBackForwardListItemIsInPageCache@Base 5.0.2
  WKBundleBackForwardListItemIsSame@Base 5.0.2
  WKBundleBackForwardListItemIsTargetItem@Base 5.0.2
@@ -150,6 +160,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleClearApplicationCache@Base 5.0.2
  WKBundleClearApplicationCacheForOrigin@Base 5.0.2
  WKBundleCopyOriginsWithApplicationCache@Base 5.0.2
+ WKBundleCreateWKDataFromUInt8Array@Base 5.2.0
  WKBundleDOMWindowExtensionCreate@Base 5.0.2
  WKBundleDOMWindowExtensionGetFrame@Base 5.0.2
  WKBundleDOMWindowExtensionGetScriptWorld@Base 5.0.2
@@ -158,13 +169,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleFrameAllowsFollowingLink@Base 5.0.2
  WKBundleFrameCallShouldCloseOnWebView@Base 5.0.2
  WKBundleFrameClearOpener@Base 5.0.2
+ WKBundleFrameContainsAnyFormControls@Base 5.2.0
  WKBundleFrameContainsAnyFormElements@Base 5.0.2
  WKBundleFrameCopyChildFrames@Base 5.0.2
  WKBundleFrameCopyCounterValue@Base 5.0.2
  WKBundleFrameCopyInnerText@Base 5.0.2
  WKBundleFrameCopyLayerTreeAsText@Base 5.0.2
  WKBundleFrameCopyMIMETypeForResourceWithURL@Base 5.0.2
- WKBundleFrameCopyMarkerText@Base 5.0.2
  WKBundleFrameCopyName@Base 5.0.2
  WKBundleFrameCopyProvisionalURL@Base 5.0.2
  WKBundleFrameCopySecurityOrigin@Base 5.0.2
@@ -174,7 +185,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleFrameCopyWebArchiveFilteringSubframes@Base 5.0.2
  WKBundleFrameCreateHitTestResult@Base 5.0.2
  WKBundleFrameForJavaScriptContext@Base 5.0.2
- WKBundleFrameGetComputedStyleIncludingVisitedInfo@Base 5.0.2
  WKBundleFrameGetContentBounds@Base 5.0.2
  WKBundleFrameGetDocumentBackgroundColor@Base 5.0.2
  WKBundleFrameGetFrameLoadState@Base 5.0.2
@@ -182,7 +192,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleFrameGetJavaScriptContextForWorld@Base 5.0.2
  WKBundleFrameGetJavaScriptWrapperForNodeForWorld@Base 5.0.2
  WKBundleFrameGetJavaScriptWrapperForRangeForWorld@Base 5.0.2
- WKBundleFrameGetNumberOfActiveAnimations@Base 5.0.2
  WKBundleFrameGetPage@Base 5.0.2
  WKBundleFrameGetParentFrame@Base 5.0.2
  WKBundleFrameGetPendingUnloadCount@Base 5.0.2
@@ -194,12 +203,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleFrameHasHorizontalScrollbar@Base 5.0.2
  WKBundleFrameHasVerticalScrollbar@Base 5.0.2
  WKBundleFrameIsMainFrame@Base 5.0.2
- WKBundleFramePauseAnimationOnElementWithId@Base 5.0.2
- WKBundleFramePauseTransitionOnElementWithId@Base 5.0.2
- WKBundleFrameResumeAnimations@Base 5.0.2
  WKBundleFrameSetTextDirection@Base 5.0.2
  WKBundleFrameStopLoading@Base 5.0.2
- WKBundleFrameSuspendAnimations@Base 5.0.2
  WKBundleGarbageCollectJavaScriptObjects@Base 5.0.2
  WKBundleGarbageCollectJavaScriptObjectsOnAlternateThreadForDebugging@Base 5.0.2
  WKBundleGetAppCacheUsageForOrigin@Base 5.0.2
@@ -207,7 +212,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleGetJavaScriptObjectsCount@Base 5.0.2
  WKBundleGetTypeID@Base 5.0.2
  WKBundleGetWebNotificationID@Base 5.0.2
- WKBundleGetWorkerThreadCount@Base 5.0.2
  WKBundleHitTestResultCopyAbsoluteImageURL@Base 5.0.2
  WKBundleHitTestResultCopyAbsoluteLinkURL@Base 5.0.2
  WKBundleHitTestResultCopyAbsoluteMediaURL@Base 5.0.2
@@ -218,26 +222,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleHitTestResultGetFrame@Base 5.0.2
  WKBundleHitTestResultGetImageRect@Base 5.0.2
  WKBundleHitTestResultGetIsSelected@Base 5.0.2
+ WKBundleHitTestResultGetMediaType@Base 5.2.0
  WKBundleHitTestResultGetTargetFrame@Base 5.0.2
  WKBundleHitTestResultGetTypeID@Base 5.0.2
+ WKBundleHitTestResultMediaHasAudio@Base 5.2.0
+ WKBundleHitTestResultMediaIsInFullscreen@Base 5.2.0
  WKBundleInspectorClose@Base 5.0.2
  WKBundleInspectorEvaluateScriptForTest@Base 5.0.2
  WKBundleInspectorGetTypeID@Base 5.0.2
  WKBundleInspectorSetPageProfilingEnabled@Base 5.0.2
  WKBundleInspectorShow@Base 5.0.2
- WKBundleIntentCopyAction@Base 5.0.2
- WKBundleIntentCopyExtraValue@Base 5.0.2
- WKBundleIntentCopyExtras@Base 5.0.2
- WKBundleIntentCopyService@Base 5.0.2
- WKBundleIntentCopySuggestions@Base 5.0.2
- WKBundleIntentCopyType@Base 5.0.2
- WKBundleIntentCreate@Base 5.0.2
- WKBundleIntentGetTypeID@Base 5.0.2
- WKBundleIntentMessagePortCount@Base 5.0.2
- WKBundleIntentRequestCopyIntent@Base 5.0.2
- WKBundleIntentRequestGetTypeID@Base 5.0.2
- WKBundleIntentRequestPostFailure@Base 5.0.2
- WKBundleIntentRequestPostResult@Base 5.0.2
  WKBundleIsPageBoxVisible@Base 5.0.2
  WKBundleIsProcessingUserGesture@Base 5.0.2
  WKBundleNavigationActionCopyFormElement@Base 5.0.2
@@ -251,6 +245,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleNodeHandleCopyHTMLFrameElementContentFrame@Base 5.0.2
  WKBundleNodeHandleCopyHTMLIFrameElementContentFrame@Base 5.0.2
  WKBundleNodeHandleCopyHTMLTableCellElementCellAbove@Base 5.0.2
+ WKBundleNodeHandleCopySnapshotWithOptions@Base 5.2.0
  WKBundleNodeHandleCreate@Base 5.0.2
  WKBundleNodeHandleGetElementBounds@Base 5.0.2
  WKBundleNodeHandleGetHTMLInputElementAutofilled@Base 5.0.2
@@ -268,19 +263,21 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundlePageClose@Base 5.0.2
  WKBundlePageConfirmComposition@Base 5.0.2
  WKBundlePageConfirmCompositionWithText@Base 5.0.2
+ WKBundlePageCopyContextMenuAtPointInWindow@Base 5.2.0
  WKBundlePageCopyContextMenuItemTitles@Base 5.0.2
  WKBundlePageCopyRenderLayerTree@Base 5.0.2
  WKBundlePageCopyRenderTree@Base 5.0.2
  WKBundlePageCopyRenderTreeExternalRepresentation@Base 5.0.2
+ WKBundlePageCopyRenderTreeExternalRepresentationForPrinting@Base 5.2.0
  WKBundlePageCopyTrackedRepaintRects@Base 5.0.2
  WKBundlePageCreateScaledSnapshotInDocumentCoordinates@Base 5.0.2
  WKBundlePageCreateSnapshotInDocumentCoordinates@Base 5.0.2
  WKBundlePageCreateSnapshotInViewCoordinates@Base 5.0.2
  WKBundlePageCreateSnapshotWithOptions@Base 5.0.2
- WKBundlePageDeliverIntentToFrame@Base 5.0.2
  WKBundlePageDidEnterFullScreen@Base 5.0.2
  WKBundlePageDidExitFullScreen@Base 5.0.2
  WKBundlePageExecuteEditingCommand@Base 5.0.2
+ WKBundlePageExtendIncrementalRenderingSuppression@Base 5.2.0
  WKBundlePageFindString@Base 5.0.2
  WKBundlePageForceRepaint@Base 5.0.2
  WKBundlePageGetBackForwardList@Base 5.0.2
@@ -297,6 +294,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundlePageHasComposition@Base 5.0.2
  WKBundlePageHasLocalDataForURL@Base 5.0.2
  WKBundlePageInstallPageOverlay@Base 5.0.2
+ WKBundlePageInstallPageOverlayWithAnimation@Base 5.2.0
  WKBundlePageIsEditingCommandEnabled@Base 5.0.2
  WKBundlePageIsTrackingRepaints@Base 5.0.2
  WKBundlePageListenForLayoutMilestones@Base 5.0.2
@@ -306,13 +304,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundlePageOverlayGetTypeID@Base 5.0.2
  WKBundlePageOverlaySetNeedsDisplay@Base 5.0.2
  WKBundlePageResetTrackedRepaints@Base 5.0.2
+ WKBundlePageSetBottomOverhangImage@Base 5.2.0
  WKBundlePageSetComposition@Base 5.0.2
  WKBundlePageSetContextMenuClient@Base 5.0.2
  WKBundlePageSetDefersLoading@Base 5.0.2
  WKBundlePageSetDiagnosticLoggingClient@Base 5.0.2
  WKBundlePageSetEditorClient@Base 5.0.2
+ WKBundlePageSetFooterBanner@Base 5.2.0
  WKBundlePageSetFormClient@Base 5.0.2
  WKBundlePageSetFullScreenClient@Base 5.0.2
+ WKBundlePageSetHeaderBanner@Base 5.2.0
  WKBundlePageSetPageLoaderClient@Base 5.0.2
  WKBundlePageSetPageZoomFactor@Base 5.0.2
  WKBundlePageSetPaintedObjectsCounterThreshold@Base 5.0.2
@@ -320,6 +321,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundlePageSetResourceLoadClient@Base 5.0.2
  WKBundlePageSetScaleAtOrigin@Base 5.0.2
  WKBundlePageSetTextZoomFactor@Base 5.0.2
+ WKBundlePageSetTopOverhangImage@Base 5.2.0
  WKBundlePageSetTracksRepaints@Base 5.0.2
  WKBundlePageSetUIClient@Base 5.0.2
  WKBundlePageSetUnderlayPage@Base 5.0.2
@@ -327,8 +329,10 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundlePageSimulateMouseMotion@Base 5.0.2
  WKBundlePageSimulateMouseUp@Base 5.0.2
  WKBundlePageSizeAndMarginsInPixels@Base 5.0.2
+ WKBundlePageStopExtendingIncrementalRenderingSuppression@Base 5.2.0
  WKBundlePageStopLoading@Base 5.0.2
  WKBundlePageUninstallPageOverlay@Base 5.0.2
+ WKBundlePageUninstallPageOverlayWithAnimation@Base 5.2.0
  WKBundlePageWillEnterFullScreen@Base 5.0.2
  WKBundlePageWillExitFullScreen@Base 5.0.2
  WKBundlePostMessage@Base 5.0.2
@@ -353,6 +357,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleSetAlwaysAcceptCookies@Base 5.0.2
  WKBundleSetAppCacheMaximumSize@Base 5.0.2
  WKBundleSetApplicationCacheOriginQuota@Base 5.0.2
+ WKBundleSetAsynchronousSpellCheckingEnabled@Base 5.2.0
  WKBundleSetAuthorAndUserStylesEnabled@Base 5.0.2
  WKBundleSetCacheModel@Base 5.0.2
  WKBundleSetClient@Base 5.0.2
@@ -360,11 +365,10 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKBundleSetFrameFlatteningEnabled@Base 5.0.2
  WKBundleSetJavaScriptCanAccessClipboard@Base 5.0.2
  WKBundleSetMinimumLogicalFontSize@Base 5.0.2
- WKBundleSetMinimumTimerInterval@Base 5.0.2
- WKBundleSetPageVisibilityState@Base 5.0.2
  WKBundleSetPluginsEnabled@Base 5.0.2
  WKBundleSetPopupBlockingEnabled@Base 5.0.2
  WKBundleSetPrivateBrowsingEnabled@Base 5.0.2
+ WKBundleSetSeamlessIFramesEnabled@Base 5.2.0
  WKBundleSetSerialLoadingEnabled@Base 5.0.2
  WKBundleSetShadowDOMEnabled@Base 5.0.2
  WKBundleSetShouldTrackVisitedLinks@Base 5.0.2
@@ -380,6 +384,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKConnectionPostMessage@Base 5.0.2
  WKConnectionSetConnectionClient@Base 5.0.2
  WKContextAddVisitedLink@Base 5.0.2
+ WKContextAllowSpecificHTTPSCertificateForHost@Base 5.2.0
+ WKContextCopyPlugInAutoStartOriginHashes@Base 5.2.0
  WKContextCreate@Base 5.0.2
  WKContextCreateWithInjectedBundlePath@Base 5.0.2
  WKContextDisableProcessTermination@Base 5.0.2
@@ -395,6 +401,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKContextGetGlobalStatistics@Base 5.0.2
  WKContextGetIconDatabase@Base 5.0.2
  WKContextGetKeyValueStorageManager@Base 5.0.2
+ WKContextGetMaximumNumberOfProcesses@Base 5.2.0
  WKContextGetMediaCacheManager@Base 5.0.2
  WKContextGetNetworkInfoManager@Base 5.0.2
  WKContextGetNotificationManager@Base 5.0.2
@@ -402,6 +409,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKContextGetProcessModel@Base 5.0.2
  WKContextGetResourceCacheManager@Base 5.0.2
  WKContextGetStatistics@Base 5.0.2
+ WKContextGetStatisticsWithOptions@Base 5.2.0
  WKContextGetTypeID@Base 5.0.2
  WKContextMenuCopySubmenuItems@Base 5.0.2
  WKContextMenuItemCopyTitle@Base 5.0.2
@@ -421,7 +429,9 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKContextRegisterURLSchemeAsSecure@Base 5.0.2
  WKContextSetAdditionalPluginsDirectory@Base 5.0.2
  WKContextSetAlwaysUsesComplexTextCodePath@Base 5.0.2
+ WKContextSetApplicationCacheDirectory@Base 5.2.0
  WKContextSetCacheModel@Base 5.0.2
+ WKContextSetClient@Base 5.2.0
  WKContextSetConnectionClient@Base 5.0.2
  WKContextSetCookieStorageDirectory@Base 5.0.2
  WKContextSetDatabaseDirectory@Base 5.0.2
@@ -433,8 +443,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKContextSetIconDatabasePath@Base 5.0.2
  WKContextSetInitializationUserDataForInjectedBundle@Base 5.0.2
  WKContextSetInjectedBundleClient@Base 5.0.2
+ WKContextSetInvalidMessageFunction@Base 5.2.0
  WKContextSetJavaScriptGarbageCollectorTimerEnabled@Base 5.0.2
  WKContextSetLocalStorageDirectory@Base 5.0.2
+ WKContextSetMaximumNumberOfProcesses@Base 5.2.0
+ WKContextSetPlugInAutoStartOriginHashes@Base 5.2.0
+ WKContextSetPlugInAutoStartOrigins@Base 5.2.0
  WKContextSetProcessModel@Base 5.0.2
  WKContextSetShouldUseFontSmoothing@Base 5.0.2
  WKContextSetUsesNetworkProcess@Base 5.0.2
@@ -445,6 +459,10 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKCredentialCreate@Base 5.0.2
  WKCredentialCreateWithCertificateInfo@Base 5.0.2
  WKCredentialGetTypeID@Base 5.0.2
+ WKDataCreate@Base 5.2.0
+ WKDataGetBytes@Base 5.2.0
+ WKDataGetSize@Base 5.2.0
+ WKDataGetTypeID@Base 5.2.0
  WKDatabaseManagerDeleteAllDatabases@Base 5.0.2
  WKDatabaseManagerDeleteDatabasesForOrigin@Base 5.0.2
  WKDatabaseManagerDeleteDatabasesWithNameForOrigin@Base 5.0.2
@@ -474,6 +492,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKDoubleGetValue@Base 5.0.2
  WKDownloadCancel@Base 5.0.2
  WKDownloadCopyRequest@Base 5.0.2
+ WKDownloadGetID@Base 5.2.0
  WKDownloadGetResumeData@Base 5.0.2
  WKDownloadGetTypeID@Base 5.0.2
  WKErrorCopyDomain@Base 5.0.2
@@ -547,10 +566,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKImageGetTypeID@Base 5.0.2
  WKInspectorAttach@Base 5.0.2
  WKInspectorClose@Base 5.0.2
+ WKInspectorConnect@Base 5.2.0
  WKInspectorDetach@Base 5.0.2
  WKInspectorGetPage@Base 5.0.2
  WKInspectorGetTypeID@Base 5.0.2
+ WKInspectorHide@Base 5.2.0
  WKInspectorIsAttached@Base 5.0.2
+ WKInspectorIsConnected@Base 5.2.0
  WKInspectorIsDebuggingJavaScript@Base 5.0.2
  WKInspectorIsFront@Base 5.0.2
  WKInspectorIsProfilingJavaScript@Base 5.0.2
@@ -563,21 +585,9 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKInspectorToggleJavaScriptDebugging@Base 5.0.2
  WKInspectorToggleJavaScriptProfiling@Base 5.0.2
  WKInspectorTogglePageProfiling@Base 5.0.2
- WKIntentDataCopyAction@Base 5.0.2
- WKIntentDataCopyExtraValue@Base 5.0.2
- WKIntentDataCopyExtras@Base 5.0.2
- WKIntentDataCopyService@Base 5.0.2
- WKIntentDataCopySuggestions@Base 5.0.2
- WKIntentDataCopyType@Base 5.0.2
- WKIntentDataGetTypeID@Base 5.0.2
- WKIntentServiceInfoCopyAction@Base 5.0.2
- WKIntentServiceInfoCopyDisposition@Base 5.0.2
- WKIntentServiceInfoCopyHref@Base 5.0.2
- WKIntentServiceInfoCopyTitle@Base 5.0.2
- WKIntentServiceInfoCopyType@Base 5.0.2
- WKIntentServiceInfoGetTypeID@Base 5.0.2
  WKMutableArrayCreate@Base 5.0.2
  WKMutableDictionaryCreate@Base 5.0.2
+ WKNavigationDataCopyNavigationDestinationURL@Base 5.2.0
  WKNavigationDataCopyOriginalRequest@Base 5.0.2
  WKNavigationDataCopyTitle@Base 5.0.2
  WKNavigationDataCopyURL@Base 5.0.2
@@ -608,6 +618,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKNotificationPermissionRequestGetTypeID@Base 5.0.2
  WKOpenPanelParametersCopyAcceptedMIMETypes@Base 5.0.2
  WKOpenPanelParametersCopyCapture@Base 5.0.2
+ WKOpenPanelParametersCopySelectedFileNames@Base 5.2.0
  WKOpenPanelParametersGetAllowsMultipleFiles@Base 5.0.2
  WKOpenPanelParametersGetTypeID@Base 5.0.2
  WKOpenPanelResultListenerCancel@Base 5.0.2
@@ -633,9 +644,9 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPageCopyUserAgent@Base 5.0.2
  WKPageCountStringMatches@Base 5.0.2
  WKPageCreateSnapshotOfVisibleContent@Base 5.0.2
- WKPageDeliverIntentToFrame@Base 5.0.2
  WKPageExecuteCommand@Base 5.0.2
  WKPageFindString@Base 5.0.2
+ WKPageFindStringMatches@Base 5.2.0
  WKPageFixedLayoutSize@Base 5.0.2
  WKPageForceRepaint@Base 5.0.2
  WKPageGetBackForwardList@Base 5.0.2
@@ -648,6 +659,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPageGetFocusedFrame@Base 5.0.2
  WKPageGetFrameSetLargestFrame@Base 5.0.2
  WKPageGetGapBetweenPages@Base 5.0.2
+ WKPageGetImageForFindMatch@Base 5.2.0
  WKPageGetInspector@Base 5.0.2
  WKPageGetMainFrame@Base 5.0.2
  WKPageGetPageCount@Base 5.0.2
@@ -656,8 +668,19 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPageGetPageZoomFactor@Base 5.0.2
  WKPageGetPaginationBehavesLikeColumns@Base 5.0.2
  WKPageGetPaginationMode@Base 5.0.2
+ WKPageGetPluginInformationBundleIdentifierKey@Base 5.2.0
+ WKPageGetPluginInformationBundleVersionKey@Base 5.2.0
+ WKPageGetPluginInformationDisplayNameKey@Base 5.2.0
+ WKPageGetPluginInformationFrameURLKey@Base 5.2.0
+ WKPageGetPluginInformationMIMETypeKey@Base 5.2.0
+ WKPageGetPluginInformationPageURLKey@Base 5.2.0
+ WKPageGetPluginInformationPluginURLKey@Base 5.2.0
+ WKPageGetPluginInformationPluginspageAttributeURLKey@Base 5.2.0
  WKPageGetRenderTreeSize@Base 5.0.2
  WKPageGetScaleFactor@Base 5.0.2
+ WKPageGetScrollPinningBehavior@Base 5.2.0
+ WKPageGetSelectionAsWebArchiveData@Base 5.2.0
+ WKPageGetSessionBackForwardListItemValueType@Base 5.2.0
  WKPageGetSessionHistoryURLValueType@Base 5.0.2
  WKPageGetSourceForFrame@Base 5.0.2
  WKPageGetTextZoomFactor@Base 5.0.2
@@ -687,17 +710,31 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPageIsPinnedToTopSide@Base 5.0.2
  WKPageListenForLayoutMilestones@Base 5.0.2
  WKPageLoadAlternateHTMLString@Base 5.0.2
+ WKPageLoadAlternateHTMLStringWithUserData@Base 5.2.0
+ WKPageLoadData@Base 5.2.0
+ WKPageLoadDataWithUserData@Base 5.2.0
+ WKPageLoadFile@Base 5.2.0
+ WKPageLoadFileWithUserData@Base 5.2.0
  WKPageLoadHTMLString@Base 5.0.2
+ WKPageLoadHTMLStringWithUserData@Base 5.2.0
  WKPageLoadPlainTextString@Base 5.0.2
+ WKPageLoadPlainTextStringWithUserData@Base 5.2.0
  WKPageLoadURL@Base 5.0.2
  WKPageLoadURLRequest@Base 5.0.2
+ WKPageLoadURLRequestWithUserData@Base 5.2.0
+ WKPageLoadURLWithUserData@Base 5.2.0
  WKPageLoadWebArchiveData@Base 5.0.2
+ WKPageLoadWebArchiveDataWithUserData@Base 5.2.0
  WKPagePostMessageToInjectedBundle@Base 5.0.2
  WKPageReload@Base 5.0.2
  WKPageReloadFromOrigin@Base 5.0.2
  WKPageRenderTreeExternalRepresentation@Base 5.0.2
  WKPageRestoreFromSessionState@Base 5.0.2
+ WKPageRubberBandsAtBottom@Base 5.2.0
+ WKPageRubberBandsAtTop@Base 5.2.0
  WKPageRunJavaScriptInMainFrame@Base 5.0.2
+ WKPageSelectContextMenuItem@Base 5.2.0
+ WKPageSelectFindMatch@Base 5.2.0
  WKPageSetApplicationNameForUserAgent@Base 5.0.2
  WKPageSetCustomBackingScaleFactor@Base 5.0.2
  WKPageSetCustomTextEncodingName@Base 5.0.2
@@ -705,6 +742,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPageSetDebugPaintFlags@Base 5.0.2
  WKPageSetFixedLayoutSize@Base 5.0.2
  WKPageSetGapBetweenPages@Base 5.0.2
+ WKPageSetInvalidMessageFunction@Base 5.2.0
  WKPageSetMaintainsInactiveSelection@Base 5.0.2
  WKPageSetMayStartMediaWhenInWindow@Base 5.0.2
  WKPageSetMediaVolume@Base 5.0.2
@@ -712,20 +750,24 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPageSetPageAndTextZoomFactors@Base 5.0.2
  WKPageSetPageContextMenuClient@Base 5.0.2
  WKPageSetPageFindClient@Base 5.0.2
+ WKPageSetPageFindMatchesClient@Base 5.2.0
  WKPageSetPageFormClient@Base 5.0.2
  WKPageSetPageLength@Base 5.0.2
  WKPageSetPageLoaderClient@Base 5.0.2
  WKPageSetPagePolicyClient@Base 5.0.2
- WKPageSetPageResourceLoadClient@Base 5.0.2
  WKPageSetPageUIClient@Base 5.0.2
  WKPageSetPageZoomFactor@Base 5.0.2
  WKPageSetPaginationBehavesLikeColumns@Base 5.0.2
  WKPageSetPaginationMode@Base 5.0.2
+ WKPageSetRubberBandsAtBottom@Base 5.2.0
+ WKPageSetRubberBandsAtTop@Base 5.2.0
  WKPageSetScaleFactor@Base 5.0.2
+ WKPageSetScrollPinningBehavior@Base 5.2.0
  WKPageSetShouldSendEventsSynchronously@Base 5.0.2
  WKPageSetSuppressScrollbarAnimations@Base 5.0.2
  WKPageSetTextZoomFactor@Base 5.0.2
  WKPageSetUseFixedLayout@Base 5.0.2
+ WKPageSetVisibilityState@Base 5.2.0
  WKPageStopLoading@Base 5.0.2
  WKPageSupportsTextEncoding@Base 5.0.2
  WKPageSupportsTextZoom@Base 5.0.2
@@ -735,6 +777,19 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPageUseFixedLayout@Base 5.0.2
  WKPageValidateCommand@Base 5.0.2
  WKPageWillHandleHorizontalScrollEvents@Base 5.0.2
+ WKPlugInInformationReplacementObscuredKey@Base 5.2.0
+ WKPluginInformationBundleIdentifierKey@Base 5.2.0
+ WKPluginInformationBundleVersionKey@Base 5.2.0
+ WKPluginInformationDefaultLoadPolicyKey@Base 5.2.0
+ WKPluginInformationDisplayNameKey@Base 5.2.0
+ WKPluginInformationFrameURLKey@Base 5.2.0
+ WKPluginInformationHasSandboxProfileKey@Base 5.2.0
+ WKPluginInformationMIMETypeKey@Base 5.2.0
+ WKPluginInformationPageURLKey@Base 5.2.0
+ WKPluginInformationPathKey@Base 5.2.0
+ WKPluginInformationPluginURLKey@Base 5.2.0
+ WKPluginInformationPluginspageAttributeURLKey@Base 5.2.0
+ WKPluginInformationUpdatePastLastBlockedVersionIsKnownAvailableKey@Base 5.2.0
  WKPluginSiteDataManagerClearAllSiteData@Base 5.0.2
  WKPluginSiteDataManagerClearSiteData@Base 5.0.2
  WKPluginSiteDataManagerGetSitesWithData@Base 5.0.2
@@ -757,12 +812,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesGetAVFoundationEnabled@Base 5.0.2
  WKPreferencesGetAccelerated2DCanvasEnabled@Base 5.0.2
  WKPreferencesGetAcceleratedCompositingEnabled@Base 5.0.2
+ WKPreferencesGetAcceleratedCompositingForOverflowScrollEnabled@Base 5.2.0
  WKPreferencesGetAcceleratedDrawingEnabled@Base 5.0.2
+ WKPreferencesGetAggressiveTileRetentionEnabled@Base 5.2.0
  WKPreferencesGetApplicationChromeModeEnabled@Base 5.0.2
  WKPreferencesGetArtificialPluginInitializationDelayEnabled@Base 5.0.2
  WKPreferencesGetAsynchronousPluginInitializationEnabled@Base 5.0.2
  WKPreferencesGetAsynchronousPluginInitializationEnabledForAllPlugins@Base 5.0.2
+ WKPreferencesGetAsynchronousSpellCheckingEnabled@Base 5.2.0
  WKPreferencesGetAuthorAndUserStylesEnabled@Base 5.0.2
+ WKPreferencesGetAutostartOriginPlugInSnapshottingEnabled@Base 5.2.0
  WKPreferencesGetBackspaceKeyNavigationEnabled@Base 5.0.2
  WKPreferencesGetCSSCustomFilterEnabled@Base 5.0.2
  WKPreferencesGetCSSGridLayoutEnabled@Base 5.0.2
@@ -786,8 +845,11 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesGetForceFTPDirectoryListings@Base 5.0.2
  WKPreferencesGetFrameFlatteningEnabled@Base 5.0.2
  WKPreferencesGetFullScreenEnabled@Base 5.0.2
+ WKPreferencesGetHiddenPageCSSAnimationSuspensionEnabled@Base 5.2.0
+ WKPreferencesGetHiddenPageDOMTimerThrottlingEnabled@Base 5.2.0
  WKPreferencesGetHixie76WebSocketProtocolEnabled@Base 5.0.2
  WKPreferencesGetHyperlinkAuditingEnabled@Base 5.0.2
+ WKPreferencesGetIncrementalRenderingSuppressionTimeout@Base 5.2.0
  WKPreferencesGetInspectorUsesWebKitUserInterface@Base 5.0.2
  WKPreferencesGetInteractiveFormValidationEnabled@Base 5.0.2
  WKPreferencesGetJavaEnabled@Base 5.0.2
@@ -796,10 +858,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesGetJavaScriptCanOpenWindowsAutomatically@Base 5.0.2
  WKPreferencesGetJavaScriptEnabled@Base 5.0.2
  WKPreferencesGetJavaScriptExperimentsEnabled@Base 5.0.2
+ WKPreferencesGetJavaScriptMarkupEnabled@Base 5.2.0
  WKPreferencesGetLoadsImagesAutomatically@Base 5.0.2
  WKPreferencesGetLoadsSiteIconsIgnoringImageLoadingPreference@Base 5.0.2
  WKPreferencesGetLocalFileContentSniffingEnabled@Base 5.0.2
  WKPreferencesGetLocalStorageEnabled@Base 5.0.2
+ WKPreferencesGetLogsPageMessagesToSystemConsoleEnabled@Base 5.2.0
  WKPreferencesGetMediaPlaybackAllowsInline@Base 5.0.2
  WKPreferencesGetMediaPlaybackRequiresUserGesture@Base 5.0.2
  WKPreferencesGetMinimumFontSize@Base 5.0.2
@@ -810,26 +874,34 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesGetPDFPluginEnabled@Base 5.0.2
  WKPreferencesGetPageCacheEnabled@Base 5.0.2
  WKPreferencesGetPageCacheSupportsPlugins@Base 5.0.2
+ WKPreferencesGetPageVisibilityBasedProcessSuppressionEnabled@Base 5.2.0
  WKPreferencesGetPaginateDuringLayoutEnabled@Base 5.0.2
  WKPreferencesGetPlugInSnapshottingEnabled@Base 5.0.2
  WKPreferencesGetPluginsEnabled@Base 5.0.2
+ WKPreferencesGetPrimaryPlugInSnapshotDetectionEnabled@Base 5.2.0
  WKPreferencesGetPrivateBrowsingEnabled@Base 5.0.2
+ WKPreferencesGetQTKitEnabled@Base 5.2.0
  WKPreferencesGetRegionBasedColumnsEnabled@Base 5.0.2
  WKPreferencesGetRequestAnimationFrameEnabled@Base 5.0.2
  WKPreferencesGetScreenFontSubstitutionEnabled@Base 5.0.2
  WKPreferencesGetScrollingPerformanceLoggingEnabled@Base 5.0.2
+ WKPreferencesGetSelectTrailingWhitespaceEnabled@Base 5.2.0
  WKPreferencesGetShouldDisplayCaptions@Base 5.0.2
  WKPreferencesGetShouldDisplaySubtitles@Base 5.0.2
  WKPreferencesGetShouldDisplayTextDescriptions@Base 5.0.2
  WKPreferencesGetShouldPrintBackgrounds@Base 5.0.2
  WKPreferencesGetShouldRespectImageOrientation@Base 5.0.2
  WKPreferencesGetShowsToolTipOverTruncatedText@Base 5.0.2
+ WKPreferencesGetShowsURLsInToolTipsEnabled@Base 5.2.0
+ WKPreferencesGetSmartInsertDeleteEnabled@Base 5.2.0
+ WKPreferencesGetSnapshotAllPlugIns@Base 5.2.0
  WKPreferencesGetStorageBlockingPolicy@Base 5.0.2
  WKPreferencesGetSuppressesIncrementalRendering@Base 5.0.2
  WKPreferencesGetTabToLinksEnabled@Base 5.0.2
  WKPreferencesGetTabsToLinks@Base 5.0.2
  WKPreferencesGetTextAreasAreResizable@Base 5.0.2
  WKPreferencesGetTextAutosizingEnabled@Base 5.0.2
+ WKPreferencesGetTiledScrollingIndicatorVisible@Base 5.2.0
  WKPreferencesGetTypeID@Base 5.0.2
  WKPreferencesGetUniversalAccessFromFileURLsAllowed@Base 5.0.2
  WKPreferencesGetWebArchiveDebugModeEnabled@Base 5.0.2
@@ -841,12 +913,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesSetAVFoundationEnabled@Base 5.0.2
  WKPreferencesSetAccelerated2DCanvasEnabled@Base 5.0.2
  WKPreferencesSetAcceleratedCompositingEnabled@Base 5.0.2
+ WKPreferencesSetAcceleratedCompositingForOverflowScrollEnabled@Base 5.2.0
  WKPreferencesSetAcceleratedDrawingEnabled@Base 5.0.2
+ WKPreferencesSetAggressiveTileRetentionEnabled@Base 5.2.0
  WKPreferencesSetApplicationChromeModeEnabled@Base 5.0.2
  WKPreferencesSetArtificialPluginInitializationDelayEnabled@Base 5.0.2
  WKPreferencesSetAsynchronousPluginInitializationEnabled@Base 5.0.2
  WKPreferencesSetAsynchronousPluginInitializationEnabledForAllPlugins@Base 5.0.2
+ WKPreferencesSetAsynchronousSpellCheckingEnabled@Base 5.2.0
  WKPreferencesSetAuthorAndUserStylesEnabled@Base 5.0.2
+ WKPreferencesSetAutostartOriginPlugInSnapshottingEnabled@Base 5.2.0
  WKPreferencesSetBackspaceKeyNavigationEnabled@Base 5.0.2
  WKPreferencesSetCSSCustomFilterEnabled@Base 5.0.2
  WKPreferencesSetCSSGridLayoutEnabled@Base 5.0.2
@@ -875,8 +951,11 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesSetForceFTPDirectoryListings@Base 5.0.2
  WKPreferencesSetFrameFlatteningEnabled@Base 5.0.2
  WKPreferencesSetFullScreenEnabled@Base 5.0.2
+ WKPreferencesSetHiddenPageCSSAnimationSuspensionEnabled@Base 5.2.0
+ WKPreferencesSetHiddenPageDOMTimerThrottlingEnabled@Base 5.2.0
  WKPreferencesSetHixie76WebSocketProtocolEnabled@Base 5.0.2
  WKPreferencesSetHyperlinkAuditingEnabled@Base 5.0.2
+ WKPreferencesSetIncrementalRenderingSuppressionTimeout@Base 5.2.0
  WKPreferencesSetInspectorUsesWebKitUserInterface@Base 5.0.2
  WKPreferencesSetInteractiveFormValidationEnabled@Base 5.0.2
  WKPreferencesSetJavaEnabled@Base 5.0.2
@@ -885,10 +964,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesSetJavaScriptCanOpenWindowsAutomatically@Base 5.0.2
  WKPreferencesSetJavaScriptEnabled@Base 5.0.2
  WKPreferencesSetJavaScriptExperimentsEnabled@Base 5.0.2
+ WKPreferencesSetJavaScriptMarkupEnabled@Base 5.2.0
  WKPreferencesSetLoadsImagesAutomatically@Base 5.0.2
  WKPreferencesSetLoadsSiteIconsIgnoringImageLoadingPreference@Base 5.0.2
  WKPreferencesSetLocalFileContentSniffingEnabled@Base 5.0.2
  WKPreferencesSetLocalStorageEnabled@Base 5.0.2
+ WKPreferencesSetLogsPageMessagesToSystemConsoleEnabled@Base 5.2.0
  WKPreferencesSetMediaPlaybackAllowsInline@Base 5.0.2
  WKPreferencesSetMediaPlaybackRequiresUserGesture@Base 5.0.2
  WKPreferencesSetMinimumFontSize@Base 5.0.2
@@ -899,16 +980,20 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesSetPDFPluginEnabled@Base 5.0.2
  WKPreferencesSetPageCacheEnabled@Base 5.0.2
  WKPreferencesSetPageCacheSupportsPlugins@Base 5.0.2
+ WKPreferencesSetPageVisibilityBasedProcessSuppressionEnabled@Base 5.2.0
  WKPreferencesSetPaginateDuringLayoutEnabled@Base 5.0.2
  WKPreferencesSetPictographFontFamily@Base 5.0.2
  WKPreferencesSetPlugInSnapshottingEnabled@Base 5.0.2
  WKPreferencesSetPluginsEnabled@Base 5.0.2
+ WKPreferencesSetPrimaryPlugInSnapshotDetectionEnabled@Base 5.2.0
  WKPreferencesSetPrivateBrowsingEnabled@Base 5.0.2
+ WKPreferencesSetQTKitEnabled@Base 5.2.0
  WKPreferencesSetRegionBasedColumnsEnabled@Base 5.0.2
  WKPreferencesSetRequestAnimationFrameEnabled@Base 5.0.2
  WKPreferencesSetSansSerifFontFamily@Base 5.0.2
  WKPreferencesSetScreenFontSubstitutionEnabled@Base 5.0.2
  WKPreferencesSetScrollingPerformanceLoggingEnabled@Base 5.0.2
+ WKPreferencesSetSelectTrailingWhitespaceEnabled@Base 5.2.0
  WKPreferencesSetSerifFontFamily@Base 5.0.2
  WKPreferencesSetShouldDisplayCaptions@Base 5.0.2
  WKPreferencesSetShouldDisplaySubtitles@Base 5.0.2
@@ -916,6 +1001,9 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesSetShouldPrintBackgrounds@Base 5.0.2
  WKPreferencesSetShouldRespectImageOrientation@Base 5.0.2
  WKPreferencesSetShowsToolTipOverTruncatedText@Base 5.0.2
+ WKPreferencesSetShowsURLsInToolTipsEnabled@Base 5.2.0
+ WKPreferencesSetSmartInsertDeleteEnabled@Base 5.2.0
+ WKPreferencesSetSnapshotAllPlugIns@Base 5.2.0
  WKPreferencesSetStandardFontFamily@Base 5.0.2
  WKPreferencesSetStorageBlockingPolicy@Base 5.0.2
  WKPreferencesSetSuppressesIncrementalRendering@Base 5.0.2
@@ -923,6 +1011,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesSetTabsToLinks@Base 5.0.2
  WKPreferencesSetTextAreasAreResizable@Base 5.0.2
  WKPreferencesSetTextAutosizingEnabled@Base 5.0.2
+ WKPreferencesSetTiledScrollingIndicatorVisible@Base 5.2.0
  WKPreferencesSetUniversalAccessFromFileURLsAllowed@Base 5.0.2
  WKPreferencesSetWebArchiveDebugModeEnabled@Base 5.0.2
  WKPreferencesSetWebAudioEnabled@Base 5.0.2
@@ -1025,6 +1114,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKURLResponseCopyMIMEType@Base 5.0.2
  WKURLResponseCopySuggestedFilename@Base 5.0.2
  WKURLResponseCopyURL@Base 5.0.2
+ WKURLResponseGetExpectedContentLength@Base 5.2.0
  WKURLResponseGetTypeID@Base 5.0.2
  WKURLResponseHTTPStatusCode@Base 5.0.2
  WKURLResponseIsAttachment@Base 5.0.2
@@ -1037,6 +1127,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKUserContentURLPatternMatchesURL@Base 5.0.2
  WKVibrationGetTypeID@Base 5.0.2
  WKVibrationSetProvider@Base 5.0.2
+ WTFCrash@Base 5.2.0
  WTFGetBacktrace@Base 5.0.2
  WTFInstallReportBacktraceOnCrashHook@Base 5.0.2
  WTFInvokeCrashHook@Base 5.0.2
@@ -1055,15 +1146,21 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _WKContextSetAdditionalPluginsDirectory@Base 5.0.2
  _WKContextSetAlwaysUsesComplexTextCodePath@Base 5.0.2
  _WKContextSetHTTPPipeliningEnabled@Base 5.0.2
+ _Z13WKURLCopyQUrlPK11OpaqueWKURL@Base 5.2.0
  _Z14qWebKitVersionv@Base 5.0.2
+ _Z16WKURLCopyQStringPK11OpaqueWKURL@Base 5.2.0
+ _Z19JSStringCopyQStringP14OpaqueJSString@Base 5.2.0
  _Z19WKImageCreateQImagePK13OpaqueWKImage@Base 5.0.2
  _Z19WKStringCopyQStringPK14OpaqueWKString@Base 5.0.2
  _Z19WKURLCreateWithQUrlRK4QUrl@Base 5.0.2
  _Z19qWebKitMajorVersionv@Base 5.0.2
  _Z19qWebKitMinorVersionv@Base 5.0.2
+ _Z22WKURLCreateWithQStringRK7QString@Base 5.2.0
  _Z23WKImageCreateFromQImageRK6QImage@Base 5.0.2
  _Z23qt_networkAccessAllowedb@Base 5.0.2
+ _Z25JSStringCreateWithQStringRK7QString@Base 5.2.0
  _Z25WKStringCreateWithQStringRK7QString@Base 5.0.2
+ _Z32WKIconDatabaseTryGetQImageForURLPK20OpaqueWKIconDatabasePK11OpaqueWKURL@Base 5.2.0
  _ZN10UndoStepQt4redoEv@Base 5.0.2
  _ZN10UndoStepQt4undoEv@Base 5.0.2
  _ZN10UndoStepQtC1EN3WTF6RefPtrIN7WebCore8UndoStepEEE@Base 5.0.2
@@ -1140,15 +1237,18 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN11QWebHistoryC2Ev@Base 5.0.2
  _ZN11QWebHistoryD1Ev@Base 5.0.2
  _ZN11QWebHistoryD2Ev@Base 5.0.2
+ _ZN11QWebKitTest10wheelEventEP7QObjectddiN2Qt11OrientationE@Base 5.2.0
  _ZN11QWebKitTest11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.0.2
  _ZN11QWebKitTest11qt_metacastEPKc@Base 5.0.2
  _ZN11QWebKitTest14sendTouchEventEP13QQuickWebViewN6QEvent4TypeERK5QListIN11QTouchEvent10TouchPointEEm@Base 5.0.2
+ _ZN11QWebKitTest14touchDoubleTapEP7QObjectddi@Base 5.2.0
  _ZN11QWebKitTest15viewportChangedEv@Base 5.0.2
  _ZN11QWebKitTest16staticMetaObjectE@Base 5.0.2
  _ZN11QWebKitTest19contentsSizeChangedEv@Base 5.0.2
  _ZN11QWebKitTest20contentsScaleChangedEv@Base 5.0.2
  _ZN11QWebKitTest22contentsScaleCommittedEv@Base 5.0.2
  _ZN11QWebKitTest23devicePixelRatioChangedEv@Base 5.0.2
+ _ZN11QWebKitTest8touchTapEP7QObjectddi@Base 5.2.0
  _ZN11QWebKitTestC1EP20QQuickWebViewPrivateP7QObject@Base 5.0.2
  _ZN11QWebKitTestC2EP20QQuickWebViewPrivateP7QObject@Base 5.0.2
  _ZN11QWebKitTestD0Ev@Base 5.0.2
@@ -1173,7 +1273,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN12QWebSettings14globalSettingsEv@Base 5.0.2
  _ZN12QWebSettings14resetAttributeENS_12WebAttributeE@Base 5.0.2
  _ZN12QWebSettings15resetFontFamilyENS_10FontFamilyE@Base 5.0.2
- _ZN12QWebSettings15setCSSMediaTypeERK7QString@Base 5.1.0
+ _ZN12QWebSettings15setCSSMediaTypeERK7QString@Base 5.2.0
  _ZN12QWebSettings16iconDatabasePathEv@Base 5.0.2
  _ZN12QWebSettings17clearIconDatabaseEv@Base 5.0.2
  _ZN12QWebSettings17clearMemoryCachesEv@Base 5.0.2
@@ -1200,10 +1300,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN12QWebSettingsC2Ev@Base 5.0.2
  _ZN12QWebSettingsD1Ev@Base 5.0.2
  _ZN12QWebSettingsD2Ev@Base 5.0.2
+ _ZN13OpaqueJSClassD1Ev@Base 5.2.0
+ _ZN13OpaqueJSClassD2Ev@Base 5.2.0
  _ZN13QQuickWebPage11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.0.2
  _ZN13QQuickWebPage11qt_metacastEPKc@Base 5.0.2
  _ZN13QQuickWebPage15setContentsSizeERK6QSizeF@Base 5.0.2
  _ZN13QQuickWebPage15updatePaintNodeEP7QSGNodePN10QQuickItem19UpdatePaintNodeDataE@Base 5.0.2
+ _ZN13QQuickWebPage16setContentsScaleEd@Base 5.2.0
  _ZN13QQuickWebPage16staticMetaObjectE@Base 5.0.2
  _ZN13QQuickWebPageC1EP13QQuickWebView@Base 5.0.2
  _ZN13QQuickWebPageC2EP13QQuickWebView@Base 5.0.2
@@ -1223,6 +1326,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN13QQuickWebView13dragMoveEventEP14QDragMoveEvent@Base 5.0.2
  _ZN13QQuickWebView13keyPressEventEP9QKeyEvent@Base 5.0.2
  _ZN13QQuickWebView13setContentPosERK7QPointF@Base 5.0.2
+ _ZN13QQuickWebView13setZoomFactorEd@Base 5.2.0
  _ZN13QQuickWebView14dragEnterEventEP15QDragEnterEvent@Base 5.0.2
  _ZN13QQuickWebView14dragLeaveEventEP15QDragLeaveEvent@Base 5.0.2
  _ZN13QQuickWebView14hoverMoveEventEP11QHoverEvent@Base 5.0.2
@@ -1308,8 +1412,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN15QWebPageAdapter11dragUpdatedEPK9QMimeDataRK6QPoint6QFlagsIN2Qt10DropActionEE@Base 5.0.2
  _ZN15QWebPageAdapter11performDragEPK9QMimeDataRK6QPoint6QFlagsIN2Qt10DropActionEE@Base 5.0.2
  _ZN15QWebPageAdapter12focusInEventEP11QFocusEvent@Base 5.0.2
- _ZN15QWebPageAdapter13TouchAdjusterC1Ejjjj@Base 5.0.2
- _ZN15QWebPageAdapter13TouchAdjusterC2Ejjjj@Base 5.0.2
  _ZN15QWebPageAdapter13focusOutEventEP11QFocusEvent@Base 5.0.2
  _ZN15QWebPageAdapter13triggerActionENS_10MenuActionEP24QWebHitTestResultPrivatePKcb@Base 5.0.2
  _ZN15QWebPageAdapter14dragLeaveEventEv@Base 5.0.2
@@ -1324,6 +1426,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN15QWebPageAdapter17mouseReleaseEventEP11QMouseEvent@Base 5.0.2
  _ZN15QWebPageAdapter17setSystemTrayIconEP7QObject@Base 5.0.2
  _ZN15QWebPageAdapter18setContentEditableEb@Base 5.0.2
+ _ZN15QWebPageAdapter18setVisibilityStateENS_15VisibilityStateE@Base 5.2.0
  _ZN15QWebPageAdapter18treatSchemeAsLocalERK7QString@Base 5.0.2
  _ZN15QWebPageAdapter20networkAccessManagerEv@Base 5.0.2
  _ZN15QWebPageAdapter20updateActionInternalENS_10MenuActionEPKcPbS3_@Base 5.0.2
@@ -1385,7 +1488,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN15QWebPreferences24fantasyFontFamilyChangedEv@Base 5.0.2
  _ZN15QWebPreferences24fullScreenEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences24javascriptEnabledChangedEv@Base 5.0.2
- _ZN15QWebPreferences24setScrollAnimatorEnabledEb@Base 5.0.2
  _ZN15QWebPreferences25dnsPrefetchEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences25setDeveloperExtrasEnabledEb@Base 5.0.2
  _ZN15QWebPreferences25setFrameFlatteningEnabledEb@Base 5.0.2
@@ -1398,13 +1500,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN15QWebPreferences27defaultFixedFontSizeChangedEv@Base 5.0.2
  _ZN15QWebPreferences27notificationsEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences27setNavigatorQtObjectEnabledEb@Base 5.0.2
- _ZN15QWebPreferences28scrollAnimatorEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences29developerExtrasEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences29frameFlatteningEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences29privateBrowsingEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences31navigatorQtObjectEnabledChangedEv@Base 5.0.2
+ _ZN15QWebPreferences32setFileAccessFromFileURLsAllowedEb@Base 5.2.0
+ _ZN15QWebPreferences36fileAccessFromFileURLsAllowedChangedEv@Base 5.2.0
  _ZN15QWebPreferences36setOfflineWebApplicationCacheEnabledEb@Base 5.0.2
+ _ZN15QWebPreferences37setUniversalAccessFromFileURLsAllowedEb@Base 5.2.0
  _ZN15QWebPreferences40offlineWebApplicationCacheEnabledChangedEv@Base 5.0.2
+ _ZN15QWebPreferences41universalAccessFromFileURLsAllowedChangedEv@Base 5.2.0
  _ZN15QWebPreferencesC1Ev@Base 5.0.2
  _ZN15QWebPreferencesC2Ev@Base 5.0.2
  _ZN15QWebPreferencesD0Ev@Base 5.0.2
@@ -1434,6 +1539,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN16QWebDownloadItemD2Ev@Base 5.0.2
  _ZN16QWebFrameAdapter10cancelLoadEv@Base 5.0.2
  _ZN16QWebFrameAdapter10setContentERK10QByteArrayRK7QStringRK4QUrl@Base 5.0.2
+ _ZN16QWebFrameAdapter13setZoomFactorEd@Base 5.2.0
  _ZN16QWebFrameAdapter14clearCoreFrameEv@Base 5.0.2
  _ZN16QWebFrameAdapter14scrollToAnchorERK7QString@Base 5.0.2
  _ZN16QWebFrameAdapter15setViewportSizeERK5QSize@Base 5.0.2
@@ -1447,6 +1553,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN16QWebFrameAdapter20renderRelativeCoordsEP8QPainteriRK7QRegion@Base 5.0.2
  _ZN16QWebFrameAdapter21_q_orientationChangedEv@Base 5.0.2
  _ZN16QWebFrameAdapter21setDelegatesScrollingEb@Base 5.0.2
+ _ZN16QWebFrameAdapter21setTextSizeMultiplierEd@Base 5.2.0
  _ZN16QWebFrameAdapter22renderCompositedLayersEPN7WebCore15GraphicsContextERKNS0_7IntRectE@Base 5.0.2
  _ZN16QWebFrameAdapter23setPaintsEntireContentsEb@Base 5.0.2
  _ZN16QWebFrameAdapter26setFixedVisibleContentRectERK5QRect@Base 5.0.2
@@ -1509,10 +1616,14 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN18QWebSecurityOrigin14addLocalSchemeERK7QString@Base 5.0.2
  _ZN18QWebSecurityOrigin16setDatabaseQuotaEx@Base 5.0.2
  _ZN18QWebSecurityOrigin17removeLocalSchemeERK7QString@Base 5.0.2
+ _ZN18QWebSecurityOrigin23addAccessWhitelistEntryERK7QStringS2_NS_16SubdomainSettingE@Base 5.2.0
  _ZN18QWebSecurityOrigin24setApplicationCacheQuotaEx@Base 5.0.2
+ _ZN18QWebSecurityOrigin26removeAccessWhitelistEntryERK7QStringS2_NS_16SubdomainSettingE@Base 5.2.0
  _ZN18QWebSecurityOriginC1EP25QWebSecurityOriginPrivate@Base 5.0.2
+ _ZN18QWebSecurityOriginC1ERK4QUrl@Base 5.2.0
  _ZN18QWebSecurityOriginC1ERKS_@Base 5.0.2
  _ZN18QWebSecurityOriginC2EP25QWebSecurityOriginPrivate@Base 5.0.2
+ _ZN18QWebSecurityOriginC2ERK4QUrl@Base 5.2.0
  _ZN18QWebSecurityOriginC2ERKS_@Base 5.0.2
  _ZN18QWebSecurityOriginD1Ev@Base 5.0.2
  _ZN18QWebSecurityOriginD2Ev@Base 5.0.2
@@ -1565,7 +1676,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN21QWebElementCollectionD2Ev@Base 5.0.2
  _ZN21QWebElementCollectionaSERKS_@Base 5.0.2
  _ZN21QWebIconImageProvider12requestImageERK7QStringP5QSizeRKS3_@Base 5.0.2
- _ZN21QWebIconImageProvider26iconURLForPageURLInContextERKN3WTF6StringEPN6WebKit12QtWebContextE@Base 5.0.2
+ _ZN21QWebIconImageProvider26iconURLForPageURLInContextERK7QStringPN6WebKit12QtWebContextE@Base 5.2.0
  _ZN21QWebIconImageProviderC1Ev@Base 5.0.2
  _ZN21QWebIconImageProviderC2Ev@Base 5.0.2
  _ZN21QWebIconImageProviderD0Ev@Base 5.0.2
@@ -1610,7 +1721,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN21QtPluginWidgetAdapterD1Ev@Base 5.0.2
  _ZN21QtPluginWidgetAdapterD2Ev@Base 5.0.2
  _ZN22QWebHistoryItemPrivate4coreEPK15QWebHistoryItem@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt10findStringEP15QWebPageAdapterRK7QStringRK11QStringList@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt10initializeEv@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt11clearOpenerEP16QWebFrameAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt11contextMenuEP15QWebPageAdapter@Base 5.0.2
@@ -1618,9 +1728,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN23DumpRenderTreeSupportQt11shouldCloseEP16QWebFrameAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt12isTargetItemERK15QWebHistoryItem@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt13selectedRangeEP15QWebPageAdapter@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt13setAutofilledERK11QWebElementb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt14clearFrameNameEP16QWebFrameAdapter@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt14pauseAnimationEP16QWebFrameAdapterRK7QStringdS4_@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt14viewportAsTextEP15QWebPageAdapteriRK5QSizeS4_@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt15dumpFrameLoaderEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt15setValueForUserERK11QWebElementRK7QString@Base 5.0.2
@@ -1634,13 +1742,14 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN23DumpRenderTreeSupportQt16webPageGroupNameEP15QWebPageAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt17addUserStyleSheetEP15QWebPageAdapterRK7QString@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt17clearScriptWorldsEv@Base 5.0.2
+ _ZN23DumpRenderTreeSupportQt17getJSWindowObjectEP16QWebFrameAdapterPPK15OpaqueJSContextPP13OpaqueJSValue@Base 5.2.0
  _ZN23DumpRenderTreeSupportQt17historyItemTargetERK15QWebHistoryItem@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt17trackRepaintRectsEP16QWebFrameAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt17webInspectorCloseEP15QWebPageAdapter@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt17workerThreadCountEv@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt18confirmCompositionEP15QWebPageAdapterPKc@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt18hasDocumentElementEP16QWebFrameAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt19frameRenderTreeDumpEP16QWebFrameAdapter@Base 5.0.2
+ _ZN23DumpRenderTreeSupportQt19resetPageVisibilityEP15QWebPageAdapter@Base 5.2.0
  _ZN23DumpRenderTreeSupportQt19webPageSetGroupNameEP15QWebPageAdapterRK7QString@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt20dumpEditingCallbacksEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt20dumpHistoryCallbacksEb@Base 5.0.2
@@ -1653,33 +1762,29 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN23DumpRenderTreeSupportQt21dumpSetAcceptsEditingEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt21injectInternalsObjectEP16QWebFrameAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt21injectInternalsObjectEPK15OpaqueJSContext@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt21markerTextForListItemERK11QWebElement@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt21removeUserStyleSheetsEP15QWebPageAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt22getTrackedRepaintRectsEP16QWebFrameAdapterR7QVectorI5QRectE@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt22javaScriptObjectsCountEv@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt23garbageCollectorCollectEv@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt23setCaretBrowsingEnabledEP15QWebPageAdapterb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt23setCustomPolicyDelegateEbb@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt23setMinimumTimerIntervalEP15QWebPageAdapterd@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt24executeCoreCommandByNameEP15QWebPageAdapterRK7QStringS4_@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt24numberOfActiveAnimationsEP16QWebFrameAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt24paintPagesWithBoundariesEP16QWebFrameAdapter@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt24setMockDeviceOrientationEP15QWebPageAdapterbdbdbd@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt25clearAllApplicationCachesEv@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt25dumpResourceLoadCallbacksEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt25dumpVisitedLinksCallbacksEb@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt25pauseTransitionOfPropertyEP16QWebFrameAdapterRK7QStringdS4_@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt25setFrameFlatteningEnabledEP15QWebPageAdapterb@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt25setShouldUseFontSmoothingEb@Base 5.1.0
+ _ZN23DumpRenderTreeSupportQt25setSeamlessIFramesEnabledEb@Base 5.2.0
+ _ZN23DumpRenderTreeSupportQt25setShouldUseFontSmoothingEb@Base 5.2.0
  _ZN23DumpRenderTreeSupportQt25webInspectorExecuteScriptEP15QWebPageAdapterlRK7QString@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt25whiteListAccessFromOriginERK7QStringS2_S2_b@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt26firstRectForCharacterRangeEP15QWebPageAdapterii@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt26mediaContentUrlByElementIdEP16QWebFrameAdapterRK7QString@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt26overwritePluginDirectoriesEv@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt26setMockGeolocationPositionEP15QWebPageAdapterddd@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt27defaultMinimumTimerIntervalEv@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt27resetOriginAccessWhiteListsEv@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt27setSmartInsertDeleteEnabledEP15QWebPageAdapterb@Base 5.0.2
+ _ZN23DumpRenderTreeSupportQt28clearNotificationPermissionsEv@Base 5.2.0
  _ZN23DumpRenderTreeSupportQt28dumpProgressFinishedCallbackEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt28dumpUserGestureInFrameLoaderEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt28setDeferMainResourceDataLoadEb@Base 5.0.2
@@ -1695,12 +1800,9 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN23DumpRenderTreeSupportQt30setWillSendRequestClearHeadersERK11QStringList@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt31removeWhiteListAccessFromOriginERK7QStringS2_S2_b@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt32simulateDesktopNotificationClickERK7QString@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt33computedStyleIncludingVisitedInfoERK11QWebElement@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt33disableDefaultTypesettingFeaturesEv@Base 5.1.0
- _ZN23DumpRenderTreeSupportQt34setSelectTrailingWhitespaceEnabledEP15QWebPageAdapterb@Base 5.0.2
+ _ZN23DumpRenderTreeSupportQt33disableDefaultTypesettingFeaturesEv@Base 5.2.0
  _ZN23DumpRenderTreeSupportQt35setInteractiveFormValidationEnabledEP15QWebPageAdapterb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt35setWindowsBehaviorAsEditingBehaviorEP15QWebPageAdapter@Base 5.0.2
- _ZN23DumpRenderTreeSupportQt39elementDoesAutoCompleteForElementWithIdEP16QWebFrameAdapterRK7QString@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt39setWillSendRequestReturnsNullOnRedirectEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt40garbageCollectorCollectOnAlternateThreadEb@Base 5.0.2
  _ZN23DumpRenderTreeSupportQt40setDomainRelaxationForbiddenForURLSchemeEbRK7QString@Base 5.0.2
@@ -1746,6 +1848,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN25QQuickWebViewExperimental14setDeviceWidthEi@Base 5.0.2
  _ZN25QQuickWebViewExperimental14setUserScriptsERK5QListI4QUrlE@Base 5.0.2
  _ZN25QQuickWebViewExperimental15messageReceivedERK4QMapI7QString8QVariantE@Base 5.0.2
+ _ZN25QQuickWebViewExperimental15processDidCrashEv@Base 5.2.0
  _ZN25QQuickWebViewExperimental15schemeDelegatesEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental15setColorChooserEP13QQmlComponent@Base 5.0.2
  _ZN25QQuickWebViewExperimental15setDeviceHeightEi@Base 5.0.2
@@ -1758,6 +1861,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN25QQuickWebViewExperimental17filePickerChangedEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental18alertDialogChangedEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental18deviceWidthChangedEv@Base 5.0.2
+ _ZN25QQuickWebViewExperimental18didRelaunchProcessEv@Base 5.2.0
  _ZN25QQuickWebViewExperimental18evaluateJavaScriptERK7QStringRK8QJSValue@Base 5.0.2
  _ZN25QQuickWebViewExperimental18schemeDelegates_AtEP16QQmlListPropertyI23QQuickUrlSchemeDelegateEi@Base 5.0.2
  _ZN25QQuickWebViewExperimental18userScriptsChangedEv@Base 5.0.2
@@ -1779,10 +1883,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN25QQuickWebViewExperimental24setTransparentBackgroundEb@Base 5.0.2
  _ZN25QQuickWebViewExperimental25remoteInspectorUrlChangedEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental26databaseQuotaDialogChangedEv@Base 5.0.2
+ _ZN25QQuickWebViewExperimental26processDidBecomeResponsiveEv@Base 5.2.0
  _ZN25QQuickWebViewExperimental26sendApplicationSchemeReplyEP18QQuickNetworkReply@Base 5.0.2
  _ZN25QQuickWebViewExperimental26setRenderToOffscreenBufferEb@Base 5.0.2
  _ZN25QQuickWebViewExperimental27authenticationDialogChangedEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental27setFlickableViewportEnabledEb@Base 5.0.2
+ _ZN25QQuickWebViewExperimental28processDidBecomeUnresponsiveEv@Base 5.2.0
  _ZN25QQuickWebViewExperimental28setProxyAuthenticationDialogEP13QQmlComponent@Base 5.0.2
  _ZN25QQuickWebViewExperimental28setUseDefaultContentItemSizeEb@Base 5.0.2
  _ZN25QQuickWebViewExperimental30invokeApplicationSchemeHandlerEN3WTF10PassRefPtrIN6WebKit30QtRefCountedNetworkRequestDataEEE@Base 5.0.2
@@ -1793,30 +1899,34 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN25QQuickWebViewExperimental36preferredMinimumContentsWidthChangedEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental4pageEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental4testEv@Base 5.0.2
+ _ZN25QQuickWebViewExperimental8findTextERK7QString6QFlagsINS_8FindFlagEE@Base 5.2.0
  _ZN25QQuickWebViewExperimental8goBackToEi@Base 5.0.2
+ _ZN25QQuickWebViewExperimental9textFoundEi@Base 5.2.0
  _ZN25QQuickWebViewExperimentalC1EP13QQuickWebViewP20QQuickWebViewPrivate@Base 5.0.2
  _ZN25QQuickWebViewExperimentalC2EP13QQuickWebViewP20QQuickWebViewPrivate@Base 5.0.2
  _ZN25QQuickWebViewExperimentalD0Ev@Base 5.0.2
  _ZN25QQuickWebViewExperimentalD1Ev@Base 5.0.2
  _ZN25QQuickWebViewExperimentalD2Ev@Base 5.0.2
- _ZN3JSC10Identifier11addSlowCaseEPNS_12JSGlobalDataEPN3WTF10StringImplE@Base 5.0.2
+ _ZN3JSC10Identifier11addSlowCaseEPNS_2VMEPN3WTF10StringImplE@Base 5.2.0
  _ZN3JSC10Identifier11addSlowCaseEPNS_9ExecStateEPN3WTF10StringImplE@Base 5.0.2
- _ZN3JSC10Identifier27checkCurrentIdentifierTableEPNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC10Identifier27checkCurrentIdentifierTableEPNS_2VME@Base 5.2.0
  _ZN3JSC10Identifier27checkCurrentIdentifierTableEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC10Identifier3addEPNS_9ExecStateEPKc@Base 5.0.2
  _ZN3JSC10Identifier4fromEPNS_9ExecStateEi@Base 5.0.2
  _ZN3JSC10Identifier4fromEPNS_9ExecStateEj@Base 5.0.2
  _ZN3JSC10JSFunction11displayNameEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC10JSFunction4nameEPNS_9ExecStateE@Base 5.0.2
- (subst)_ZN3JSC10JSFunction6createEPNS_9ExecStateEPNS_14JSGlobalObjectEiRKN3WTF6StringEPF{int64_t}S2_ENS_9IntrinsicESA_@Base 5.0.2
+ _ZN3JSC10JSFunction6createEPNS_9ExecStateEPNS_14JSGlobalObjectEiRKN3WTF6StringEPFlS2_ENS_9IntrinsicESA_@Base 5.2.0
  _ZN3JSC10JSFunction6s_infoE@Base 5.0.2
  _ZN3JSC10JSFunctionC1EPNS_9ExecStateEPNS_14JSGlobalObjectEPNS_9StructureE@Base 5.0.2
  _ZN3JSC10JSFunctionC2EPNS_9ExecStateEPNS_14JSGlobalObjectEPNS_9StructureE@Base 5.0.2
+ _ZN3JSC10StackFrame20computeLineAndColumnERjS1_@Base 5.2.0
+ _ZN3JSC10StackFrame8toStringEPNS_9ExecStateE@Base 5.2.0
  _ZN3JSC10throwErrorEPNS_9ExecStateENS_7JSValueE@Base 5.0.2
  _ZN3JSC10throwErrorEPNS_9ExecStateEPNS_8JSObjectE@Base 5.0.2
- (subst)_ZN3JSC11CopiedSpace19tryAllocateSlowCaseE{size_t}PPv@Base 5.0.2
+ _ZN3JSC11CopiedSpace19tryAllocateSlowCaseEmPPv@Base 5.2.0
  _ZN3JSC11Interpreter13dumpCallFrameEPNS_9ExecStateE@Base 5.0.2
- (subst)_ZN3JSC11Interpreter13getStackTraceEPNS_12JSGlobalDataERN3WTF6VectorINS_10StackFrameEL{size_t}0EEE@Base 5.0.2
+ _ZN3JSC11Interpreter13getStackTraceEPNS_2VMERN3WTF6VectorINS_10StackFrameELm0ENS3_15CrashOnOverflowEEEm@Base 5.2.0
  _ZN3JSC11Interpreter17ErrorHandlingModeC1EPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC11Interpreter17ErrorHandlingModeC2EPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC11Interpreter17ErrorHandlingModeD1Ev@Base 5.0.2
@@ -1826,9 +1936,11 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC11SlotVisitor16mergeOpaqueRootsEv@Base 5.0.2
  _ZN3JSC11SlotVisitor8validateEPNS_6JSCellE@Base 5.0.2
  _ZN3JSC11checkSyntaxEPNS_9ExecStateERKNS_10SourceCodeEPNS_7JSValueE@Base 5.0.2
+ _ZN3JSC11checkSyntaxERNS_2VMERKNS_10SourceCodeERNS_11ParserErrorE@Base 5.2.0
+ _ZN3JSC11createErrorEPNS_9ExecStateEPFPNS_8JSObjectES1_RKN3WTF6StringEENS_7JSValueES7_@Base 5.2.0
  _ZN3JSC11createErrorEPNS_9ExecStateERKN3WTF6StringE@Base 5.0.2
  _ZN3JSC11regExpFlagsERKN3WTF6StringE@Base 5.0.2
- _ZN3JSC12DateInstance14finishCreationERNS_12JSGlobalDataEd@Base 5.0.2
+ _ZN3JSC12DateInstance14finishCreationERNS_2VMEd@Base 5.2.0
  _ZN3JSC12DateInstance6s_infoE@Base 5.0.2
  _ZN3JSC12DateInstanceC1EPNS_9ExecStateEPNS_9StructureE@Base 5.0.2
  _ZN3JSC12DateInstanceC2EPNS_9ExecStateEPNS_9StructureE@Base 5.0.2
@@ -1837,29 +1949,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC12GlobalJSLockD1Ev@Base 5.0.2
  _ZN3JSC12GlobalJSLockD2Ev@Base 5.0.2
  _ZN3JSC12JSActivation24getOwnPropertyDescriptorEPNS_8JSObjectEPNS_9ExecStateENS_12PropertyNameERNS_18PropertyDescriptorE@Base 5.0.2
- _ZN3JSC12JSGlobalData10ClientDataD0Ev@Base 5.0.2
- _ZN3JSC12JSGlobalData10ClientDataD1Ev@Base 5.0.2
- _ZN3JSC12JSGlobalData10ClientDataD2Ev@Base 5.0.2
- _ZN3JSC12JSGlobalData12createLeakedENS_8HeapTypeE@Base 5.0.2
- _ZN3JSC12JSGlobalData12stopSamplingEv@Base 5.0.2
- _ZN3JSC12JSGlobalData13startSamplingEv@Base 5.0.2
- _ZN3JSC12JSGlobalData14dumpSampleDataEPNS_9ExecStateE@Base 5.0.2
- _ZN3JSC12JSGlobalData14resetDateCacheEv@Base 5.0.2
- _ZN3JSC12JSGlobalData14sharedInstanceEv@Base 5.0.2
- _ZN3JSC12JSGlobalData15dumpRegExpTraceEv@Base 5.0.2
- _ZN3JSC12JSGlobalData23releaseExecutableMemoryEv@Base 5.0.2
- _ZN3JSC12JSGlobalData6createENS_8HeapTypeE@Base 5.0.2
- _ZN3JSC12JSGlobalDataD1Ev@Base 5.0.2
- _ZN3JSC12JSGlobalDataD2Ev@Base 5.0.2
- _ZN3JSC12JSLockHolderC1EPNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC12JSLockHolderC1EPNS_2VME@Base 5.2.0
  _ZN3JSC12JSLockHolderC1EPNS_9ExecStateE@Base 5.0.2
- _ZN3JSC12JSLockHolderC1ERNS_12JSGlobalDataE@Base 5.0.2
- _ZN3JSC12JSLockHolderC2EPNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC12JSLockHolderC1ERNS_2VME@Base 5.2.0
+ _ZN3JSC12JSLockHolderC2EPNS_2VME@Base 5.2.0
  _ZN3JSC12JSLockHolderC2EPNS_9ExecStateE@Base 5.0.2
- _ZN3JSC12JSLockHolderC2ERNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC12JSLockHolderC2ERNS_2VME@Base 5.2.0
  _ZN3JSC12JSLockHolderD1Ev@Base 5.0.2
  _ZN3JSC12JSLockHolderD2Ev@Base 5.0.2
  _ZN3JSC12NumberObject6s_infoE@Base 5.0.2
+ _ZN3JSC12PrototypeMap32emptyObjectStructureForPrototypeEPNS_8JSObjectEj@Base 5.2.0
  _ZN3JSC12RegExpObject14deletePropertyEPNS_6JSCellEPNS_9ExecStateENS_12PropertyNameE@Base 5.0.2
  _ZN3JSC12RegExpObject14finishCreationEPNS_14JSGlobalObjectE@Base 5.0.2
  _ZN3JSC12RegExpObject16getPropertyNamesEPNS_8JSObjectEPNS_9ExecStateERNS_17PropertyNameArrayENS_15EnumerationModeE@Base 5.0.2
@@ -1869,30 +1968,30 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC12RegExpObjectC1EPNS_14JSGlobalObjectEPNS_9StructureEPNS_6RegExpE@Base 5.0.2
  _ZN3JSC12RegExpObjectC2EPNS_14JSGlobalObjectEPNS_9StructureEPNS_6RegExpE@Base 5.0.2
  _ZN3JSC12SamplingTool5setupEv@Base 5.0.2
- _ZN3JSC12SmallStrings17createEmptyStringEPNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC12SmallStrings17createEmptyStringEPNS_2VME@Base 5.2.0
  _ZN3JSC12SmallStrings24singleCharacterStringRepEh@Base 5.0.2
- _ZN3JSC12SmallStrings27createSingleCharacterStringEPNS_12JSGlobalDataEh@Base 5.0.2
- _ZN3JSC12StringObject14finishCreationERNS_12JSGlobalDataEPNS_8JSStringE@Base 5.0.2
+ _ZN3JSC12SmallStrings27createSingleCharacterStringEPNS_2VMEh@Base 5.2.0
+ _ZN3JSC12StringObject14finishCreationERNS_2VMEPNS_8JSStringE@Base 5.2.0
  _ZN3JSC12StringObject6s_infoE@Base 5.0.2
- _ZN3JSC12StringObjectC1ERNS_12JSGlobalDataEPNS_9StructureE@Base 5.0.2
- _ZN3JSC12StringObjectC2ERNS_12JSGlobalDataEPNS_9StructureE@Base 5.0.2
- _ZN3JSC13BooleanObject14finishCreationERNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC12StringObjectC1ERNS_2VMEPNS_9StructureE@Base 5.2.0
+ _ZN3JSC12StringObjectC2ERNS_2VMEPNS_9StructureE@Base 5.2.0
+ _ZN3JSC13BooleanObject14finishCreationERNS_2VME@Base 5.2.0
  _ZN3JSC13BooleanObject6s_infoE@Base 5.0.2
- _ZN3JSC13BooleanObjectC1ERNS_12JSGlobalDataEPNS_9StructureE@Base 5.0.2
- _ZN3JSC13BooleanObjectC2ERNS_12JSGlobalDataEPNS_9StructureE@Base 5.0.2
+ _ZN3JSC13BooleanObjectC1ERNS_2VMEPNS_9StructureE@Base 5.2.0
+ _ZN3JSC13BooleanObjectC2ERNS_2VMEPNS_9StructureE@Base 5.2.0
  _ZN3JSC13JSFinalObject13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE@Base 5.0.2
  _ZN3JSC13JSFinalObject6s_infoE@Base 5.0.2
+ _ZN3JSC13PropertyTable6s_infoE@Base 5.2.0
  _ZN3JSC13SamplingFlags4stopEv@Base 5.0.2
  _ZN3JSC13SamplingFlags5startEv@Base 5.0.2
  _ZN3JSC13SamplingFlags7s_flagsE@Base 5.0.2
- _ZN3JSC13StatementNode6setLocEii@Base 5.0.2
  _ZN3JSC13WatchpointSet15notifyWriteSlowEv@Base 5.0.2
  _ZN3JSC14ExecutableBase6s_infoE@Base 5.0.2
  _ZN3JSC14HeapStatistics13reportSuccessEv@Base 5.0.2
  _ZN3JSC14JSGlobalObject10globalExecEv@Base 5.0.2
  _ZN3JSC14JSGlobalObject12toThisObjectEPNS_6JSCellEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC14JSGlobalObject13clearRareDataEPNS_6JSCellE@Base 5.0.2
- _ZN3JSC14JSGlobalObject13setGlobalThisERNS_12JSGlobalDataEPNS_8JSObjectE@Base 5.0.2
+ _ZN3JSC14JSGlobalObject13setGlobalThisERNS_2VMEPNS_8JSObjectE@Base 5.2.0
  _ZN3JSC14JSGlobalObject13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE@Base 5.0.2
  _ZN3JSC14JSGlobalObject16addStaticGlobalsEPNS0_18GlobalPropertyInfoEi@Base 5.0.2
  _ZN3JSC14JSGlobalObject16putDirectVirtualEPNS_8JSObjectEPNS_9ExecStateENS_12PropertyNameENS_7JSValueEj@Base 5.0.2
@@ -1904,21 +2003,31 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC14JSGlobalObject4initEPNS_8JSObjectE@Base 5.0.2
  _ZN3JSC14JSGlobalObject6s_infoE@Base 5.0.2
  _ZN3JSC14JSGlobalObject7destroyEPNS_6JSCellE@Base 5.0.2
- _ZN3JSC14JSGlobalObjectC1ERNS_12JSGlobalDataEPNS_9StructureEPKNS_23GlobalObjectMethodTableE@Base 5.0.2
- _ZN3JSC14JSGlobalObjectC2ERNS_12JSGlobalDataEPNS_9StructureEPKNS_23GlobalObjectMethodTableE@Base 5.0.2
+ _ZN3JSC14JSGlobalObjectC1ERNS_2VMEPNS_9StructureEPKNS_23GlobalObjectMethodTableE@Base 5.2.0
+ _ZN3JSC14JSGlobalObjectC2ERNS_2VMEPNS_9StructureEPKNS_23GlobalObjectMethodTableE@Base 5.2.0
  _ZN3JSC14JSGlobalObjectD1Ev@Base 5.0.2
  _ZN3JSC14JSGlobalObjectD2Ev@Base 5.0.2
+ _ZN3JSC14LegacyProfiler13stopProfilingEPNS_9ExecStateERKN3WTF6StringE@Base 5.2.0
+ _ZN3JSC14LegacyProfiler14startProfilingEPNS_9ExecStateERKN3WTF6StringE@Base 5.2.0
+ _ZN3JSC14LegacyProfiler8profilerEv@Base 5.2.0
  _ZN3JSC14MachineThreads16addCurrentThreadEv@Base 5.0.2
  _ZN3JSC14MarkStackArray6expandEv@Base 5.0.2
  _ZN3JSC14SamplingRegion4dumpEv@Base 5.0.2
  _ZN3JSC14SamplingThread4stopEv@Base 5.0.2
  _ZN3JSC14SamplingThread5startEj@Base 5.0.2
- _ZN3JSC14TimeoutChecker10didTimeOutEPNS_9ExecStateE@Base 5.0.2
- _ZN3JSC14TimeoutChecker5resetEv@Base 5.0.2
+ _ZN3JSC14SourceProvider5getIDEv@Base 5.2.0
+ _ZN3JSC14SourceProviderC1ERKN3WTF6StringERKNS1_12TextPositionE@Base 5.2.0
+ _ZN3JSC14SourceProviderC2ERKN3WTF6StringERKNS1_12TextPositionE@Base 5.2.0
+ _ZN3JSC14SourceProviderD0Ev@Base 5.2.0
+ _ZN3JSC14SourceProviderD1Ev@Base 5.2.0
+ _ZN3JSC14SourceProviderD2Ev@Base 5.2.0
  _ZN3JSC14VTableSpectrum5countEPNS_6JSCellE@Base 5.0.2
  _ZN3JSC14throwTypeErrorEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC14throwTypeErrorEPNS_9ExecStateERKN3WTF6StringE@Base 5.0.2
- (subst)_ZN3JSC15MarkedAllocator16allocateSlowCaseE{size_t}@Base 5.0.2
+ _ZN3JSC15IdentifierTable3addEPN3WTF10StringImplE@Base 5.2.0
+ _ZN3JSC15IdentifierTableD1Ev@Base 5.2.0
+ _ZN3JSC15IdentifierTableD2Ev@Base 5.2.0
+ _ZN3JSC15MarkedAllocator16allocateSlowCaseEm@Base 5.2.0
  _ZN3JSC15WeakHandleOwner26isReachableFromOpaqueRootsENS_6HandleINS_7UnknownEEEPvRNS_11SlotVisitorE@Base 5.0.2
  _ZN3JSC15WeakHandleOwner8finalizeENS_6HandleINS_7UnknownEEEPv@Base 5.0.2
  _ZN3JSC15WeakHandleOwnerD0Ev@Base 5.0.2
@@ -1927,12 +2036,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC15constructNumberEPNS_9ExecStateEPNS_14JSGlobalObjectENS_7JSValueE@Base 5.0.2
  _ZN3JSC15constructStringEPNS_9ExecStateEPNS_14JSGlobalObjectENS_7JSValueE@Base 5.0.2
  _ZN3JSC15createTypeErrorEPNS_9ExecStateERKN3WTF6StringE@Base 5.0.2
- _ZN3JSC16InternalFunction14finishCreationERNS_12JSGlobalDataERKN3WTF6StringE@Base 5.0.2
+ _ZN3JSC16InternalFunction14finishCreationERNS_2VMERKN3WTF6StringE@Base 5.2.0
  _ZN3JSC16InternalFunction4nameEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC16InternalFunction6s_infoE@Base 5.0.2
  _ZN3JSC16InternalFunctionC1EPNS_14JSGlobalObjectEPNS_9StructureE@Base 5.0.2
  _ZN3JSC16InternalFunctionC2EPNS_14JSGlobalObjectEPNS_9StructureE@Base 5.0.2
  _ZN3JSC16SymbolTableEntry15notifyWriteSlowEv@Base 5.0.2
+ _ZN3JSC16SymbolTableEntry16freeFatEntrySlowEv@Base 5.2.0
  _ZN3JSC16createRangeErrorEPNS_9ExecStateERKN3WTF6StringE@Base 5.0.2
  _ZN3JSC16slowValidateCellEPNS_14JSGlobalObjectE@Base 5.0.2
  _ZN3JSC16slowValidateCellEPNS_6JSCellE@Base 5.0.2
@@ -1940,11 +2050,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC17JSAPIValueWrapper6s_infoE@Base 5.0.2
  _ZN3JSC17PropertyNameArray3addEPN3WTF10StringImplE@Base 5.0.2
  _ZN3JSC17SharedSymbolTable6s_infoE@Base 5.0.2
+ _ZN3JSC17StructureRareData6s_infoE@Base 5.2.0
  _ZN3JSC17createSyntaxErrorEPNS_9ExecStateERKN3WTF6StringE@Base 5.0.2
- _ZN3JSC18DebuggerActivation14finishCreationERNS_12JSGlobalDataEPNS_8JSObjectE@Base 5.0.2
+ _ZN3JSC17weakClearSlowCaseERPNS_8WeakImplE@Base 5.2.0
+ _ZN3JSC18DebuggerActivation14finishCreationERNS_2VMEPNS_8JSObjectE@Base 5.2.0
  _ZN3JSC18DebuggerActivation6s_infoE@Base 5.0.2
- _ZN3JSC18DebuggerActivationC1ERNS_12JSGlobalDataE@Base 5.0.2
- _ZN3JSC18DebuggerActivationC2ERNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC18DebuggerActivationC1ERNS_2VME@Base 5.2.0
+ _ZN3JSC18DebuggerActivationC2ERNS_2VME@Base 5.2.0
  _ZN3JSC18PropertyDescriptor11setWritableEb@Base 5.0.2
  _ZN3JSC18PropertyDescriptor12setUndefinedEv@Base 5.0.2
  _ZN3JSC18PropertyDescriptor13setDescriptorENS_7JSValueEj@Base 5.0.2
@@ -1968,13 +2080,14 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC20createReferenceErrorEPNS_9ExecStateERKN3WTF6StringE@Base 5.0.2
  _ZN3JSC21getCallableObjectSlowEPNS_6JSCellE@Base 5.0.2
  _ZN3JSC22ArrayAllocationProfile18updateIndexingTypeEv@Base 5.0.2
+ _ZN3JSC22JSPropertyNameIterator6s_infoE@Base 5.2.0
  _ZN3JSC22globalMemoryStatisticsEv@Base 5.0.2
  _ZN3JSC23AbstractSamplingCounter30s_abstractSamplingCounterChainE@Base 5.0.2
  _ZN3JSC23AbstractSamplingCounter4dumpEv@Base 5.0.2
  _ZN3JSC23objectProtoFuncToStringEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC23setUpStaticFunctionSlotEPNS_9ExecStateEPKNS_9HashEntryEPNS_8JSObjectENS_12PropertyNameERNS_12PropertySlotE@Base 5.0.2
- _ZN3JSC24DynamicGlobalObjectScopeC1ERNS_12JSGlobalDataEPNS_14JSGlobalObjectE@Base 5.0.2
- _ZN3JSC24DynamicGlobalObjectScopeC2ERNS_12JSGlobalDataEPNS_14JSGlobalObjectE@Base 5.0.2
+ _ZN3JSC24DynamicGlobalObjectScopeC1ERNS_2VMEPNS_14JSGlobalObjectE@Base 5.2.0
+ _ZN3JSC24DynamicGlobalObjectScopeC2ERNS_2VMEPNS_14JSGlobalObjectE@Base 5.2.0
  _ZN3JSC24TerminatedExecutionError6s_infoE@Base 5.0.2
  _ZN3JSC24createStackOverflowErrorEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC24getCalculatedDisplayNameEPNS_9ExecStateEPNS_8JSObjectE@Base 5.0.2
@@ -1984,8 +2097,23 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC25evaluateInGlobalCallFrameERKN3WTF6StringERNS_7JSValueEPNS_14JSGlobalObjectE@Base 5.0.2
  _ZN3JSC29callHostFunctionAsConstructorEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC29createNotEnoughArgumentsErrorEPNS_9ExecStateE@Base 5.0.2
+ _ZN3JSC2VM10ClientDataD0Ev@Base 5.2.0
+ _ZN3JSC2VM10ClientDataD1Ev@Base 5.2.0
+ _ZN3JSC2VM10ClientDataD2Ev@Base 5.2.0
+ _ZN3JSC2VM12createLeakedENS_8HeapTypeE@Base 5.2.0
+ _ZN3JSC2VM12stopSamplingEv@Base 5.2.0
+ _ZN3JSC2VM13startSamplingEv@Base 5.2.0
+ _ZN3JSC2VM14discardAllCodeEv@Base 5.2.0
+ _ZN3JSC2VM14dumpSampleDataEPNS_9ExecStateE@Base 5.2.0
+ _ZN3JSC2VM14resetDateCacheEv@Base 5.2.0
+ _ZN3JSC2VM14sharedInstanceEv@Base 5.2.0
+ _ZN3JSC2VM15dumpRegExpTraceEv@Base 5.2.0
+ _ZN3JSC2VM19clearExceptionStackEv@Base 5.2.0
+ _ZN3JSC2VM23releaseExecutableMemoryEv@Base 5.2.0
+ _ZN3JSC2VM6createENS_8HeapTypeE@Base 5.2.0
+ _ZN3JSC2VMD1Ev@Base 5.2.0
+ _ZN3JSC2VMD2Ev@Base 5.2.0
  _ZN3JSC30isTerminatedExecutionExceptionENS_7JSValueE@Base 5.0.2
- _ZN3JSC35createInterruptedExecutionExceptionEPNS_12JSGlobalDataE@Base 5.0.2
  _ZN3JSC36StrictModeReadonlyPropertyWriteErrorE@Base 5.0.2
  _ZN3JSC3DFG18getNumCompilationsEv@Base 5.0.2
  _ZN3JSC41constructFunctionSkippingEvalEnabledCheckEPNS_9ExecStateEPNS_14JSGlobalObjectERKNS_7ArgListERKNS_10IdentifierERKN3WTF6StringERKNSA_12TextPositionE@Base 5.0.2
@@ -1995,15 +2123,15 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC4Heap16objectTypeCountsEv@Base 5.0.2
  _ZN3JSC4Heap17collectAllGarbageEv@Base 5.0.2
  _ZN3JSC4Heap17globalObjectCountEv@Base 5.0.2
- (subst)_ZN3JSC4Heap17isValidAllocationE{size_t}@Base 5.0.2
- _ZN3JSC4Heap19setActivityCallbackEPNS_18GCActivityCallbackE@Base 5.0.2
+ _ZN3JSC4Heap17isValidAllocationEm@Base 5.2.0
+ _ZN3JSC4Heap19setActivityCallbackEN3WTF10PassOwnPtrINS_18GCActivityCallbackEEE@Base 5.2.0
  _ZN3JSC4Heap20lastChanceToFinalizeEv@Base 5.0.2
  _ZN3JSC4Heap20protectedObjectCountEv@Base 5.0.2
  _ZN3JSC4Heap21deleteAllCompiledCodeEv@Base 5.0.2
  _ZN3JSC4Heap25protectedObjectTypeCountsEv@Base 5.0.2
  _ZN3JSC4Heap26protectedGlobalObjectCountEv@Base 5.0.2
  _ZN3JSC4Heap26reportAbandonedObjectGraphEv@Base 5.0.2
- (subst)_ZN3JSC4Heap29reportExtraMemoryCostSlowCaseE{size_t}@Base 5.0.2
+ _ZN3JSC4Heap29reportExtraMemoryCostSlowCaseEm@Base 5.2.0
  _ZN3JSC4Heap32setGarbageCollectionTimerEnabledEb@Base 5.0.2
  _ZN3JSC4Heap4sizeEv@Base 5.0.2
  _ZN3JSC4Heap7protectENS_7JSValueE@Base 5.0.2
@@ -2021,9 +2149,9 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC6JSCell17customHasInstanceEPNS_8JSObjectEPNS_9ExecStateENS_7JSValueE@Base 5.0.2
  _ZN3JSC6JSCell7destroyEPS0_@Base 5.0.2
  _ZN3JSC6JSCell9getObjectEv@Base 5.0.2
- _ZN3JSC6JSLock12DropAllLocksC1EPNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC6JSLock12DropAllLocksC1EPNS_2VME@Base 5.2.0
  _ZN3JSC6JSLock12DropAllLocksC1EPNS_9ExecStateE@Base 5.0.2
- _ZN3JSC6JSLock12DropAllLocksC2EPNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC6JSLock12DropAllLocksC2EPNS_2VME@Base 5.2.0
  _ZN3JSC6JSLock12DropAllLocksC2EPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC6JSLock12DropAllLocksD1Ev@Base 5.0.2
  _ZN3JSC6JSLock12DropAllLocksD2Ev@Base 5.0.2
@@ -2032,8 +2160,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC6JSLock6unlockEv@Base 5.0.2
  _ZN3JSC6JSLockD1Ev@Base 5.0.2
  _ZN3JSC6JSLockD2Ev@Base 5.0.2
- (subst)_ZN3JSC6RegExp5matchERNS_12JSGlobalDataERKN3WTF6StringEjRNS3_6VectorIiL{size_t}32EEE@Base 5.0.2
- _ZN3JSC6RegExp6createERNS_12JSGlobalDataERKN3WTF6StringENS_11RegExpFlagsE@Base 5.0.2
+ _ZN3JSC6RegExp5matchERNS_2VMERKN3WTF6StringEjRNS3_6VectorIiLm32ENS3_15CrashOnOverflowEEE@Base 5.2.0
+ _ZN3JSC6RegExp6createERNS_2VMERKN3WTF6StringENS_11RegExpFlagsE@Base 5.2.0
  _ZN3JSC7JSArray17defineOwnPropertyEPNS_8JSObjectEPNS_9ExecStateENS_12PropertyNameERNS_18PropertyDescriptorEb@Base 5.0.2
  _ZN3JSC7JSArray27getOwnNonIndexPropertyNamesEPNS_8JSObjectEPNS_9ExecStateERNS_17PropertyNameArrayENS_15EnumerationModeE@Base 5.0.2
  _ZN3JSC7JSArray6s_infoE@Base 5.0.2
@@ -2051,7 +2179,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC7JSProxy3putEPNS_6JSCellEPNS_9ExecStateENS_12PropertyNameENS_7JSValueERNS_15PutPropertySlotE@Base 5.0.2
  _ZN3JSC7JSProxy6s_infoE@Base 5.0.2
  _ZN3JSC7JSProxy9classNameEPKNS_8JSObjectE@Base 5.0.2
- _ZN3JSC7JSProxy9setTargetERNS_12JSGlobalDataEPNS_14JSGlobalObjectE@Base 5.0.2
+ _ZN3JSC7JSProxy9setTargetERNS_2VMEPNS_14JSGlobalObjectE@Base 5.2.0
  _ZN3JSC7JSScope13objectAtScopeEPS0_@Base 5.0.2
  _ZN3JSC7JSValue13isValidCalleeEv@Base 5.0.2
  _ZN3JSC7Options14dumpAllOptionsEP8_IO_FILE@Base 5.0.2
@@ -2063,7 +2191,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC7Profile7forEachEMNS_11ProfileNodeEFvvE@Base 5.0.2
  _ZN3JSC7WeakSet13findAllocatorEv@Base 5.0.2
  _ZN3JSC7toInt32Ed@Base 5.0.2
- _ZN3JSC8Debugger23recompileAllJSFunctionsEPNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC8Debugger23recompileAllJSFunctionsEPNS_2VME@Base 5.2.0
  _ZN3JSC8Debugger6attachEPNS_14JSGlobalObjectE@Base 5.0.2
  _ZN3JSC8Debugger6detachEPNS_14JSGlobalObjectE@Base 5.0.2
  _ZN3JSC8DebuggerD0Ev@Base 5.0.2
@@ -2078,57 +2206,62 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC8JSObject16getPropertyNamesEPS0_PNS_9ExecStateERNS_17PropertyNameArrayENS_15EnumerationModeE@Base 5.0.2
  _ZN3JSC8JSObject16putDirectVirtualEPS0_PNS_9ExecStateENS_12PropertyNameENS_7JSValueEj@Base 5.0.2
  _ZN3JSC8JSObject17defineOwnPropertyEPS0_PNS_9ExecStateENS_12PropertyNameERNS_18PropertyDescriptorEb@Base 5.0.2
- _ZN3JSC8JSObject17preventExtensionsERNS_12JSGlobalDataE@Base 5.0.2
+ _ZN3JSC8JSObject17preventExtensionsERNS_2VME@Base 5.2.0
  _ZN3JSC8JSObject19getOwnPropertyNamesEPS0_PNS_9ExecStateERNS_17PropertyNameArrayENS_15EnumerationModeE@Base 5.0.2
  _ZN3JSC8JSObject19putDirectMayBeIndexEPNS_9ExecStateENS_12PropertyNameENS_7JSValueE@Base 5.0.2
- (subst)_ZN3JSC8JSObject20growOutOfLineStorageERNS_12JSGlobalDataE{size_t}{size_t}@Base 5.0.2
+ _ZN3JSC8JSObject20growOutOfLineStorageERNS_2VMEmm@Base 5.2.0
  _ZN3JSC8JSObject21deletePropertyByIndexEPNS_6JSCellEPNS_9ExecStateEj@Base 5.0.2
  _ZN3JSC8JSObject21getPropertyDescriptorEPNS_9ExecStateENS_12PropertyNameERNS_18PropertyDescriptorE@Base 5.0.2
  _ZN3JSC8JSObject22fillGetterPropertySlotERNS_12PropertySlotEi@Base 5.0.2
  _ZN3JSC8JSObject22getOwnPropertySlotSlowEPNS_9ExecStateENS_12PropertyNameERNS_12PropertySlotE@Base 5.0.2
  _ZN3JSC8JSObject24getOwnPropertyDescriptorEPS0_PNS_9ExecStateENS_12PropertyNameERNS_18PropertyDescriptorE@Base 5.0.2
  _ZN3JSC8JSObject25getOwnPropertySlotByIndexEPNS_6JSCellEPNS_9ExecStateEjRNS_12PropertySlotE@Base 5.0.2
- _ZN3JSC8JSObject26setIndexQuicklyToUndecidedERNS_12JSGlobalDataEjNS_7JSValueE@Base 5.0.2
+ _ZN3JSC8JSObject26setIndexQuicklyToUndecidedERNS_2VMEjNS_7JSValueE@Base 5.2.0
  _ZN3JSC8JSObject27getOwnNonIndexPropertyNamesEPS0_PNS_9ExecStateERNS_17PropertyNameArrayENS_15EnumerationModeE@Base 5.0.2
  _ZN3JSC8JSObject32putDirectIndexBeyondVectorLengthEPNS_9ExecStateEjNS_7JSValueEjNS_18PutDirectIndexModeE@Base 5.0.2
  _ZN3JSC8JSObject3putEPNS_6JSCellEPNS_9ExecStateENS_12PropertyNameENS_7JSValueERNS_15PutPropertySlotE@Base 5.0.2
- _ZN3JSC8JSObject48convertDoubleToContiguousWhilePerformingSetIndexERNS_12JSGlobalDataEjNS_7JSValueE@Base 5.0.2
- _ZN3JSC8JSObject55convertInt32ToDoubleOrContiguousWhilePerformingSetIndexERNS_12JSGlobalDataEjNS_7JSValueE@Base 5.0.2
+ _ZN3JSC8JSObject48convertDoubleToContiguousWhilePerformingSetIndexERNS_2VMEjNS_7JSValueE@Base 5.2.0
+ _ZN3JSC8JSObject55convertInt32ToDoubleOrContiguousWhilePerformingSetIndexERNS_2VMEjNS_7JSValueE@Base 5.2.0
  _ZN3JSC8JSObject6s_infoE@Base 5.0.2
  _ZN3JSC8JSObject9classNameEPKS0_@Base 5.0.2
  _ZN3JSC8JSString6s_infoE@Base 5.0.2
- _ZN3JSC8Profiler13stopProfilingEPNS_9ExecStateERKN3WTF6StringE@Base 5.0.2
- _ZN3JSC8Profiler14startProfilingEPNS_9ExecStateERKN3WTF6StringE@Base 5.0.2
- _ZN3JSC8Profiler8profilerEv@Base 5.0.2
+ _ZN3JSC8Profiler8DatabaseC1ERNS_2VME@Base 5.2.0
+ _ZN3JSC8Profiler8DatabaseC2ERNS_2VME@Base 5.2.0
+ _ZN3JSC8Profiler8DatabaseD1Ev@Base 5.2.0
+ _ZN3JSC8Profiler8DatabaseD2Ev@Base 5.2.0
  _ZN3JSC8evaluateEPNS_9ExecStateERKNS_10SourceCodeENS_7JSValueEPS5_@Base 5.0.2
  _ZN3JSC9CodeBlockD0Ev@Base 5.0.2
  _ZN3JSC9CodeBlockD1Ev@Base 5.0.2
  _ZN3JSC9CodeBlockD2Ev@Base 5.0.2
  _ZN3JSC9HandleSet12writeBarrierEPNS_7JSValueERKS1_@Base 5.0.2
  _ZN3JSC9HandleSet4growEv@Base 5.0.2
- _ZN3JSC9Structure21addPropertyTransitionERNS_12JSGlobalDataEPS0_NS_12PropertyNameEjPNS_6JSCellERi@Base 5.0.2
- _ZN3JSC9Structure22materializePropertyMapERNS_12JSGlobalDataE@Base 5.0.2
- _ZN3JSC9Structure25changePrototypeTransitionERNS_12JSGlobalDataEPS0_NS_7JSValueE@Base 5.0.2
- _ZN3JSC9Structure27despecifyDictionaryFunctionERNS_12JSGlobalDataENS_12PropertyNameE@Base 5.0.2
- _ZN3JSC9Structure27despecifyFunctionTransitionERNS_12JSGlobalDataEPS0_NS_12PropertyNameE@Base 5.0.2
- _ZN3JSC9Structure28addPropertyWithoutTransitionERNS_12JSGlobalDataENS_12PropertyNameEjPNS_6JSCellE@Base 5.0.2
+ _ZN3JSC9Structure21addPropertyTransitionERNS_2VMEPS0_NS_12PropertyNameEjPNS_6JSCellERi@Base 5.2.0
+ _ZN3JSC9Structure22materializePropertyMapERNS_2VME@Base 5.2.0
+ _ZN3JSC9Structure25changePrototypeTransitionERNS_2VMEPS0_NS_7JSValueE@Base 5.2.0
+ _ZN3JSC9Structure27despecifyDictionaryFunctionERNS_2VMENS_12PropertyNameE@Base 5.2.0
+ _ZN3JSC9Structure27despecifyFunctionTransitionERNS_2VMEPS0_NS_12PropertyNameE@Base 5.2.0
+ _ZN3JSC9Structure28addPropertyWithoutTransitionERNS_2VMENS_12PropertyNameEjPNS_6JSCellE@Base 5.2.0
  _ZN3JSC9Structure36suggestedNewOutOfLineStorageCapacityEv@Base 5.0.2
- _ZN3JSC9Structure3getERNS_12JSGlobalDataENS_12PropertyNameERjRPNS_6JSCellE@Base 5.0.2
+ _ZN3JSC9Structure3getERNS_2VMENS_12PropertyNameERjRPNS_6JSCellE@Base 5.2.0
  _ZN3JSC9Structure40addPropertyTransitionToExistingStructureEPS0_NS_12PropertyNameEjPNS_6JSCellERi@Base 5.0.2
  _ZN3JSC9Structure6s_infoE@Base 5.0.2
- _ZN3JSC9StructureC1ERNS_12JSGlobalDataEPNS_14JSGlobalObjectENS_7JSValueERKNS_8TypeInfoEPKNS_9ClassInfoEhi@Base 5.0.2
- _ZN3JSC9StructureC2ERNS_12JSGlobalDataEPNS_14JSGlobalObjectENS_7JSValueERKNS_8TypeInfoEPKNS_9ClassInfoEhi@Base 5.0.2
+ _ZN3JSC9StructureC1ERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueERKNS_8TypeInfoEPKNS_9ClassInfoEhj@Base 5.2.0
+ _ZN3JSC9StructureC2ERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueERKNS_8TypeInfoEPKNS_9ClassInfoEhj@Base 5.2.0
  _ZN3JSC9constructEPNS_9ExecStateENS_7JSValueENS_13ConstructTypeERKNS_13ConstructDataERKNS_7ArgListE@Base 5.0.2
  _ZN3WTF10StringImpl11reverseFindEPS0_j@Base 5.0.2
  _ZN3WTF10StringImpl11reverseFindEtj@Base 5.0.2
  _ZN3WTF10StringImpl16findIgnoringCaseEPS0_j@Base 5.0.2
  _ZN3WTF10StringImpl17createFromLiteralEPKc@Base 5.0.2
  _ZN3WTF10StringImpl17createFromLiteralEPKcj@Base 5.0.2
+ _ZN3WTF10StringImpl17findNextLineStartEj@Base 5.2.0
  _ZN3WTF10StringImpl18simplifyWhiteSpaceEv@Base 5.0.2
  _ZN3WTF10StringImpl19characterStartingAtEj@Base 5.0.2
  _ZN3WTF10StringImpl19createUninitializedEjRPh@Base 5.0.2
  _ZN3WTF10StringImpl19createUninitializedEjRPt@Base 5.0.2
+ _ZN3WTF10StringImpl20create8BitIfPossibleEPKt@Base 5.2.0
  _ZN3WTF10StringImpl20create8BitIfPossibleEPKtj@Base 5.0.2
+ _ZN3WTF10StringImpl20createWithoutCopyingEPKhjNS_27HasTerminatingNullCharacterE@Base 5.2.0
+ _ZN3WTF10StringImpl20createWithoutCopyingEPKtjNS_27HasTerminatingNullCharacterE@Base 5.2.0
  _ZN3WTF10StringImpl22containsOnlyWhitespaceEv@Base 5.0.2
  _ZN3WTF10StringImpl23defaultWritingDirectionEPb@Base 5.0.2
  _ZN3WTF10StringImpl23reverseFindIgnoringCaseEPS0_j@Base 5.0.2
@@ -2145,6 +2278,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF10StringImpl6createEPKh@Base 5.0.2
  _ZN3WTF10StringImpl6createEPKhj@Base 5.0.2
  _ZN3WTF10StringImpl6createEPKtj@Base 5.0.2
+ _ZN3WTF10StringImpl7destroyEPS0_@Base 5.2.0
  _ZN3WTF10StringImpl7replaceEPS0_S1_@Base 5.0.2
  _ZN3WTF10StringImpl7replaceEjjPS0_@Base 5.0.2
  _ZN3WTF10StringImpl7replaceEtPKhj@Base 5.0.2
@@ -2152,20 +2286,25 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF10StringImpl7replaceEtt@Base 5.0.2
  _ZN3WTF10StringImpl8endsWithEPS0_b@Base 5.0.2
  _ZN3WTF10StringImpl9substringEjj@Base 5.0.2
- _ZN3WTF10StringImplD1Ev@Base 5.0.2
- _ZN3WTF10StringImplD2Ev@Base 5.0.2
- (subst)_ZN3WTF10fastCallocE{size_t}{size_t}@Base 5.0.2
- (subst)_ZN3WTF10fastMallocE{size_t}@Base 5.0.2
+ _ZN3WTF10fastCallocEmm@Base 5.2.0
+ _ZN3WTF10fastMallocEm@Base 5.2.0
  _ZN3WTF10fastStrDupEPKc@Base 5.0.2
- (subst)_ZN3WTF11ArrayBuffer8transferERNS_19ArrayBufferContentsERNS_6VectorINS_6RefPtrINS_15ArrayBufferViewEEEL{size_t}0EEE@Base 5.0.2
- (subst)_ZN3WTF11OSAllocator16reserveAndCommitE{size_t}NS0_5UsageEbbb@Base 5.0.2
- (subst)_ZN3WTF11OSAllocator18releaseDecommittedEPv{size_t}@Base 5.0.2
+ _ZN3WTF10isLeapYearEi@Base 5.2.0
+ _ZN3WTF11ArrayBuffer8transferERNS_19ArrayBufferContentsERNS_6VectorINS_6RefPtrINS_15ArrayBufferViewEEELm0ENS_15CrashOnOverflowEEE@Base 5.2.0
+ _ZN3WTF11OSAllocator16reserveAndCommitEmNS0_5UsageEbbb@Base 5.2.0
+ _ZN3WTF11OSAllocator18releaseDecommittedEPvm@Base 5.2.0
+ _ZN3WTF11OSAllocator18reserveUncommittedEmNS0_5UsageEbbb@Base 5.2.0
+ _ZN3WTF11OSAllocator6commitEPvmbb@Base 5.2.0
+ _ZN3WTF11OSAllocator8decommitEPvm@Base 5.2.0
+ _ZN3WTF11PrintStream6printfEPKcz@Base 5.2.0
+ _ZN3WTF11StackBounds10initializeEv@Base 5.2.0
  _ZN3WTF11commentAtomE@Base 5.0.2
  _ZN3WTF11currentTimeEv@Base 5.0.2
  _ZN3WTF11dtoaRoundDPEPcdiRbRiRj@Base 5.0.2
  _ZN3WTF11dtoaRoundSFEPcdiRbRiRj@Base 5.0.2
  _ZN3WTF11emptyStringEv@Base 5.0.2
- (subst)_ZN3WTF11fastReallocEPv{size_t}@Base 5.0.2
+ _ZN3WTF11fastReallocEPvm@Base 5.2.0
+ _ZN3WTF11msToMinutesEd@Base 5.2.0
  _ZN3WTF12AtomicString11addSlowCaseEPNS_10StringImplE@Base 5.0.2
  _ZN3WTF12AtomicString16fromUTF8InternalEPKcS2_@Base 5.0.2
  _ZN3WTF12AtomicString18addFromLiteralDataEPKcj@Base 5.0.2
@@ -2177,21 +2316,22 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF12AtomicString3addEPNS_10StringImplEjj@Base 5.0.2
  _ZN3WTF12AtomicString4findEPKNS_10StringImplE@Base 5.0.2
  _ZN3WTF12AtomicString4initEv@Base 5.0.2
- (subst)_ZN3WTF12base64DecodeEPKcjRNS_6VectorIcL{size_t}0EEENS_18Base64DecodePolicyE@Base 5.0.2
- (subst)_ZN3WTF12base64DecodeERKNS_6StringERNS_6VectorIcL{size_t}0EEENS_18Base64DecodePolicyE@Base 5.0.2
- (subst)_ZN3WTF12base64DecodeERKNS_6VectorIcL{size_t}0EEERS1_NS_18Base64DecodePolicyE@Base 5.0.2
+ _ZN3WTF12base64DecodeEPKcjRNS_6VectorIcLm0ENS_15CrashOnOverflowEEENS_18Base64DecodePolicyE@Base 5.2.0
+ _ZN3WTF12base64DecodeERKNS_6StringERNS_6VectorIcLm0ENS_15CrashOnOverflowEEENS_18Base64DecodePolicyE@Base 5.2.0
+ _ZN3WTF12base64DecodeERKNS_6VectorIcLm0ENS_15CrashOnOverflowEEERS2_NS_18Base64DecodePolicyE@Base 5.2.0
  _ZN3WTF12base64EncodeEPKcjNS_18Base64EncodePolicyE@Base 5.0.2
- (subst)_ZN3WTF12base64EncodeEPKcjRNS_6VectorIcL{size_t}0EEENS_18Base64EncodePolicyE@Base 5.0.2
+ _ZN3WTF12base64EncodeEPKcjRNS_6VectorIcLm0ENS_15CrashOnOverflowEEENS_18Base64EncodePolicyE@Base 5.2.0
  _ZN3WTF12createThreadEPFvPvES0_PKc@Base 5.0.2
  _ZN3WTF12detachThreadEj@Base 5.0.2
+ _ZN3WTF12equalNonNullEPKNS_10StringImplES2_@Base 5.2.0
  _ZN3WTF12isMainThreadEv@Base 5.0.2
  _ZN3WTF12randomNumberEv@Base 5.0.2
- (subst)_ZN3WTF13MetaAllocator17addFreshFreeSpaceEPv{size_t}@Base 5.0.2
+ _ZN3WTF13MetaAllocator17addFreshFreeSpaceEPvm@Base 5.2.0
  _ZN3WTF13MetaAllocator17freeFreeSpaceNodeEPNS0_13FreeSpaceNodeE@Base 5.0.2
  _ZN3WTF13MetaAllocator18debugFreeSpaceSizeEv@Base 5.0.2
- (subst)_ZN3WTF13MetaAllocator8allocateE{size_t}Pv@Base 5.0.2
- (subst)_ZN3WTF13MetaAllocatorC1E{size_t}@Base 5.0.2
- (subst)_ZN3WTF13MetaAllocatorC2E{size_t}@Base 5.0.2
+ _ZN3WTF13MetaAllocator8allocateEmPv@Base 5.2.0
+ _ZN3WTF13MetaAllocatorC1Emm@Base 5.2.0
+ _ZN3WTF13MetaAllocatorC2Emm@Base 5.2.0
  _ZN3WTF13MetaAllocatorD0Ev@Base 5.0.2
  _ZN3WTF13MetaAllocatorD1Ev@Base 5.0.2
  _ZN3WTF13MetaAllocatorD2Ev@Base 5.0.2
@@ -2212,21 +2352,39 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF13WTFThreadDataD1Ev@Base 5.0.2
  _ZN3WTF13WTFThreadDataD2Ev@Base 5.0.2
  _ZN3WTF13currentThreadEv@Base 5.0.2
- (subst)_ZN3WTF13tryFastCallocE{size_t}{size_t}@Base 5.0.2
- (subst)_ZN3WTF13tryFastMallocE{size_t}@Base 5.0.2
+ _ZN3WTF13printInternalERNS_11PrintStreamENS_10RawPointerE@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEPKc@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamERKNS_6StringE@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamERKNS_7CStringE@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEb@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEd@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEf@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEi@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEj@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEl@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEm@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEx@Base 5.2.0
+ _ZN3WTF13printInternalERNS_11PrintStreamEy@Base 5.2.0
+ _ZN3WTF13tryFastCallocEmm@Base 5.2.0
+ _ZN3WTF13tryFastMallocEm@Base 5.2.0
+ _ZN3WTF14currentCPUTimeEv@Base 5.2.0
  _ZN3WTF14dataLogFStringEPKc@Base 5.0.2
  _ZN3WTF14fastMallocSizeEPKv@Base 5.0.2
  _ZN3WTF14numberToStringEdPc@Base 5.0.2
- (subst)_ZN3WTF14tryFastReallocEPv{size_t}@Base 5.0.2
+ _ZN3WTF14tryFastReallocEPvm@Base 5.2.0
  _ZN3WTF15ArrayBufferView6neuterEv@Base 5.0.2
  _ZN3WTF15ArrayBufferViewC1ENS_10PassRefPtrINS_11ArrayBufferEEEj@Base 5.0.2
  _ZN3WTF15ArrayBufferViewC2ENS_10PassRefPtrINS_11ArrayBufferEEEj@Base 5.0.2
  _ZN3WTF15ArrayBufferViewD0Ev@Base 5.0.2
  _ZN3WTF15ArrayBufferViewD1Ev@Base 5.0.2
  _ZN3WTF15ArrayBufferViewD2Ev@Base 5.0.2
- (subst)_ZN3WTF15MemoryClassInfo12addRawBufferERKPKv{size_t}@Base 5.0.2
- (subst)_ZN3WTF15MemoryClassInfo16addPrivateBufferE{size_t}PKc@Base 5.0.2
- (subst)_ZN3WTF15MemoryClassInfo4initEPKvPKc{size_t}@Base 5.0.2
+ _ZN3WTF15BinarySemaphore4waitEd@Base 5.2.0
+ _ZN3WTF15BinarySemaphore6signalEv@Base 5.2.0
+ _ZN3WTF15BinarySemaphoreC1Ev@Base 5.2.0
+ _ZN3WTF15BinarySemaphoreC2Ev@Base 5.2.0
+ _ZN3WTF15BinarySemaphoreD1Ev@Base 5.2.0
+ _ZN3WTF15BinarySemaphoreD2Ev@Base 5.2.0
+ _ZN3WTF15FilePrintStream4openEPKcS2_@Base 5.2.0
  _ZN3WTF15ThreadCondition4waitERNS_5MutexE@Base 5.0.2
  _ZN3WTF15ThreadCondition6signalEv@Base 5.0.2
  _ZN3WTF15ThreadCondition9broadcastEv@Base 5.0.2
@@ -2235,46 +2393,53 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF15ThreadConditionC2Ev@Base 5.0.2
  _ZN3WTF15ThreadConditionD1Ev@Base 5.0.2
  _ZN3WTF15ThreadConditionD2Ev@Base 5.0.2
- (subst)_ZN3WTF15charactersToIntEPKt{size_t}Pb@Base 5.0.2
+ _ZN3WTF15charactersToIntEPKtmPb@Base 5.2.0
  _ZN3WTF16callOnMainThreadEPFvPvES0_@Base 5.0.2
  _ZN3WTF16callOnMainThreadERKNS_8FunctionIFvvEEE@Base 5.0.2
  _ZN3WTF16codePointCompareERKNS_6StringES2_@Base 5.0.2
- (subst)_ZN3WTF16fastZeroedMallocE{size_t}@Base 5.0.2
+ _ZN3WTF16currentCPUTimeMSEv@Base 5.2.0
+ _ZN3WTF16fastZeroedMallocEm@Base 5.2.0
  _ZN3WTF17GregorianDateTime21setToCurrentLocalTimeEv@Base 5.0.2
- (subst)_ZN3WTF17charactersToFloatEPKh{size_t}R{size_t}@Base 5.0.2
- (subst)_ZN3WTF17charactersToFloatEPKt{size_t}Pb@Base 5.0.2
- (subst)_ZN3WTF17charactersToFloatEPKt{size_t}R{size_t}@Base 5.0.2
- (subst)_ZN3WTF17double_conversion23StringToDoubleConverter14StringToDoubleEPKc{size_t}P{size_t}@Base 5.0.2
+ _ZN3WTF17StringPrintStream5resetEv@Base 5.2.0
+ _ZN3WTF17StringPrintStream8toStringEv@Base 5.2.0
+ _ZN3WTF17StringPrintStream9toCStringEv@Base 5.2.0
+ _ZN3WTF17StringPrintStreamC1Ev@Base 5.2.0
+ _ZN3WTF17StringPrintStreamC2Ev@Base 5.2.0
+ _ZN3WTF17StringPrintStreamD0Ev@Base 5.2.0
+ _ZN3WTF17StringPrintStreamD1Ev@Base 5.2.0
+ _ZN3WTF17StringPrintStreamD2Ev@Base 5.2.0
+ _ZN3WTF17charactersToFloatEPKhmRm@Base 5.2.0
+ _ZN3WTF17charactersToFloatEPKtmPb@Base 5.2.0
+ _ZN3WTF17charactersToFloatEPKtmRm@Base 5.2.0
+ _ZN3WTF17double_conversion10initializeEv@Base 5.2.0
+ _ZN3WTF17double_conversion23DoubleToStringConverter19EcmaScriptConverterEv@Base 5.2.0
+ _ZN3WTF17double_conversion23StringToDoubleConverter14StringToDoubleEPKcmPm@Base 5.2.0
+ _ZN3WTF17equalIgnoringCaseEPKNS_10StringImplEPKh@Base 5.2.0
+ _ZN3WTF17equalIgnoringCaseEPKNS_10StringImplES2_@Base 5.2.0
  _ZN3WTF17equalIgnoringCaseEPKhS1_j@Base 5.0.2
  _ZN3WTF17equalIgnoringCaseEPKtPKhj@Base 5.0.2
- _ZN3WTF17equalIgnoringCaseEPNS_10StringImplEPKh@Base 5.0.2
- _ZN3WTF17equalIgnoringCaseEPNS_10StringImplES1_@Base 5.0.2
- _ZN3WTF18calculateDSTOffsetEdd@Base 5.0.2
- _ZN3WTF18calculateUTCOffsetEv@Base 5.0.2
- (subst)_ZN3WTF18charactersToDoubleEPKh{size_t}Pb@Base 5.0.2
- (subst)_ZN3WTF18charactersToDoubleEPKt{size_t}Pb@Base 5.0.2
+ _ZN3WTF18FunctionDispatcherC1Ev@Base 5.2.0
+ _ZN3WTF18FunctionDispatcherC2Ev@Base 5.2.0
+ _ZN3WTF18FunctionDispatcherD0Ev@Base 5.2.0
+ _ZN3WTF18FunctionDispatcherD1Ev@Base 5.2.0
+ _ZN3WTF18FunctionDispatcherD2Ev@Base 5.2.0
+ _ZN3WTF18charactersToDoubleEPKhmPb@Base 5.2.0
+ _ZN3WTF18charactersToDoubleEPKtmPb@Base 5.2.0
  _ZN3WTF18dateToDaysFrom1970Eiii@Base 5.0.2
+ _ZN3WTF18fastMallocGoodSizeEm@Base 5.2.0
  _ZN3WTF18monthFromDayInYearEib@Base 5.0.2
- (subst)_ZN3WTF19MetaAllocatorHandle6shrinkE{size_t}@Base 5.0.2
+ _ZN3WTF19MetaAllocatorHandle6shrinkEm@Base 5.2.0
  _ZN3WTF19MetaAllocatorHandleD1Ev@Base 5.0.2
  _ZN3WTF19MetaAllocatorHandleD2Ev@Base 5.0.2
  _ZN3WTF19ParallelEnvironment7executeEPv@Base 5.0.2
- (subst)_ZN3WTF19ParallelEnvironmentC1EPFvPvE{size_t}i@Base 5.0.2
- (subst)_ZN3WTF19ParallelEnvironmentC2EPFvPvE{size_t}i@Base 5.0.2
+ _ZN3WTF19ParallelEnvironmentC1EPFvPvEmi@Base 5.2.0
+ _ZN3WTF19ParallelEnvironmentC2EPFvPvEmi@Base 5.2.0
  _ZN3WTF19initializeThreadingEv@Base 5.0.2
  _ZN3WTF20equalIgnoringNullityEPNS_10StringImplES1_@Base 5.0.2
  _ZN3WTF20fastMallocStatisticsEv@Base 5.0.2
  _ZN3WTF20initializeMainThreadEv@Base 5.0.2
- _ZN3WTF21MemoryInstrumentation13getObjectTypeEPNS_16MemoryObjectInfoE@Base 5.0.2
- (subst)_ZN3WTF21MemoryInstrumentation20callReportObjectInfoEPNS_16MemoryObjectInfoEPKvPKc{size_t}@Base 5.0.2
- _ZN3WTF21MemoryInstrumentation23InstrumentedPointerBase7processEPS0_@Base 5.0.2
- _ZN3WTF21MemoryInstrumentation23InstrumentedPointerBaseC1EPNS_16MemoryObjectInfoE@Base 5.0.2
- _ZN3WTF21MemoryInstrumentation23InstrumentedPointerBaseC2EPNS_16MemoryObjectInfoE@Base 5.0.2
- _ZN3WTF21MemoryInstrumentationC1EPNS_27MemoryInstrumentationClientE@Base 5.0.2
- _ZN3WTF21MemoryInstrumentationC2EPNS_27MemoryInstrumentationClientE@Base 5.0.2
- _ZN3WTF21MemoryInstrumentationD0Ev@Base 5.0.2
- _ZN3WTF21MemoryInstrumentationD1Ev@Base 5.0.2
- _ZN3WTF21MemoryInstrumentationD2Ev@Base 5.0.2
+ _ZN3WTF21PageAllocationAligned10deallocateEv@Base 5.2.0
+ _ZN3WTF21PageAllocationAligned8allocateEmmNS_11OSAllocator5UsageEb@Base 5.2.0
  _ZN3WTF21RefCountedLeakCounter16suppressMessagesEPKc@Base 5.0.2
  _ZN3WTF21RefCountedLeakCounter24cancelMessageSuppressionEPKc@Base 5.0.2
  _ZN3WTF21RefCountedLeakCounter9decrementEv@Base 5.0.2
@@ -2283,33 +2448,38 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF21RefCountedLeakCounterC2EPKc@Base 5.0.2
  _ZN3WTF21RefCountedLeakCounterD1Ev@Base 5.0.2
  _ZN3WTF21RefCountedLeakCounterD2Ev@Base 5.0.2
- (subst)_ZN3WTF21charactersToIntStrictEPKh{size_t}Pbi@Base 5.0.2
- (subst)_ZN3WTF21charactersToIntStrictEPKt{size_t}Pbi@Base 5.0.2
+ _ZN3WTF21charactersToIntStrictEPKhmPbi@Base 5.2.0
+ _ZN3WTF21charactersToIntStrictEPKtmPbi@Base 5.2.0
  _ZN3WTF22cancelCallOnMainThreadEPFvPvES0_@Base 5.0.2
- (subst)_ZN3WTF22charactersToUIntStrictEPKh{size_t}Pbi@Base 5.0.2
- (subst)_ZN3WTF22charactersToUIntStrictEPKt{size_t}Pbi@Base 5.0.2
+ _ZN3WTF22charactersToUIntStrictEPKhmPbi@Base 5.2.0
+ _ZN3WTF22charactersToUIntStrictEPKtmPbi@Base 5.2.0
+ _ZN3WTF22isMainThreadOrGCThreadEv@Base 5.2.0
  _ZN3WTF23callOnMainThreadAndWaitEPFvPvES0_@Base 5.0.2
  _ZN3WTF23dayInMonthFromDayInYearEib@Base 5.0.2
  _ZN3WTF23waitForThreadCompletionEj@Base 5.0.2
+ _ZN3WTF24calculateLocalTimeOffsetEd@Base 5.2.0
+ _ZN3WTF24equalIgnoringCaseNonNullEPKNS_10StringImplES2_@Base 5.2.0
  _ZN3WTF24numberToFixedWidthStringEdjPc@Base 5.0.2
  _ZN3WTF27monotonicallyIncreasingTimeEv@Base 5.0.2
  _ZN3WTF27releaseFastMallocFreeMemoryEv@Base 5.0.2
  _ZN3WTF28numberToFixedPrecisionStringEdjPcb@Base 5.0.2
  _ZN3WTF28setMainThreadCallbacksPausedEb@Base 5.0.2
  _ZN3WTF29cryptographicallyRandomNumberEv@Base 5.0.2
- (subst)_ZN3WTF29cryptographicallyRandomValuesEPv{size_t}@Base 5.0.2
+ _ZN3WTF29cryptographicallyRandomValuesEPvm@Base 5.2.0
  _ZN3WTF36lockAtomicallyInitializedStaticMutexEv@Base 5.0.2
  _ZN3WTF37parseDateFromNullTerminatedCharactersEPKc@Base 5.0.2
+ _ZN3WTF37parseDateFromNullTerminatedCharactersEPKcRbRi@Base 5.2.0
  _ZN3WTF38unlockAtomicallyInitializedStaticMutexEv@Base 5.0.2
- (subst)_ZN3WTF3MD58addBytesEPKh{size_t}@Base 5.0.2
- (subst)_ZN3WTF3MD58checksumERNS_6VectorIhL{size_t}16EEE@Base 5.0.2
+ _ZN3WTF3MD58addBytesEPKhm@Base 5.2.0
+ _ZN3WTF3MD58checksumERNS_6VectorIhLm16ENS_15CrashOnOverflowEEE@Base 5.2.0
  _ZN3WTF3MD5C1Ev@Base 5.0.2
  _ZN3WTF3MD5C2Ev@Base 5.0.2
  _ZN3WTF3absERKNS_9MediaTimeE@Base 5.0.2
- (subst)_ZN3WTF4SHA111computeHashERNS_6VectorIhL{size_t}20EEE@Base 5.0.2
+ _ZN3WTF40parseES5DateFromNullTerminatedCharactersEPKc@Base 5.2.0
+ _ZN3WTF4SHA111computeHashERNS_6VectorIhLm20ENS_15CrashOnOverflowEEE@Base 5.2.0
  _ZN3WTF4SHA116computeHexDigestEv@Base 5.0.2
- (subst)_ZN3WTF4SHA18addBytesEPKh{size_t}@Base 5.0.2
- (subst)_ZN3WTF4SHA19hexDigestERKNS_6VectorIhL{size_t}20EEE@Base 5.0.2
+ _ZN3WTF4SHA18addBytesEPKhm@Base 5.2.0
+ _ZN3WTF4SHA19hexDigestERKNS_6VectorIhLm20ENS_15CrashOnOverflowEEE@Base 5.2.0
  _ZN3WTF4SHA1C1Ev@Base 5.0.2
  _ZN3WTF4SHA1C2Ev@Base 5.0.2
  _ZN3WTF4dtoaEPcdRbRiRj@Base 5.0.2
@@ -2325,12 +2495,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF5equalEPKNS_10StringImplEPKtj@Base 5.0.2
  _ZN3WTF5equalEPKNS_10StringImplES2_@Base 5.0.2
  _ZN3WTF5yieldEv@Base 5.0.2
- (subst)_ZN3WTF6String23make16BitFrom8BitSourceEPKh{size_t}@Base 5.0.2
- (subst)_ZN3WTF6String23make8BitFrom16BitSourceEPKt{size_t}@Base 5.0.2
+ _ZN3WTF6String23make16BitFrom8BitSourceEPKhm@Base 5.2.0
+ _ZN3WTF6String23make8BitFrom16BitSourceEPKtm@Base 5.2.0
  _ZN3WTF6String24numberToStringECMAScriptEd@Base 5.0.2
  _ZN3WTF6String24numberToStringFixedWidthEdj@Base 5.0.2
- (subst)_ZN3WTF6String26fromUTF8WithLatin1FallbackEPKh{size_t}@Base 5.0.2
- _ZN3WTF6String29charactersWithNullTerminationEv@Base 5.0.2
+ _ZN3WTF6String26fromUTF8WithLatin1FallbackEPKhm@Base 5.2.0
+ _ZN3WTF6String39deprecatedCharactersWithNullTerminationEv@Base 5.2.0
  _ZN3WTF6String6appendEPKhj@Base 5.0.2
  _ZN3WTF6String6appendEPKtj@Base 5.0.2
  _ZN3WTF6String6appendERKS0_@Base 5.0.2
@@ -2347,7 +2517,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF6String6numberEy@Base 5.0.2
  _ZN3WTF6String6removeEji@Base 5.0.2
  _ZN3WTF6String8fromUTF8EPKh@Base 5.0.2
- (subst)_ZN3WTF6String8fromUTF8EPKh{size_t}@Base 5.0.2
+ _ZN3WTF6String8fromUTF8EPKhm@Base 5.2.0
+ _ZN3WTF6String8fromUTF8ERKNS_7CStringE@Base 5.2.0
  _ZN3WTF6String8truncateEj@Base 5.0.2
  _ZN3WTF6StringC1ENS_12ASCIILiteralE@Base 5.0.2
  _ZN3WTF6StringC1EPKc@Base 5.0.2
@@ -2368,38 +2539,43 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF6StringC2ERK10QStringRef@Base 5.0.2
  _ZN3WTF6StringC2ERK7QString@Base 5.0.2
  _ZN3WTF7CString11mutableDataEv@Base 5.0.2
- (subst)_ZN3WTF7CString16newUninitializedE{size_t}RPc@Base 5.0.2
+ _ZN3WTF7CString16newUninitializedEmRPc@Base 5.2.0
  _ZN3WTF7CStringC1EPKc@Base 5.0.2
- (subst)_ZN3WTF7CStringC1EPKc{size_t}@Base 5.0.2
+ _ZN3WTF7CStringC1EPKcm@Base 5.2.0
  _ZN3WTF7CStringC2EPKc@Base 5.0.2
- (subst)_ZN3WTF7CStringC2EPKc{size_t}@Base 5.0.2
+ _ZN3WTF7CStringC2EPKcm@Base 5.2.0
+ _ZN3WTF7Unicode18UTF8SequenceLengthEc@Base 5.2.0
  _ZN3WTF7Unicode18convertUTF16ToUTF8EPPKtS2_PPcS4_b@Base 5.0.2
  _ZN3WTF7Unicode18convertUTF8ToUTF16EPPKcS2_PPtS4_Pbb@Base 5.0.2
+ _ZN3WTF7Unicode18decodeUTF8SequenceEPKc@Base 5.2.0
  _ZN3WTF7Unicode18equalUTF16WithUTF8EPKtS2_PKcS4_@Base 5.0.2
  _ZN3WTF7Unicode19convertLatin1ToUTF8EPPKhS2_PPcS4_@Base 5.0.2
  _ZN3WTF7Unicode51calculateStringHashAndLengthFromUTF8MaskingTop8BitsEPKcS2_RjS3_@Base 5.0.2
  _ZN3WTF7ramSizeEv@Base 5.0.2
  _ZN3WTF7xmlAtomE@Base 5.0.2
+ _ZN3WTF8Collator11userDefaultEv@Base 5.2.0
  _ZN3WTF8Collator18setOrderLowerFirstEb@Base 5.0.2
  _ZN3WTF8CollatorC1EPKc@Base 5.0.2
  _ZN3WTF8CollatorC2EPKc@Base 5.0.2
  _ZN3WTF8CollatorD1Ev@Base 5.0.2
  _ZN3WTF8CollatorD2Ev@Base 5.0.2
  _ZN3WTF8Internal21fastMallocMatchFailedEPv@Base 5.0.2
- (subst)_ZN3WTF8Internal25parseDoubleFromLongStringEPKt{size_t}R{size_t}@Base 5.0.2
+ _ZN3WTF8Internal25parseDoubleFromLongStringEPKtmRm@Base 5.2.0
  _ZN3WTF8dataFileEv@Base 5.0.2
  _ZN3WTF8dataLogFEPKcz@Base 5.0.2
  _ZN3WTF8fastFreeEPv@Base 5.0.2
+ _ZN3WTF8msToDaysEd@Base 5.2.0
  _ZN3WTF8msToYearEd@Base 5.0.2
  _ZN3WTF8nullAtomE@Base 5.0.2
  _ZN3WTF8pageMaskEv@Base 5.0.2
  _ZN3WTF8pageSizeEv@Base 5.0.2
  _ZN3WTF8starAtomE@Base 5.0.2
  _ZN3WTF8textAtomE@Base 5.0.2
- (subst)_ZN3WTF9BitVector13OutOfLineBits6createE{size_t}@Base 5.0.2
+ _ZN3WTF8timeClipEd@Base 5.2.0
+ _ZN3WTF9BitVector13OutOfLineBits6createEm@Base 5.2.0
  _ZN3WTF9BitVector13OutOfLineBits7destroyEPS1_@Base 5.0.2
- (subst)_ZN3WTF9BitVector15resizeOutOfLineE{size_t}@Base 5.0.2
- (subst)_ZN3WTF9BitVector6resizeE{size_t}@Base 5.0.2
+ _ZN3WTF9BitVector15resizeOutOfLineEm@Base 5.2.0
+ _ZN3WTF9BitVector6resizeEm@Base 5.2.0
  _ZN3WTF9BitVector7setSlowERKS0_@Base 5.0.2
  _ZN3WTF9BitVector8clearAllEv@Base 5.0.2
  _ZN3WTF9MediaTime11invalidTimeEv@Base 5.0.2
@@ -2424,9 +2600,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (arch=i386)_ZN3WTF9dataLogFVEPKcPc@Base 5.0.2
  (arch=armhf)_ZN3WTF9dataLogFVEPKcSt9__va_list@Base 5.0.2
  _ZN3WTF9dayInYearEdi@Base 5.0.2
+ _ZN3WTF9dayInYearEiii@Base 5.2.0
  _ZN3WTF9emptyAtomE@Base 5.0.2
+ _ZN3WTF9msToHoursEd@Base 5.2.0
  _ZN3WTF9xlinkAtomE@Base 5.0.2
  _ZN3WTF9xmlnsAtomE@Base 5.0.2
+ _ZN3WTFeqERKNS_7CStringEPKc@Base 5.2.0
  _ZN3WTFeqERKNS_7CStringES2_@Base 5.0.2
  (arch=i386)_ZN6QRectFC1ERK5QRect@Base 5.0.2
  (arch=i386)_ZN6QRectFC2ERK5QRect@Base 5.0.2
@@ -2449,8 +2628,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN8QDRTNodeaSERKS_@Base 5.0.2
  _ZNK10UndoStepQt4textEv@Base 5.0.2
  _ZNK11QRawWebView14drawBackgroundEv@Base 5.0.2
- _ZNK11QRawWebView17layerTreeRendererEv@Base 5.0.2
  _ZNK11QRawWebView21transparentBackgroundEv@Base 5.0.2
+ _ZNK11QRawWebView24coordinatedGraphicsSceneEv@Base 5.2.0
  _ZNK11QRawWebView4sizeEv@Base 5.0.2
  _ZNK11QRawWebView8isActiveEv@Base 5.0.2
  _ZNK11QRawWebView9isFocusedEv@Base 5.0.2
@@ -2510,7 +2689,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK12QWebDatabase6originEv@Base 5.0.2
  _ZNK12QWebDatabase8fileNameEv@Base 5.0.2
  _ZNK12QWebSettings10fontFamilyENS_10FontFamilyE@Base 5.0.2
- _ZNK12QWebSettings12cssMediaTypeEv@Base 5.1.0
+ _ZNK12QWebSettings12cssMediaTypeEv@Base 5.2.0
  _ZNK12QWebSettings13testAttributeENS_12WebAttributeE@Base 5.0.2
  _ZNK12QWebSettings16localStoragePathEv@Base 5.0.2
  _ZNK12QWebSettings17userStyleSheetUrlEv@Base 5.0.2
@@ -2519,7 +2698,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK12QWebSettings8fontSizeENS_8FontSizeE@Base 5.0.2
  _ZNK13QQuickWebPage10metaObjectEv@Base 5.0.2
  _ZNK13QQuickWebPage12contentsSizeEv@Base 5.0.2
- _ZNK13QQuickWebPage12eventHandlerEv@Base 5.0.2
  _ZNK13QQuickWebPage13contentsScaleEv@Base 5.0.2
  _ZNK13QQuickWebPage15transformToItemEv@Base 5.0.2
  _ZNK13QQuickWebPage17transformFromItemEv@Base 5.0.2
@@ -2569,8 +2747,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK15QWebPageAdapter12hasSelectionEv@Base 5.0.2
  _ZNK15QWebPageAdapter12selectedHtmlEv@Base 5.0.2
  _ZNK15QWebPageAdapter12selectedTextEv@Base 5.0.2
- _ZNK15QWebPageAdapter13TouchAdjuster26findCandidatePointForTouchERKN7WebCore8IntPointEPNS1_8DocumentE@Base 5.0.2
  _ZNK15QWebPageAdapter14hasFocusedNodeEv@Base 5.0.2
+ _ZNK15QWebPageAdapter15visibilityStateEv@Base 5.2.0
  _ZNK15QWebPageAdapter16inputMethodQueryEN2Qt16InputMethodQueryE@Base 5.0.2
  _ZNK15QWebPageAdapter17hasSystemTrayIconEv@Base 5.0.2
  _ZNK15QWebPageAdapter17isContentEditableEv@Base 5.0.2
@@ -2600,12 +2778,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK15QWebPreferences20caretBrowsingEnabledEv@Base 5.0.2
  _ZNK15QWebPreferences20defaultFixedFontSizeEv@Base 5.0.2
  _ZNK15QWebPreferences20notificationsEnabledEv@Base 5.0.2
- _ZNK15QWebPreferences21scrollAnimatorEnabledEv@Base 5.0.2
  _ZNK15QWebPreferences22developerExtrasEnabledEv@Base 5.0.2
  _ZNK15QWebPreferences22frameFlatteningEnabledEv@Base 5.0.2
  _ZNK15QWebPreferences22privateBrowsingEnabledEv@Base 5.0.2
  _ZNK15QWebPreferences24navigatorQtObjectEnabledEv@Base 5.0.2
+ _ZNK15QWebPreferences29fileAccessFromFileURLsAllowedEv@Base 5.2.0
  _ZNK15QWebPreferences33offlineWebApplicationCacheEnabledEv@Base 5.0.2
+ _ZNK15QWebPreferences34universalAccessFromFileURLsAllowedEv@Base 5.2.0
  _ZNK15QWebScriptWorld5worldEv@Base 5.0.2
  _ZNK16QWebDownloadItem10metaObjectEv@Base 5.0.2
  _ZNK16QWebDownloadItem15destinationPathEv@Base 5.0.2
@@ -2715,7 +2894,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK25QQuickWebViewExperimental9userAgentEv@Base 5.0.2
  _ZNK3JSC10JSFunction10sourceCodeEv@Base 5.0.2
  _ZNK3JSC10JSFunction23isHostFunctionNonInlineEv@Base 5.0.2
- (arch=amd64)_ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiRlRN3WTF6StringERNS_7JSValueE@Base 5.0.2
+ _ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiRlRN3WTF6StringERNS_7JSValueE@Base 5.2.0
  (arch=!amd64)_ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiS3_RN3WTF6StringERNS_7JSValueE@Base 5.0.2
  _ZNK3JSC12JSRopeString11resolveRopeEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC12PropertySlot14functionGetterEPNS_9ExecStateE@Base 5.0.2
@@ -2731,28 +2910,31 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK3JSC18PropertyDescriptor6getterEv@Base 5.0.2
  _ZNK3JSC18PropertyDescriptor6setterEv@Base 5.0.2
  _ZNK3JSC18PropertyDescriptor8writableEv@Base 5.0.2
- _ZNK3JSC19SourceProviderCache8byteSizeEv@Base 5.0.2
  _ZNK3JSC6JSCell11toPrimitiveEPNS_9ExecStateENS_22PreferredPrimitiveTypeE@Base 5.0.2
  _ZNK3JSC6JSCell8toNumberEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC6JSCell8toObjectEPNS_9ExecStateEPNS_14JSGlobalObjectE@Base 5.0.2
  _ZNK3JSC6JSCell9getStringEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC6JSCell9getStringEPNS_9ExecStateERN3WTF6StringE@Base 5.0.2
  _ZNK3JSC7ArgList8getSliceEiRS0_@Base 5.0.2
- _ZNK3JSC7JSValue11descriptionEv@Base 5.0.2
  _ZNK3JSC7JSValue16toNumberSlowCaseEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC7JSValue16toObjectSlowCaseEPNS_9ExecStateEPNS_14JSGlobalObjectE@Base 5.0.2
  _ZNK3JSC7JSValue16toStringSlowCaseEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC7JSValue19synthesizePrototypeEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC7JSValue19toWTFStringSlowCaseEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC7JSValue20toThisObjectSlowCaseEPNS_9ExecStateE@Base 5.0.2
+ _ZNK3JSC7JSValue4dumpERN3WTF11PrintStreamE@Base 5.2.0
  _ZNK3JSC7JSValue9toIntegerEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC8JSObject11hasPropertyEPNS_9ExecStateENS_12PropertyNameE@Base 5.0.2
  _ZNK3JSC8JSObject11hasPropertyEPNS_9ExecStateEj@Base 5.0.2
  _ZNK3JSC8JSObject8toNumberEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC8JSObject8toStringEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC8JSString9toBooleanEv@Base 5.0.2
- _ZNK3JSC9HashTable11createTableEPNS_12JSGlobalDataE@Base 5.0.2
+ _ZNK3JSC8Profiler8Database4saveEPKc@Base 5.2.0
+ _ZNK3JSC8Profiler8Database4toJSEPNS_9ExecStateE@Base 5.2.0
+ _ZNK3JSC8Profiler8Database6toJSONEv@Base 5.2.0
+ _ZNK3JSC9HashTable11createTableEPNS_2VME@Base 5.2.0
  _ZNK3JSC9HashTable11deleteTableEv@Base 5.0.2
+ _ZNK3WTF10StringImpl10startsWithEPKS0_@Base 5.2.0
  _ZNK3WTF10StringImpl10startsWithEPKcjb@Base 5.0.2
  _ZNK3WTF10StringImpl10startsWithEt@Base 5.0.2
  _ZNK3WTF10StringImpl11sizeInBytesEv@Base 5.0.2
@@ -2768,6 +2950,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK3WTF13DecimalNumber32bufferLengthForStringExponentialEv@Base 5.0.2
  _ZNK3WTF13StringBuilder11reifyStringEv@Base 5.0.2
  _ZNK3WTF13StringBuilder9canShrinkEv@Base 5.0.2
+ _ZNK3WTF17double_conversion23DoubleToStringConverter13ToExponentialEdiPNS0_13StringBuilderE@Base 5.2.0
  _ZNK3WTF6String11toIntStrictEPbi@Base 5.0.2
  _ZNK3WTF6String12isolatedCopyEv@Base 5.0.2
  _ZNK3WTF6String12toUIntStrictEPbi@Base 5.0.2
@@ -2779,11 +2962,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK3WTF6String18simplifyWhiteSpaceEv@Base 5.0.2
  _ZNK3WTF6String19characterStartingAtEj@Base 5.0.2
  _ZNK3WTF6String20substringSharingImplEjj@Base 5.0.2
+ _ZNK3WTF6String27isSafeToSendToAnotherThreadEv@Base 5.2.0
+ _ZNK3WTF6String29charactersWithNullTerminationEv@Base 5.2.0
  _ZNK3WTF6String4utf8ENS0_14ConversionModeE@Base 5.0.2
  _ZNK3WTF6String5asciiEv@Base 5.0.2
  _ZNK3WTF6String5lowerEv@Base 5.0.2
- (subst)_ZNK3WTF6String5splitERKS0_bRNS_6VectorIS0_L{size_t}0EEE@Base 5.0.2
- (subst)_ZNK3WTF6String5splitEtbRNS_6VectorIS0_L{size_t}0EEE@Base 5.0.2
+ _ZNK3WTF6String5splitERKS0_bRNS_6VectorIS0_Lm0ENS_15CrashOnOverflowEEE@Base 5.2.0
+ _ZNK3WTF6String5splitEtbRNS_6VectorIS0_Lm0ENS_15CrashOnOverflowEEE@Base 5.2.0
  _ZNK3WTF6String5toIntEPb@Base 5.0.2
  _ZNK3WTF6String5upperEv@Base 5.0.2
  _ZNK3WTF6String6latin1Ev@Base 5.0.2
@@ -2795,7 +2980,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK3WTF6String8toUInt64EPb@Base 5.0.2
  _ZNK3WTF6String9substringEjj@Base 5.0.2
  _ZNK3WTF6Stringcv7QStringEv@Base 5.0.2
- (subst)_ZNK3WTF8Collator7collateEPKt{size_t}S2_{size_t}@Base 5.0.2
+ _ZNK3WTF8Collator7collateEPKtmS2_m@Base 5.2.0
  _ZNK3WTF9MediaTime7compareERKS0_@Base 5.0.2
  _ZNK3WTF9MediaTime7toFloatEv@Base 5.0.2
  _ZNK3WTF9MediaTime8toDoubleEv@Base 5.0.2
@@ -2808,35 +2993,42 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK3WTF9MediaTimeplERKS0_@Base 5.0.2
  (optional=templinst)_ZNKSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 5.0.2
  (optional=templinst)_ZNSs12_S_constructIPcEES0_T_S1_RKSaIcESt20forward_iterator_tag@Base 5.0.2
- (optional=templinst)_ZNSt6vectorIN23BuiltInFunctionEmulator16TBuiltInFunctionESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 5.0.2
- (optional=templinst)_ZNSt6vectorISsSaISsEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPSsS1_EERKSs@Base 5.0.2
+ (optional=templinst)_ZNSt6vectorIN23BuiltInFunctionEmulator16TBuiltInFunctionESaIS1_EE19_M_emplace_back_auxIIRKS1_EEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorIN23BuiltInFunctionEmulator16TBuiltInFunctionESaIS1_EE19_M_emplace_back_auxIJRKS1_EEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIIRKSsEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIJRKSsEEEvDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt6vectorISsSaISsEEaSERKS1_@Base 5.0.2
- (optional=templinst)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS9_SB_EERKS9_@Base 5.0.2
- (optional=templinst)_ZNSt6vectorIiSaIiEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPiS1_EERKi@Base 5.0.2
+ (optional=templinst)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE19_M_emplace_back_auxIIS9_EEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE19_M_emplace_back_auxIJS9_EEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIIiEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIJiEEEvDpOT_@Base 5.2.0
  (optional=templinst|arch=armhf i386)_ZNSt6vectorIiSaIiEE7reserveEj@Base 5.0.2
- (optional=templinst|arch=amd64)_ZNSt6vectorIiSaIiEE7reserveEm@Base 5.0.2
- (optional=templinst)_ZNSt6vectorIiSaIiEEaSERKS1_@Base 5.0.2
+ (optional=templinst)_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EEmRKj@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorImSaImEE19_M_emplace_back_auxIIRKmEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorImSaImEE19_M_emplace_back_auxIImEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorImSaImEE19_M_emplace_back_auxIJRKmEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorImSaImEE19_M_emplace_back_auxIJmEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorImSaImEE7reserveEm@Base 5.2.0
  (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE24_M_get_insert_unique_posERS2_@Base 5.0.2
- (optional=templinst|arch=amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS2_@Base 5.0.2
- (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE7_M_copyEPKSt13_Rb_tree_nodeIS4_EPSC_@Base 5.0.2
+ (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS2_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 5.0.2
- (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EEaSERKSA_@Base 5.0.2
- (optional=templinst)_ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE16_M_insert_uniqueERKSs@Base 5.0.2
- (optional=templinst)_ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE4findERKSs@Base 5.0.2
- (optional=templinst)_ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE8_M_eraseEPSt13_Rb_tree_nodeISsE@Base 5.0.2
  (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS3_ERKS3_@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE24_M_get_insert_unique_posERS1_@Base 5.0.2
- (optional=templinst|arch=amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS3_ERS1_@Base 5.0.2
- (optional=templinst|arch=!i386)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 5.0.2
+ (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS3_ERS1_@Base 5.2.0
+ (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E@Base 5.0.2
+ (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOSsEESD_IIEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOSsEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE24_M_get_insert_unique_posERS1_@Base 5.2.0
+ (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 5.0.2
- (optional=templinst|subst)_ZSt13__adjust_heapIPi{ssize_t}iEvT_T0_S2_T1_@Base 5.0.2
- (optional=templinst|subst)_ZSt13__adjust_heapIPj{ssize_t}jEvT_T0_S2_T1_@Base 5.0.2
+ (optional=templinst)_ZSt13__adjust_heapIPiliEvT_T0_S2_T1_@Base 5.2.0
+ (optional=templinst)_ZSt13__adjust_heapIPjljEvT_T0_S2_T1_@Base 5.2.0
  (optional=templinst)_ZSt16__insertion_sortIPiEvT_S1_@Base 5.0.2
  (optional=templinst)_ZSt16__insertion_sortIPjEvT_S1_@Base 5.0.2
- (optional=templinst|subst)_ZSt16__introsort_loopIPi{ssize_t}EvT_S1_T0_@Base 5.0.2
- (optional=templinst|subst)_ZSt16__introsort_loopIPj{ssize_t}EvT_S1_T0_@Base 5.0.2
+ (optional=templinst)_ZSt16__introsort_loopIPilEvT_S1_T0_@Base 5.2.0
+ (optional=templinst)_ZSt16__introsort_loopIPjlEvT_S1_T0_@Base 5.2.0
  (optional=templinst)_ZSt3maxIfERKT_S2_S2_@Base 5.0.2
  (optional=templinst)_ZSt3minIfERKT_S2_S2_@Base 5.0.2
  (optional=templinst)_ZSt6__findIN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEESsET_S8_S8_RKT0_St26random_access_iterator_tag@Base 5.0.2
@@ -2919,6 +3111,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZTV25QQuickWebViewExperimental@Base 5.0.2
  _ZTVN3JSC15WeakHandleOwnerE@Base 5.0.2
  _ZTVN3JSC8DebuggerE@Base 5.0.2
+ _ZZZN21QWebIconImageProvider10identifierEvENKUlvE_clEvE15qstring_literal@Base 5.2.0
  _ZlsR11QDataStreamRK11QWebHistory@Base 5.0.2
  _ZrsR11QDataStreamR11QWebHistory@Base 5.0.2
  kJSClassDefinitionEmpty@Base 5.0.2
@@ -2926,7 +3119,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (c++)"non-virtual thunk to QQuickWebPage::~QQuickWebPage()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::componentComplete()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::~QQuickWebView()@Base" 5.0.2
- nullptr@Base 5.0.2
+# SymbolsHelper-Confirmed: 5.2.0 amd64
 libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN13QWebInspector10closeEventEP11QCloseEvent@Base 5.0.2
  _ZN13QWebInspector11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.0.2
@@ -2961,6 +3154,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN16QGraphicsWebView13focusOutEventEP11QFocusEvent@Base 5.0.2
  _ZN16QGraphicsWebView13keyPressEventEP9QKeyEvent@Base 5.0.2
  _ZN16QGraphicsWebView13setRenderHintEN8QPainter10RenderHintEb@Base 5.0.2
+ _ZN16QGraphicsWebView13setZoomFactorEd@Base 5.2.0
  _ZN16QGraphicsWebView14dragEnterEventEP27QGraphicsSceneDragDropEvent@Base 5.0.2
  _ZN16QGraphicsWebView14dragLeaveEventEP27QGraphicsSceneDragDropEvent@Base 5.0.2
  _ZN16QGraphicsWebView14hoverMoveEventEP24QGraphicsSceneHoverEvent@Base 5.0.2
@@ -3043,6 +3237,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN8QWebPage18ViewportAttributesaSERKS0_@Base 5.0.2
  _ZN8QWebPage18focusNextPrevChildEb@Base 5.0.2
  _ZN8QWebPage18setContentEditableEb@Base 5.0.2
+ _ZN8QWebPage18setVisibilityStateENS_15VisibilityStateE@Base 5.2.0
  _ZN8QWebPage18unsupportedContentEP13QNetworkReply@Base 5.0.2
  _ZN8QWebPage20setFeaturePermissionEP9QWebFrameNS_7FeatureENS_16PermissionPolicyE@Base 5.0.2
  _ZN8QWebPage20windowCloseRequestedEv@Base 5.0.2
@@ -3095,6 +3290,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN8QWebView13focusOutEventEP11QFocusEvent@Base 5.0.2
  _ZN8QWebView13keyPressEventEP9QKeyEvent@Base 5.0.2
  _ZN8QWebView13setRenderHintEN8QPainter10RenderHintEb@Base 5.0.2
+ _ZN8QWebView13setZoomFactorEd@Base 5.2.0
  _ZN8QWebView14dragEnterEventEP15QDragEnterEvent@Base 5.0.2
  _ZN8QWebView14dragLeaveEventEP15QDragLeaveEvent@Base 5.0.2
  _ZN8QWebView14mouseMoveEventEP11QMouseEvent@Base 5.0.2
@@ -3110,6 +3306,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN8QWebView17triggerPageActionEN8QWebPage9WebActionEb@Base 5.0.2
  _ZN8QWebView18focusNextPrevChildEb@Base 5.0.2
  _ZN8QWebView21mouseDoubleClickEventEP11QMouseEvent@Base 5.0.2
+ _ZN8QWebView21setTextSizeMultiplierEd@Base 5.2.0
  _ZN8QWebView4backEv@Base 5.0.2
  _ZN8QWebView4loadERK15QNetworkRequestN21QNetworkAccessManager9OperationERK10QByteArray@Base 5.0.2
  _ZN8QWebView4loadERK4QUrl@Base 5.0.2
@@ -3136,6 +3333,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN9QWebFrame11qt_metacastEPKc@Base 5.0.2
  _ZN9QWebFrame12loadFinishedEb@Base 5.0.2
  _ZN9QWebFrame12titleChangedERK7QString@Base 5.0.2
+ _ZN9QWebFrame13setZoomFactorEd@Base 5.2.0
  _ZN9QWebFrame14scrollToAnchorERK7QString@Base 5.0.2
  _ZN9QWebFrame15provisionalLoadEv@Base 5.0.2
  _ZN9QWebFrame16staticMetaObjectE@Base 5.0.2
@@ -3144,6 +3342,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN9QWebFrame18evaluateJavaScriptERK7QString@Base 5.0.2
  _ZN9QWebFrame18setScrollBarPolicyEN2Qt11OrientationENS0_15ScrollBarPolicyE@Base 5.0.2
  _ZN9QWebFrame19contentsSizeChangedERK5QSize@Base 5.0.2
+ _ZN9QWebFrame21setTextSizeMultiplierEd@Base 5.2.0
  _ZN9QWebFrame22initialLayoutCompletedEv@Base 5.0.2
  _ZN9QWebFrame27addToJavaScriptWindowObjectERK7QStringP7QObjectNS_14ValueOwnershipE@Base 5.0.2
  _ZN9QWebFrame29javaScriptWindowObjectClearedEv@Base 5.0.2
@@ -3197,6 +3396,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZNK17QWebHitTestResult7linkUrlEv@Base 5.0.2
  _ZNK17QWebHitTestResult8imageUrlEv@Base 5.0.2
  _ZNK17QWebHitTestResult8linkTextEv@Base 5.0.2
+ _ZNK17QWebHitTestResult8mediaUrlEv@Base 5.2.0
  _ZNK17QWebHitTestResult9linkTitleEv@Base 5.0.2
  _ZNK8QWebPage10isModifiedEv@Base 5.0.2
  _ZNK8QWebPage10metaObjectEv@Base 5.0.2
@@ -3210,6 +3410,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZNK8QWebPage13pluginFactoryEv@Base 5.0.2
  _ZNK8QWebPage15setViewportSizeERK5QSize@Base 5.0.2
  _ZNK8QWebPage15userAgentForUrlERK4QUrl@Base 5.0.2
+ _ZNK8QWebPage15visibilityStateEv@Base 5.2.0
  _ZNK8QWebPage16inputMethodQueryEN2Qt16InputMethodQueryE@Base 5.0.2
  _ZNK8QWebPage17isContentEditableEv@Base 5.0.2
  _ZNK8QWebPage17supportsExtensionENS_9ExtensionE@Base 5.0.2
