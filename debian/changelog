@@ -11,6 +11,7 @@ qtwebkit-opensource-src (5.2.0+dfsg-1) UNRELEASED; urgency=low
     - Create a dfsg version.
     - Add a rule to prune non-free stuff in debian/rules.
     - Mangle the dfsg version in debian/watch.
+  * Fix wrong name and path of the GPL-2 license in debian/copyright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Dec 2013 11:23:02 -0300
 

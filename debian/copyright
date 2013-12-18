@@ -13386,5 +13386,5 @@ License: GPL-2+
  with this program; if not, write to the Free Software Foundation, Inc.,
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  .
- On Debian systems, the complete text of the GNU Public License 2 can be found
- in `/usr/share/common-licenses/Apache-2.0'.
+ On Debian systems, the complete text of the GNU General Public License 2 can be
+ found in `/usr/share/common-licenses/GPL-2'.
