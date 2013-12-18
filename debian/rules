@@ -66,3 +66,8 @@ override_dh_install:
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
+
+prune-nonfree:
+	# See http://lists.qt-project.org/pipermail/development/2013-December/014659.html
+	# and https://wiki.debian.org/qa.debian.org/jsonevil
+	rm -fv Source/WebInspectorUI/Scripts/jsmin.py

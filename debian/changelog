@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.2.0-1) UNRELEASED; urgency=low
+qtwebkit-opensource-src (5.2.0+dfsg-1) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
@@ -6,6 +6,11 @@ qtwebkit-opensource-src (5.2.0-1) UNRELEASED; urgency=low
   * Refresh 05_sparc_unaligned_access.diff, no_gc_sections.diff and hurd.diff.
   * Remove new private stuff we are not shipping.
   * Update symbols files.
+  * Remove jsmin.py from the original tarball because it is not
+    DFSG-compatible.
+    - Create a dfsg version.
+    - Add a rule to prune non-free stuff in debian/rules.
+    - Mangle the dfsg version in debian/watch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Dec 2013 11:23:02 -0300
 
