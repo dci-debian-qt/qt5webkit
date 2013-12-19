@@ -1,6 +1,5 @@
-qtwebkit-opensource-src (5.2.0+dfsg-1) UNRELEASED; urgency=low
+qtwebkit-opensource-src (5.2.0+dfsg-1) experimental; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Bump Qt build dependencies.
   * Refresh 05_sparc_unaligned_access.diff, no_gc_sections.diff and hurd.diff.
@@ -13,7 +12,7 @@ qtwebkit-opensource-src (5.2.0+dfsg-1) UNRELEASED; urgency=low
     - Mangle the dfsg version in debian/watch.
   * Fix wrong name and path of the GPL-2 license in debian/copyright.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Dec 2013 11:23:02 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 18 Dec 2013 20:56:37 -0300
 
 qtwebkit-opensource-src (5.1.1-1) unstable; urgency=low
 
