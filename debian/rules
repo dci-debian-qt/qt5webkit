@@ -8,10 +8,12 @@ export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildfla
 export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 export QT_SELECT := qt5
 
-# Filter -g from environment on troublesome arches. Replace it with -gstabs
-# See also: stabs_format_debug_info.diff
 DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+DEB_BUILD_ARCH ?= $(shell dpkg-architecture -qDEB_BUILD_ARCH)
+
+# Filter -g from environment on troublesome arches. Replace it with -gstabs
+# See also: stabs_format_debug_info.diff
 ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel armhf mips mipsel m68k))
     export DEB_CFLAGS_MAINT_STRIP := -g
     export DEB_CFLAGS_MAINT_APPEND := -gstabs
@@ -20,6 +22,12 @@ ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel armhf mips mipsel m68k))
 endif
 ifneq (,$(filter $(DEB_HOST_ARCH),alpha))
     export DEB_LDFLAGS_MAINT_APPEND := -Wl,--no-relax
+endif
+
+# Workaround FTBFS in 64 bits big endian archs.
+# See https://bugs.webkit.org/show_bug.cgi?id=113638
+ifneq (,$(filter $(DEB_BUILD_ARCH),alpha hppa ia64 powerpc ppc64 sparc sparc64 s390 s390x))
+	DEB_CPPFLAGS_MAINT_APPREND += -DENABLE_JIT=0 -DENABLE_YARR_JIT=0 -DENABLE_ASSEMBLER=0
 endif
 
 %:

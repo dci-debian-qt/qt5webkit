@@ -2,6 +2,8 @@ qtwebkit-opensource-src (5.2.0+dfsg-2) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Update symbols files with buildd's logs.
+  * Workaround FTBFS in 64 bits big endian archs.
+    See https://bugs.webkit.org/show_bug.cgi?id=113638
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 19 Dec 2013 22:48:15 -0300
 
