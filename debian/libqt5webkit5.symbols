@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.2.0 amd64
+# SymbolsHelper-Confirmed: 5.2.0 amd64 i386
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -1916,7 +1916,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC10Identifier4fromEPNS_9ExecStateEj@Base 5.0.2
  _ZN3JSC10JSFunction11displayNameEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC10JSFunction4nameEPNS_9ExecStateE@Base 5.0.2
- _ZN3JSC10JSFunction6createEPNS_9ExecStateEPNS_14JSGlobalObjectEiRKN3WTF6StringEPFlS2_ENS_9IntrinsicESA_@Base 5.2.0
+ (subst)_ZN3JSC10JSFunction6createEPNS_9ExecStateEPNS_14JSGlobalObjectEiRKN3WTF6StringEPF{int64_t}S2_ENS_9IntrinsicESA_@Base 5.2.0
  _ZN3JSC10JSFunction6s_infoE@Base 5.0.2
  _ZN3JSC10JSFunctionC1EPNS_9ExecStateEPNS_14JSGlobalObjectEPNS_9StructureE@Base 5.0.2
  _ZN3JSC10JSFunctionC2EPNS_9ExecStateEPNS_14JSGlobalObjectEPNS_9StructureE@Base 5.0.2
@@ -1924,9 +1924,9 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC10StackFrame8toStringEPNS_9ExecStateE@Base 5.2.0
  _ZN3JSC10throwErrorEPNS_9ExecStateENS_7JSValueE@Base 5.0.2
  _ZN3JSC10throwErrorEPNS_9ExecStateEPNS_8JSObjectE@Base 5.0.2
- _ZN3JSC11CopiedSpace19tryAllocateSlowCaseEmPPv@Base 5.2.0
+ (subst)_ZN3JSC11CopiedSpace19tryAllocateSlowCaseE{size_t}PPv@Base 5.2.0
  _ZN3JSC11Interpreter13dumpCallFrameEPNS_9ExecStateE@Base 5.0.2
- _ZN3JSC11Interpreter13getStackTraceEPNS_2VMERN3WTF6VectorINS_10StackFrameELm0ENS3_15CrashOnOverflowEEEm@Base 5.2.0
+ (subst)_ZN3JSC11Interpreter13getStackTraceEPNS_2VMERN3WTF6VectorINS_10StackFrameEL{size_t}0ENS3_15CrashOnOverflowEEE{size_t}@Base 5.2.0
  _ZN3JSC11Interpreter17ErrorHandlingModeC1EPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC11Interpreter17ErrorHandlingModeC2EPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC11Interpreter17ErrorHandlingModeD1Ev@Base 5.0.2
@@ -2027,7 +2027,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC15IdentifierTable3addEPN3WTF10StringImplE@Base 5.2.0
  _ZN3JSC15IdentifierTableD1Ev@Base 5.2.0
  _ZN3JSC15IdentifierTableD2Ev@Base 5.2.0
- _ZN3JSC15MarkedAllocator16allocateSlowCaseEm@Base 5.2.0
+ (subst)_ZN3JSC15MarkedAllocator16allocateSlowCaseE{size_t}@Base 5.2.0
  _ZN3JSC15WeakHandleOwner26isReachableFromOpaqueRootsENS_6HandleINS_7UnknownEEEPvRNS_11SlotVisitorE@Base 5.0.2
  _ZN3JSC15WeakHandleOwner8finalizeENS_6HandleINS_7UnknownEEEPv@Base 5.0.2
  _ZN3JSC15WeakHandleOwnerD0Ev@Base 5.0.2
@@ -2123,7 +2123,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC4Heap16objectTypeCountsEv@Base 5.0.2
  _ZN3JSC4Heap17collectAllGarbageEv@Base 5.0.2
  _ZN3JSC4Heap17globalObjectCountEv@Base 5.0.2
- _ZN3JSC4Heap17isValidAllocationEm@Base 5.2.0
+ (subst)_ZN3JSC4Heap17isValidAllocationE{size_t}@Base 5.2.0
  _ZN3JSC4Heap19setActivityCallbackEN3WTF10PassOwnPtrINS_18GCActivityCallbackEEE@Base 5.2.0
  _ZN3JSC4Heap20lastChanceToFinalizeEv@Base 5.0.2
  _ZN3JSC4Heap20protectedObjectCountEv@Base 5.0.2
@@ -2131,7 +2131,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC4Heap25protectedObjectTypeCountsEv@Base 5.0.2
  _ZN3JSC4Heap26protectedGlobalObjectCountEv@Base 5.0.2
  _ZN3JSC4Heap26reportAbandonedObjectGraphEv@Base 5.0.2
- _ZN3JSC4Heap29reportExtraMemoryCostSlowCaseEm@Base 5.2.0
+ (subst)_ZN3JSC4Heap29reportExtraMemoryCostSlowCaseE{size_t}@Base 5.2.0
  _ZN3JSC4Heap32setGarbageCollectionTimerEnabledEb@Base 5.0.2
  _ZN3JSC4Heap4sizeEv@Base 5.0.2
  _ZN3JSC4Heap7protectENS_7JSValueE@Base 5.0.2
@@ -2160,7 +2160,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC6JSLock6unlockEv@Base 5.0.2
  _ZN3JSC6JSLockD1Ev@Base 5.0.2
  _ZN3JSC6JSLockD2Ev@Base 5.0.2
- _ZN3JSC6RegExp5matchERNS_2VMERKN3WTF6StringEjRNS3_6VectorIiLm32ENS3_15CrashOnOverflowEEE@Base 5.2.0
+ (subst)_ZN3JSC6RegExp5matchERNS_2VMERKN3WTF6StringEjRNS3_6VectorIiL{size_t}32ENS3_15CrashOnOverflowEEE@Base 5.2.0
  _ZN3JSC6RegExp6createERNS_2VMERKN3WTF6StringENS_11RegExpFlagsE@Base 5.2.0
  _ZN3JSC7JSArray17defineOwnPropertyEPNS_8JSObjectEPNS_9ExecStateENS_12PropertyNameERNS_18PropertyDescriptorEb@Base 5.0.2
  _ZN3JSC7JSArray27getOwnNonIndexPropertyNamesEPNS_8JSObjectEPNS_9ExecStateERNS_17PropertyNameArrayENS_15EnumerationModeE@Base 5.0.2
@@ -2209,7 +2209,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC8JSObject17preventExtensionsERNS_2VME@Base 5.2.0
  _ZN3JSC8JSObject19getOwnPropertyNamesEPS0_PNS_9ExecStateERNS_17PropertyNameArrayENS_15EnumerationModeE@Base 5.0.2
  _ZN3JSC8JSObject19putDirectMayBeIndexEPNS_9ExecStateENS_12PropertyNameENS_7JSValueE@Base 5.0.2
- _ZN3JSC8JSObject20growOutOfLineStorageERNS_2VMEmm@Base 5.2.0
+ (subst)_ZN3JSC8JSObject20growOutOfLineStorageERNS_2VME{size_t}{size_t}@Base 5.2.0
  _ZN3JSC8JSObject21deletePropertyByIndexEPNS_6JSCellEPNS_9ExecStateEj@Base 5.0.2
  _ZN3JSC8JSObject21getPropertyDescriptorEPNS_9ExecStateENS_12PropertyNameERNS_18PropertyDescriptorE@Base 5.0.2
  _ZN3JSC8JSObject22fillGetterPropertySlotERNS_12PropertySlotEi@Base 5.0.2
@@ -2286,16 +2286,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF10StringImpl7replaceEtt@Base 5.0.2
  _ZN3WTF10StringImpl8endsWithEPS0_b@Base 5.0.2
  _ZN3WTF10StringImpl9substringEjj@Base 5.0.2
- _ZN3WTF10fastCallocEmm@Base 5.2.0
- _ZN3WTF10fastMallocEm@Base 5.2.0
+ (subst)_ZN3WTF10fastCallocE{size_t}{size_t}@Base 5.2.0
+ (subst)_ZN3WTF10fastMallocE{size_t}@Base 5.2.0
  _ZN3WTF10fastStrDupEPKc@Base 5.0.2
  _ZN3WTF10isLeapYearEi@Base 5.2.0
- _ZN3WTF11ArrayBuffer8transferERNS_19ArrayBufferContentsERNS_6VectorINS_6RefPtrINS_15ArrayBufferViewEEELm0ENS_15CrashOnOverflowEEE@Base 5.2.0
- _ZN3WTF11OSAllocator16reserveAndCommitEmNS0_5UsageEbbb@Base 5.2.0
- _ZN3WTF11OSAllocator18releaseDecommittedEPvm@Base 5.2.0
- _ZN3WTF11OSAllocator18reserveUncommittedEmNS0_5UsageEbbb@Base 5.2.0
- _ZN3WTF11OSAllocator6commitEPvmbb@Base 5.2.0
- _ZN3WTF11OSAllocator8decommitEPvm@Base 5.2.0
+ (subst)_ZN3WTF11ArrayBuffer8transferERNS_19ArrayBufferContentsERNS_6VectorINS_6RefPtrINS_15ArrayBufferViewEEEL{size_t}0ENS_15CrashOnOverflowEEE@Base 5.2.0
+ (subst)_ZN3WTF11OSAllocator16reserveAndCommitE{size_t}NS0_5UsageEbbb@Base 5.2.0
+ (subst)_ZN3WTF11OSAllocator18releaseDecommittedEPv{size_t}@Base 5.2.0
+ (subst)_ZN3WTF11OSAllocator18reserveUncommittedE{size_t}NS0_5UsageEbbb@Base 5.2.0
+ (subst)_ZN3WTF11OSAllocator6commitEPv{size_t}bb@Base 5.2.0
+ (subst)_ZN3WTF11OSAllocator8decommitEPv{size_t}@Base 5.2.0
  _ZN3WTF11PrintStream6printfEPKcz@Base 5.2.0
  _ZN3WTF11StackBounds10initializeEv@Base 5.2.0
  _ZN3WTF11commentAtomE@Base 5.0.2
@@ -2303,7 +2303,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF11dtoaRoundDPEPcdiRbRiRj@Base 5.0.2
  _ZN3WTF11dtoaRoundSFEPcdiRbRiRj@Base 5.0.2
  _ZN3WTF11emptyStringEv@Base 5.0.2
- _ZN3WTF11fastReallocEPvm@Base 5.2.0
+ (subst)_ZN3WTF11fastReallocEPv{size_t}@Base 5.2.0
  _ZN3WTF11msToMinutesEd@Base 5.2.0
  _ZN3WTF12AtomicString11addSlowCaseEPNS_10StringImplE@Base 5.0.2
  _ZN3WTF12AtomicString16fromUTF8InternalEPKcS2_@Base 5.0.2
@@ -2316,22 +2316,22 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF12AtomicString3addEPNS_10StringImplEjj@Base 5.0.2
  _ZN3WTF12AtomicString4findEPKNS_10StringImplE@Base 5.0.2
  _ZN3WTF12AtomicString4initEv@Base 5.0.2
- _ZN3WTF12base64DecodeEPKcjRNS_6VectorIcLm0ENS_15CrashOnOverflowEEENS_18Base64DecodePolicyE@Base 5.2.0
- _ZN3WTF12base64DecodeERKNS_6StringERNS_6VectorIcLm0ENS_15CrashOnOverflowEEENS_18Base64DecodePolicyE@Base 5.2.0
- _ZN3WTF12base64DecodeERKNS_6VectorIcLm0ENS_15CrashOnOverflowEEERS2_NS_18Base64DecodePolicyE@Base 5.2.0
+ (subst)_ZN3WTF12base64DecodeEPKcjRNS_6VectorIcL{size_t}0ENS_15CrashOnOverflowEEENS_18Base64DecodePolicyE@Base 5.2.0
+ (subst)_ZN3WTF12base64DecodeERKNS_6StringERNS_6VectorIcL{size_t}0ENS_15CrashOnOverflowEEENS_18Base64DecodePolicyE@Base 5.2.0
+ (subst)_ZN3WTF12base64DecodeERKNS_6VectorIcL{size_t}0ENS_15CrashOnOverflowEEERS2_NS_18Base64DecodePolicyE@Base 5.2.0
  _ZN3WTF12base64EncodeEPKcjNS_18Base64EncodePolicyE@Base 5.0.2
- _ZN3WTF12base64EncodeEPKcjRNS_6VectorIcLm0ENS_15CrashOnOverflowEEENS_18Base64EncodePolicyE@Base 5.2.0
+ (subst)_ZN3WTF12base64EncodeEPKcjRNS_6VectorIcL{size_t}0ENS_15CrashOnOverflowEEENS_18Base64EncodePolicyE@Base 5.2.0
  _ZN3WTF12createThreadEPFvPvES0_PKc@Base 5.0.2
  _ZN3WTF12detachThreadEj@Base 5.0.2
  _ZN3WTF12equalNonNullEPKNS_10StringImplES2_@Base 5.2.0
  _ZN3WTF12isMainThreadEv@Base 5.0.2
  _ZN3WTF12randomNumberEv@Base 5.0.2
- _ZN3WTF13MetaAllocator17addFreshFreeSpaceEPvm@Base 5.2.0
+ (subst)_ZN3WTF13MetaAllocator17addFreshFreeSpaceEPv{size_t}@Base 5.2.0
  _ZN3WTF13MetaAllocator17freeFreeSpaceNodeEPNS0_13FreeSpaceNodeE@Base 5.0.2
  _ZN3WTF13MetaAllocator18debugFreeSpaceSizeEv@Base 5.0.2
- _ZN3WTF13MetaAllocator8allocateEmPv@Base 5.2.0
- _ZN3WTF13MetaAllocatorC1Emm@Base 5.2.0
- _ZN3WTF13MetaAllocatorC2Emm@Base 5.2.0
+ (subst)_ZN3WTF13MetaAllocator8allocateE{size_t}Pv@Base 5.2.0
+ (subst)_ZN3WTF13MetaAllocatorC1E{size_t}{size_t}@Base 5.2.0
+ (subst)_ZN3WTF13MetaAllocatorC2E{size_t}{size_t}@Base 5.2.0
  _ZN3WTF13MetaAllocatorD0Ev@Base 5.0.2
  _ZN3WTF13MetaAllocatorD1Ev@Base 5.0.2
  _ZN3WTF13MetaAllocatorD2Ev@Base 5.0.2
@@ -2365,13 +2365,13 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF13printInternalERNS_11PrintStreamEm@Base 5.2.0
  _ZN3WTF13printInternalERNS_11PrintStreamEx@Base 5.2.0
  _ZN3WTF13printInternalERNS_11PrintStreamEy@Base 5.2.0
- _ZN3WTF13tryFastCallocEmm@Base 5.2.0
- _ZN3WTF13tryFastMallocEm@Base 5.2.0
+ (subst)_ZN3WTF13tryFastCallocE{size_t}{size_t}@Base 5.2.0
+ (subst)_ZN3WTF13tryFastMallocE{size_t}@Base 5.2.0
  _ZN3WTF14currentCPUTimeEv@Base 5.2.0
  _ZN3WTF14dataLogFStringEPKc@Base 5.0.2
  _ZN3WTF14fastMallocSizeEPKv@Base 5.0.2
  _ZN3WTF14numberToStringEdPc@Base 5.0.2
- _ZN3WTF14tryFastReallocEPvm@Base 5.2.0
+ (subst)_ZN3WTF14tryFastReallocEPv{size_t}@Base 5.2.0
  _ZN3WTF15ArrayBufferView6neuterEv@Base 5.0.2
  _ZN3WTF15ArrayBufferViewC1ENS_10PassRefPtrINS_11ArrayBufferEEEj@Base 5.0.2
  _ZN3WTF15ArrayBufferViewC2ENS_10PassRefPtrINS_11ArrayBufferEEEj@Base 5.0.2
@@ -2393,12 +2393,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF15ThreadConditionC2Ev@Base 5.0.2
  _ZN3WTF15ThreadConditionD1Ev@Base 5.0.2
  _ZN3WTF15ThreadConditionD2Ev@Base 5.0.2
- _ZN3WTF15charactersToIntEPKtmPb@Base 5.2.0
+ (subst)_ZN3WTF15charactersToIntEPKt{size_t}Pb@Base 5.2.0
  _ZN3WTF16callOnMainThreadEPFvPvES0_@Base 5.0.2
  _ZN3WTF16callOnMainThreadERKNS_8FunctionIFvvEEE@Base 5.0.2
  _ZN3WTF16codePointCompareERKNS_6StringES2_@Base 5.0.2
  _ZN3WTF16currentCPUTimeMSEv@Base 5.2.0
- _ZN3WTF16fastZeroedMallocEm@Base 5.2.0
+ (subst)_ZN3WTF16fastZeroedMallocE{size_t}@Base 5.2.0
  _ZN3WTF17GregorianDateTime21setToCurrentLocalTimeEv@Base 5.0.2
  _ZN3WTF17StringPrintStream5resetEv@Base 5.2.0
  _ZN3WTF17StringPrintStream8toStringEv@Base 5.2.0
@@ -2408,12 +2408,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF17StringPrintStreamD0Ev@Base 5.2.0
  _ZN3WTF17StringPrintStreamD1Ev@Base 5.2.0
  _ZN3WTF17StringPrintStreamD2Ev@Base 5.2.0
- _ZN3WTF17charactersToFloatEPKhmRm@Base 5.2.0
- _ZN3WTF17charactersToFloatEPKtmPb@Base 5.2.0
- _ZN3WTF17charactersToFloatEPKtmRm@Base 5.2.0
+ (subst)_ZN3WTF17charactersToFloatEPKh{size_t}R{size_t}@Base 5.2.0
+ (subst)_ZN3WTF17charactersToFloatEPKt{size_t}Pb@Base 5.2.0
+ (subst)_ZN3WTF17charactersToFloatEPKt{size_t}R{size_t}@Base 5.2.0
  _ZN3WTF17double_conversion10initializeEv@Base 5.2.0
  _ZN3WTF17double_conversion23DoubleToStringConverter19EcmaScriptConverterEv@Base 5.2.0
- _ZN3WTF17double_conversion23StringToDoubleConverter14StringToDoubleEPKcmPm@Base 5.2.0
+ (subst)_ZN3WTF17double_conversion23StringToDoubleConverter14StringToDoubleEPKc{size_t}P{size_t}@Base 5.2.0
  _ZN3WTF17equalIgnoringCaseEPKNS_10StringImplEPKh@Base 5.2.0
  _ZN3WTF17equalIgnoringCaseEPKNS_10StringImplES2_@Base 5.2.0
  _ZN3WTF17equalIgnoringCaseEPKhS1_j@Base 5.0.2
@@ -2423,23 +2423,23 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF18FunctionDispatcherD0Ev@Base 5.2.0
  _ZN3WTF18FunctionDispatcherD1Ev@Base 5.2.0
  _ZN3WTF18FunctionDispatcherD2Ev@Base 5.2.0
- _ZN3WTF18charactersToDoubleEPKhmPb@Base 5.2.0
- _ZN3WTF18charactersToDoubleEPKtmPb@Base 5.2.0
+ (subst)_ZN3WTF18charactersToDoubleEPKh{size_t}Pb@Base 5.2.0
+ (subst)_ZN3WTF18charactersToDoubleEPKt{size_t}Pb@Base 5.2.0
  _ZN3WTF18dateToDaysFrom1970Eiii@Base 5.0.2
- _ZN3WTF18fastMallocGoodSizeEm@Base 5.2.0
+ (subst)_ZN3WTF18fastMallocGoodSizeE{size_t}@Base 5.2.0
  _ZN3WTF18monthFromDayInYearEib@Base 5.0.2
- _ZN3WTF19MetaAllocatorHandle6shrinkEm@Base 5.2.0
+ (subst)_ZN3WTF19MetaAllocatorHandle6shrinkE{size_t}@Base 5.2.0
  _ZN3WTF19MetaAllocatorHandleD1Ev@Base 5.0.2
  _ZN3WTF19MetaAllocatorHandleD2Ev@Base 5.0.2
  _ZN3WTF19ParallelEnvironment7executeEPv@Base 5.0.2
- _ZN3WTF19ParallelEnvironmentC1EPFvPvEmi@Base 5.2.0
- _ZN3WTF19ParallelEnvironmentC2EPFvPvEmi@Base 5.2.0
+ (subst)_ZN3WTF19ParallelEnvironmentC1EPFvPvE{size_t}i@Base 5.2.0
+ (subst)_ZN3WTF19ParallelEnvironmentC2EPFvPvE{size_t}i@Base 5.2.0
  _ZN3WTF19initializeThreadingEv@Base 5.0.2
  _ZN3WTF20equalIgnoringNullityEPNS_10StringImplES1_@Base 5.0.2
  _ZN3WTF20fastMallocStatisticsEv@Base 5.0.2
  _ZN3WTF20initializeMainThreadEv@Base 5.0.2
  _ZN3WTF21PageAllocationAligned10deallocateEv@Base 5.2.0
- _ZN3WTF21PageAllocationAligned8allocateEmmNS_11OSAllocator5UsageEb@Base 5.2.0
+ (subst)_ZN3WTF21PageAllocationAligned8allocateE{size_t}{size_t}NS_11OSAllocator5UsageEb@Base 5.2.0
  _ZN3WTF21RefCountedLeakCounter16suppressMessagesEPKc@Base 5.0.2
  _ZN3WTF21RefCountedLeakCounter24cancelMessageSuppressionEPKc@Base 5.0.2
  _ZN3WTF21RefCountedLeakCounter9decrementEv@Base 5.0.2
@@ -2448,11 +2448,11 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF21RefCountedLeakCounterC2EPKc@Base 5.0.2
  _ZN3WTF21RefCountedLeakCounterD1Ev@Base 5.0.2
  _ZN3WTF21RefCountedLeakCounterD2Ev@Base 5.0.2
- _ZN3WTF21charactersToIntStrictEPKhmPbi@Base 5.2.0
- _ZN3WTF21charactersToIntStrictEPKtmPbi@Base 5.2.0
+ (subst)_ZN3WTF21charactersToIntStrictEPKh{size_t}Pbi@Base 5.2.0
+ (subst)_ZN3WTF21charactersToIntStrictEPKt{size_t}Pbi@Base 5.2.0
  _ZN3WTF22cancelCallOnMainThreadEPFvPvES0_@Base 5.0.2
- _ZN3WTF22charactersToUIntStrictEPKhmPbi@Base 5.2.0
- _ZN3WTF22charactersToUIntStrictEPKtmPbi@Base 5.2.0
+ (subst)_ZN3WTF22charactersToUIntStrictEPKh{size_t}Pbi@Base 5.2.0
+ (subst)_ZN3WTF22charactersToUIntStrictEPKt{size_t}Pbi@Base 5.2.0
  _ZN3WTF22isMainThreadOrGCThreadEv@Base 5.2.0
  _ZN3WTF23callOnMainThreadAndWaitEPFvPvES0_@Base 5.0.2
  _ZN3WTF23dayInMonthFromDayInYearEib@Base 5.0.2
@@ -2465,21 +2465,21 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF28numberToFixedPrecisionStringEdjPcb@Base 5.0.2
  _ZN3WTF28setMainThreadCallbacksPausedEb@Base 5.0.2
  _ZN3WTF29cryptographicallyRandomNumberEv@Base 5.0.2
- _ZN3WTF29cryptographicallyRandomValuesEPvm@Base 5.2.0
+ (subst)_ZN3WTF29cryptographicallyRandomValuesEPv{size_t}@Base 5.2.0
  _ZN3WTF36lockAtomicallyInitializedStaticMutexEv@Base 5.0.2
  _ZN3WTF37parseDateFromNullTerminatedCharactersEPKc@Base 5.0.2
  _ZN3WTF37parseDateFromNullTerminatedCharactersEPKcRbRi@Base 5.2.0
  _ZN3WTF38unlockAtomicallyInitializedStaticMutexEv@Base 5.0.2
- _ZN3WTF3MD58addBytesEPKhm@Base 5.2.0
- _ZN3WTF3MD58checksumERNS_6VectorIhLm16ENS_15CrashOnOverflowEEE@Base 5.2.0
+ (subst)_ZN3WTF3MD58addBytesEPKh{size_t}@Base 5.2.0
+ (subst)_ZN3WTF3MD58checksumERNS_6VectorIhL{size_t}16ENS_15CrashOnOverflowEEE@Base 5.2.0
  _ZN3WTF3MD5C1Ev@Base 5.0.2
  _ZN3WTF3MD5C2Ev@Base 5.0.2
  _ZN3WTF3absERKNS_9MediaTimeE@Base 5.0.2
  _ZN3WTF40parseES5DateFromNullTerminatedCharactersEPKc@Base 5.2.0
- _ZN3WTF4SHA111computeHashERNS_6VectorIhLm20ENS_15CrashOnOverflowEEE@Base 5.2.0
+ (subst)_ZN3WTF4SHA111computeHashERNS_6VectorIhL{size_t}20ENS_15CrashOnOverflowEEE@Base 5.2.0
  _ZN3WTF4SHA116computeHexDigestEv@Base 5.0.2
- _ZN3WTF4SHA18addBytesEPKhm@Base 5.2.0
- _ZN3WTF4SHA19hexDigestERKNS_6VectorIhLm20ENS_15CrashOnOverflowEEE@Base 5.2.0
+ (subst)_ZN3WTF4SHA18addBytesEPKh{size_t}@Base 5.2.0
+ (subst)_ZN3WTF4SHA19hexDigestERKNS_6VectorIhL{size_t}20ENS_15CrashOnOverflowEEE@Base 5.2.0
  _ZN3WTF4SHA1C1Ev@Base 5.0.2
  _ZN3WTF4SHA1C2Ev@Base 5.0.2
  _ZN3WTF4dtoaEPcdRbRiRj@Base 5.0.2
@@ -2495,11 +2495,11 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF5equalEPKNS_10StringImplEPKtj@Base 5.0.2
  _ZN3WTF5equalEPKNS_10StringImplES2_@Base 5.0.2
  _ZN3WTF5yieldEv@Base 5.0.2
- _ZN3WTF6String23make16BitFrom8BitSourceEPKhm@Base 5.2.0
- _ZN3WTF6String23make8BitFrom16BitSourceEPKtm@Base 5.2.0
+ (subst)_ZN3WTF6String23make16BitFrom8BitSourceEPKh{size_t}@Base 5.2.0
+ (subst)_ZN3WTF6String23make8BitFrom16BitSourceEPKt{size_t}@Base 5.2.0
  _ZN3WTF6String24numberToStringECMAScriptEd@Base 5.0.2
  _ZN3WTF6String24numberToStringFixedWidthEdj@Base 5.0.2
- _ZN3WTF6String26fromUTF8WithLatin1FallbackEPKhm@Base 5.2.0
+ (subst)_ZN3WTF6String26fromUTF8WithLatin1FallbackEPKh{size_t}@Base 5.2.0
  _ZN3WTF6String39deprecatedCharactersWithNullTerminationEv@Base 5.2.0
  _ZN3WTF6String6appendEPKhj@Base 5.0.2
  _ZN3WTF6String6appendEPKtj@Base 5.0.2
@@ -2517,7 +2517,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF6String6numberEy@Base 5.0.2
  _ZN3WTF6String6removeEji@Base 5.0.2
  _ZN3WTF6String8fromUTF8EPKh@Base 5.0.2
- _ZN3WTF6String8fromUTF8EPKhm@Base 5.2.0
+ (subst)_ZN3WTF6String8fromUTF8EPKh{size_t}@Base 5.2.0
  _ZN3WTF6String8fromUTF8ERKNS_7CStringE@Base 5.2.0
  _ZN3WTF6String8truncateEj@Base 5.0.2
  _ZN3WTF6StringC1ENS_12ASCIILiteralE@Base 5.0.2
@@ -2539,11 +2539,11 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF6StringC2ERK10QStringRef@Base 5.0.2
  _ZN3WTF6StringC2ERK7QString@Base 5.0.2
  _ZN3WTF7CString11mutableDataEv@Base 5.0.2
- _ZN3WTF7CString16newUninitializedEmRPc@Base 5.2.0
+ (subst)_ZN3WTF7CString16newUninitializedE{size_t}RPc@Base 5.2.0
  _ZN3WTF7CStringC1EPKc@Base 5.0.2
- _ZN3WTF7CStringC1EPKcm@Base 5.2.0
+ (subst)_ZN3WTF7CStringC1EPKc{size_t}@Base 5.2.0
  _ZN3WTF7CStringC2EPKc@Base 5.0.2
- _ZN3WTF7CStringC2EPKcm@Base 5.2.0
+ (subst)_ZN3WTF7CStringC2EPKc{size_t}@Base 5.2.0
  _ZN3WTF7Unicode18UTF8SequenceLengthEc@Base 5.2.0
  _ZN3WTF7Unicode18convertUTF16ToUTF8EPPKtS2_PPcS4_b@Base 5.0.2
  _ZN3WTF7Unicode18convertUTF8ToUTF16EPPKcS2_PPtS4_Pbb@Base 5.0.2
@@ -2560,7 +2560,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF8CollatorD1Ev@Base 5.0.2
  _ZN3WTF8CollatorD2Ev@Base 5.0.2
  _ZN3WTF8Internal21fastMallocMatchFailedEPv@Base 5.0.2
- _ZN3WTF8Internal25parseDoubleFromLongStringEPKtmRm@Base 5.2.0
+ (subst)_ZN3WTF8Internal25parseDoubleFromLongStringEPKt{size_t}R{size_t}@Base 5.2.0
  _ZN3WTF8dataFileEv@Base 5.0.2
  _ZN3WTF8dataLogFEPKcz@Base 5.0.2
  _ZN3WTF8fastFreeEPv@Base 5.0.2
@@ -2572,10 +2572,10 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF8starAtomE@Base 5.0.2
  _ZN3WTF8textAtomE@Base 5.0.2
  _ZN3WTF8timeClipEd@Base 5.2.0
- _ZN3WTF9BitVector13OutOfLineBits6createEm@Base 5.2.0
+ (subst)_ZN3WTF9BitVector13OutOfLineBits6createE{size_t}@Base 5.2.0
  _ZN3WTF9BitVector13OutOfLineBits7destroyEPS1_@Base 5.0.2
- _ZN3WTF9BitVector15resizeOutOfLineEm@Base 5.2.0
- _ZN3WTF9BitVector6resizeEm@Base 5.2.0
+ (subst)_ZN3WTF9BitVector15resizeOutOfLineE{size_t}@Base 5.2.0
+ (subst)_ZN3WTF9BitVector6resizeE{size_t}@Base 5.2.0
  _ZN3WTF9BitVector7setSlowERKS0_@Base 5.0.2
  _ZN3WTF9BitVector8clearAllEv@Base 5.0.2
  _ZN3WTF9MediaTime11invalidTimeEv@Base 5.0.2
@@ -2607,8 +2607,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3WTF9xmlnsAtomE@Base 5.0.2
  _ZN3WTFeqERKNS_7CStringEPKc@Base 5.2.0
  _ZN3WTFeqERKNS_7CStringES2_@Base 5.0.2
- (arch=i386)_ZN6QRectFC1ERK5QRect@Base 5.0.2
- (arch=i386)_ZN6QRectFC2ERK5QRect@Base 5.0.2
  _ZN6WebKit16WebProcessMainQtEP15QGuiApplication@Base 5.0.2
  _ZN6WebKit17PluginProcessMainEiPPc@Base 5.0.2
  _ZN6WebKit18initializeWebKitQtEv@Base 5.0.2
@@ -2894,7 +2892,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK25QQuickWebViewExperimental9userAgentEv@Base 5.0.2
  _ZNK3JSC10JSFunction10sourceCodeEv@Base 5.0.2
  _ZNK3JSC10JSFunction23isHostFunctionNonInlineEv@Base 5.0.2
- _ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiRlRN3WTF6StringERNS_7JSValueE@Base 5.2.0
+ (arch=amd64)_ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiRlRN3WTF6StringERNS_7JSValueE@Base 5.2.0
  (arch=!amd64)_ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiS3_RN3WTF6StringERNS_7JSValueE@Base 5.0.2
  _ZNK3JSC12JSRopeString11resolveRopeEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC12PropertySlot14functionGetterEPNS_9ExecStateE@Base 5.0.2
@@ -2967,8 +2965,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK3WTF6String4utf8ENS0_14ConversionModeE@Base 5.0.2
  _ZNK3WTF6String5asciiEv@Base 5.0.2
  _ZNK3WTF6String5lowerEv@Base 5.0.2
- _ZNK3WTF6String5splitERKS0_bRNS_6VectorIS0_Lm0ENS_15CrashOnOverflowEEE@Base 5.2.0
- _ZNK3WTF6String5splitEtbRNS_6VectorIS0_Lm0ENS_15CrashOnOverflowEEE@Base 5.2.0
+ (subst)_ZNK3WTF6String5splitERKS0_bRNS_6VectorIS0_L{size_t}0ENS_15CrashOnOverflowEEE@Base 5.2.0
+ (subst)_ZNK3WTF6String5splitEtbRNS_6VectorIS0_L{size_t}0ENS_15CrashOnOverflowEEE@Base 5.2.0
  _ZNK3WTF6String5toIntEPb@Base 5.0.2
  _ZNK3WTF6String5upperEv@Base 5.0.2
  _ZNK3WTF6String6latin1Ev@Base 5.0.2
@@ -2980,7 +2978,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK3WTF6String8toUInt64EPb@Base 5.0.2
  _ZNK3WTF6String9substringEjj@Base 5.0.2
  _ZNK3WTF6Stringcv7QStringEv@Base 5.0.2
- _ZNK3WTF8Collator7collateEPKtmS2_m@Base 5.2.0
+ (subst)_ZNK3WTF8Collator7collateEPKt{size_t}S2_{size_t}@Base 5.2.0
  _ZNK3WTF9MediaTime7compareERKS0_@Base 5.0.2
  _ZNK3WTF9MediaTime7toFloatEv@Base 5.0.2
  _ZNK3WTF9MediaTime8toDoubleEv@Base 5.0.2
@@ -3002,35 +3000,37 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE19_M_emplace_back_auxIJS9_EEEvDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIIiEEEvDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIJiEEEvDpOT_@Base 5.2.0
- (optional=templinst|arch=armhf i386)_ZNSt6vectorIiSaIiEE7reserveEj@Base 5.0.2
- (optional=templinst)_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EEmRKj@Base 5.2.0
- (optional=templinst)_ZNSt6vectorImSaImEE19_M_emplace_back_auxIIRKmEEEvDpOT_@Base 5.2.0
- (optional=templinst)_ZNSt6vectorImSaImEE19_M_emplace_back_auxIImEEEvDpOT_@Base 5.2.0
- (optional=templinst)_ZNSt6vectorImSaImEE19_M_emplace_back_auxIJRKmEEEvDpOT_@Base 5.2.0
- (optional=templinst)_ZNSt6vectorImSaImEE19_M_emplace_back_auxIJmEEEvDpOT_@Base 5.2.0
- (optional=templinst)_ZNSt6vectorImSaImEE7reserveEm@Base 5.2.0
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 5.0.2
+ (optional=templinst|subst)_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EE{size_t}RKj@Base 5.2.0
+ (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxIIRK{size_t}EEEvDpOT_@Base 5.2.0
+ (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxII{size_t}EEEvDpOT_@Base 5.2.0
+ (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxIJRK{size_t}EEEvDpOT_@Base 5.2.0
+ (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxIJ{size_t}EEEvDpOT_@Base 5.2.0
+ (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE7reserveE{size_t}@Base 5.2.0
+ (optional=templinst|arch=i386)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIRS2_EESF_IIEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_@Base 5.2.0
+ (optional=templinst|arch=i386)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS2_EESF_IJEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE24_M_get_insert_unique_posERS2_@Base 5.0.2
- (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS2_@Base 5.2.0
+ (optional=templinst|arch=amd64)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS2_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 5.0.2
- (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS3_ERKS3_@Base 5.0.2
+ (optional=templinst|arch=i386)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOSsEESE_IIEEEEESt17_Rb_tree_iteratorIS3_ESt23_Rb_tree_const_iteratorIS3_EDpOT_@Base 5.2.0
+ (optional=templinst|arch=i386)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOSsEESE_IJEEEEESt17_Rb_tree_iteratorIS3_ESt23_Rb_tree_const_iteratorIS3_EDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE24_M_get_insert_unique_posERS1_@Base 5.0.2
- (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS3_ERS1_@Base 5.2.0
- (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 5.2.0
+ (optional=templinst|arch=amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS3_ERS1_@Base 5.2.0
+ (optional=templinst|arch=amd64)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E@Base 5.0.2
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOSsEESD_IIEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOSsEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE24_M_get_insert_unique_posERS1_@Base 5.2.0
- (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_@Base 5.2.0
+ (optional=templinst|arch=amd64)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 5.0.2
- (optional=templinst)_ZSt13__adjust_heapIPiliEvT_T0_S2_T1_@Base 5.2.0
- (optional=templinst)_ZSt13__adjust_heapIPjljEvT_T0_S2_T1_@Base 5.2.0
+ (optional=templinst|subst)_ZSt13__adjust_heapIPi{ssize_t}iEvT_T0_S2_T1_@Base 5.2.0
+ (optional=templinst|subst)_ZSt13__adjust_heapIPj{ssize_t}jEvT_T0_S2_T1_@Base 5.2.0
  (optional=templinst)_ZSt16__insertion_sortIPiEvT_S1_@Base 5.0.2
  (optional=templinst)_ZSt16__insertion_sortIPjEvT_S1_@Base 5.0.2
- (optional=templinst)_ZSt16__introsort_loopIPilEvT_S1_T0_@Base 5.2.0
- (optional=templinst)_ZSt16__introsort_loopIPjlEvT_S1_T0_@Base 5.2.0
+ (optional=templinst|subst)_ZSt16__introsort_loopIPi{ssize_t}EvT_S1_T0_@Base 5.2.0
+ (optional=templinst|subst)_ZSt16__introsort_loopIPj{ssize_t}EvT_S1_T0_@Base 5.2.0
  (optional=templinst)_ZSt3maxIfERKT_S2_S2_@Base 5.0.2
  (optional=templinst)_ZSt3minIfERKT_S2_S2_@Base 5.0.2
+ (optional=templinst|arch=i386)_ZSt4swapIN8QVariant7PrivateEEvRT_S3_@Base 5.2.0
  (optional=templinst)_ZSt6__findIN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEESsET_S8_S8_RKT0_St26random_access_iterator_tag@Base 5.0.2
  (optional=templinst)_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_@Base 5.0.2
  _ZTI11QWebKitTest@Base 5.0.2
