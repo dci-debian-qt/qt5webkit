@@ -1,0 +1,42 @@
+Description: disable JIT and llint on ia64, s390, sparc and mips
+Author: Dmitry Shachnev <mitya57@gmail.com>
+Forwarded: no
+Last-Update: 2014-01-05
+
+--- a/Source/JavaScriptCore/Target.pri
++++ b/Source/JavaScriptCore/Target.pri
+@@ -18,6 +18,11 @@
+ *-g++*:QMAKE_CXXFLAGS_RELEASE -= -O2
+ *-g++*:QMAKE_CXXFLAGS_RELEASE += -O3
+ 
++# Disable JIT and llint on some archs
++equals(QT_ARCH, ia64)|equals(QT_ARCH, s390)|equals(QT_ARCH, sparc)|equals(QT_ARCH, mips) {
++    DEFINES += ENABLE_JIT=0 ENABLE_LLINT=0
++}
++
+ # Rules when JIT enabled (not disabled)
+ !contains(DEFINES, ENABLE_JIT=0) {
+     linux*-g++*:greaterThan(QT_GCC_MAJOR_VERSION,3):greaterThan(QT_GCC_MINOR_VERSION,0) {
+--- a/Source/WTF/wtf/Platform.h
++++ b/Source/WTF/wtf/Platform.h
+@@ -741,9 +741,9 @@
+ #define ENABLE_JIT 1
+ #endif
+ 
+-/* The JIT is enabled by default on all x86, x86-64, ARM & MIPS platforms. */
++/* The JIT is enabled by default on all x86, x86-64 & ARM platforms. */
+ #if !defined(ENABLE_JIT) \
+-    && (CPU(X86) || CPU(X86_64) || CPU(ARM) || CPU(MIPS)) \
++    && (CPU(X86) || CPU(X86_64) || CPU(ARM)) \
+     && (OS(DARWIN) || !COMPILER(GCC) || GCC_VERSION_AT_LEAST(4, 1, 0)) \
+     && !OS(WINCE) \
+     && !(OS(QNX) && !PLATFORM(QT)) /* We use JIT in QNX Qt */
+@@ -777,7 +777,7 @@
+     && ENABLE(JIT) \
+     && (OS(DARWIN) || OS(LINUX)) \
+     && (PLATFORM(MAC) || PLATFORM(IOS) || PLATFORM(GTK) || PLATFORM(QT)) \
+-    && (CPU(X86) || CPU(X86_64) || CPU(ARM_THUMB2) || CPU(ARM_TRADITIONAL) || CPU(MIPS) || CPU(SH4))
++    && (CPU(X86) || CPU(X86_64) || CPU(ARM_THUMB2) || CPU(ARM_TRADITIONAL) || CPU(SH4))
+ #define ENABLE_LLINT 1
+ #endif
+ 
