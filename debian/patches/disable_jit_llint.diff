@@ -11,7 +11,7 @@ Last-Update: 2014-01-05
  
 +# Disable JIT and llint on archs where it FTBFS.
 +equals(QT_ARCH, ia64)|equals(QT_ARCH, s390)|equals(QT_ARCH, sparc) {
-+    DEFINES -= ENABLE_JIT=1 ENABLE_LLINT=1
++    DEFINES -= ENABLE_JIT ENABLE_LLINT
 +    DEFINES += ENABLE_JIT=0 ENABLE_LLINT=0
 +}
 +
