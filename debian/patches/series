@@ -5,3 +5,4 @@ no_gc_sections.diff
 hurd.diff
 webkit_qt_hide_symbols.diff
 disable_jit_llint.diff
+glslang_bison3.diff

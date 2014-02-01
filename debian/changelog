@@ -30,6 +30,14 @@ qtwebkit-opensource-src (5.2.0+dfsg-1) experimental; urgency=low
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 18 Dec 2013 20:56:37 -0300
 
+qtwebkit-opensource-src (5.1.1-2) unstable; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Backport upstream patch (glslang_bison3.diff) to fix build failure
+    with bison 3 (closes: #731979).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 22 Dec 2013 16:35:23 -0300
+
 qtwebkit-opensource-src (5.1.1-1) unstable; urgency=low
 
   * New upstream release.
