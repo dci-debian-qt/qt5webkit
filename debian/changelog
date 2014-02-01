@@ -6,6 +6,8 @@ qtwebkit-opensource-src (5.2.0+dfsg-3) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove glslang_bison3.diff, applied upstream.
+  * Move mkspec files to their new location.
+    - B-D on qtbase5-private-dev 5.2.0+dfsg-7 which changed the location.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jan 2014 22:35:45 +0400
 
