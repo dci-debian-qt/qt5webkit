@@ -1,16 +1,17 @@
-qtwebkit-opensource-src (5.2.0+dfsg-3) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.2.0+dfsg-3) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Add a patch (disable_jit_llint.diff) to disable JIT and llint on ia64, s390
     and sparc.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Upload to unstable.
   * Remove glslang_bison3.diff, applied upstream.
   * Move mkspec files to their new location.
     - B-D on qtbase5-private-dev 5.2.0+dfsg-7 which changed the location.
   * Update Standards-Version to 3.9.5, no changes required.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jan 2014 22:35:45 +0400
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 31 Jan 2014 21:50:23 -0300
 
 qtwebkit-opensource-src (5.2.0+dfsg-2) experimental; urgency=medium
 
