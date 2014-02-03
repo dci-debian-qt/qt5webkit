@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.2.0+dfsg1-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.2.0+dfsg1-1) unstable; urgency=medium
 
   [ Pino Toscano ]
   * rules: fix typo in DEB_CPPFLAGS_MAINT_APPEND, and properly export it.
@@ -9,7 +9,7 @@ qtwebkit-opensource-src (5.2.0+dfsg1-1) UNRELEASED; urgency=medium
     The file was not shipped by any package (Closes: #737462).
     - Switch to version dfsg1-1.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Feb 2014 08:50:42 +0100
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 02 Feb 2014 23:02:51 -0300
 
 qtwebkit-opensource-src (5.2.0+dfsg-3) unstable; urgency=medium
 
