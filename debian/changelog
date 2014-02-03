@@ -6,6 +6,7 @@ qtwebkit-opensource-src (5.2.0+dfsg1-1) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Repack source tarball to remove minified javascript without source
     Source/WebInspectorUI/Tools/PrettyPrinting/populate/jquery.min.js.
+    The file was not shipped by any package.
     - Switch to version dfsg1-1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Feb 2014 08:50:42 +0100
