@@ -1,9 +1,5 @@
 qtwebkit-opensource-src (5.2.0+dfsg1-1r1) UNRELEASED; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Backport reduce_memory_footprint.patch. This patch reduces memory footprint
-    when linking by forcing GCC 4.8+ to fully use DWARF-4 debug-types sections.
-
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Feb 2014 18:03:45 -0300
 
 qtwebkit-opensource-src (5.2.0+dfsg1-1) unstable; urgency=medium
