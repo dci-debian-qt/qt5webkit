@@ -1,6 +1,7 @@
-qtwebkit-opensource-src (5.2.0+dfsg1-2) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.2.1+dfsg1-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
   * Backport reduce_memory_footprint.patch. This patch reduces memory footprint
     when linking by forcing GCC 4.8+ to fully use DWARF-4 debug-types sections.
 
