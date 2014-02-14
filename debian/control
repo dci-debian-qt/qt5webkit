@@ -124,7 +124,9 @@ Priority: extra
 Architecture: any
 Multi-Arch: same
 Section: debug
-Depends: libqt5webkitwidgets5 (= ${binary:Version}), ${misc:Depends}
+Depends: libqt5webkit5-dbg (= ${binary:Version}),
+         libqt5webkitwidgets5 (= ${binary:Version}),
+         ${misc:Depends}
 Description: Web content engine library for Qt - debugging symbols
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
