@@ -7,6 +7,7 @@ qtwebkit-opensource-src (5.2.1+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files with buildd's logs.
   * Split libqt5webkitwidgets5 out of libqt5webkit5. This will need a transition,
     but it will hopefully make our lifes easier to maintain them.
+  * Bump Qt build dependencies to 5.2.1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Feb 2014 18:03:45 -0300
 
