@@ -2,8 +2,6 @@ qtwebkit-opensource-src (5.2.1+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
-  * Backport reduce_memory_footprint.patch. This patch reduces memory footprint
-    when linking by forcing GCC 4.8+ to fully use DWARF-4 debug-types sections.
   * Update symbols files with buildd's logs.
   * Split libqt5webkitwidgets5 out of libqt5webkit5. This will need a transition,
     but it will hopefully make our lifes easier to maintain them.
