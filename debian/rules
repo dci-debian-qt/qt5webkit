@@ -31,7 +31,7 @@ ifneq (,$(filter $(DEB_BUILD_ARCH),alpha hppa ia64 powerpc ppc64 sparc sparc64 s
 endif
 
 %:
-	dh $@ --parallel --with pkgkde_symbolshelper
+	dh $@ --parallel --dbg-package=libqt5webkit5-dbg --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
 	qmake
@@ -71,10 +71,6 @@ override_dh_auto_install-indep:
 
 override_dh_install:
 	dh_install --fail-missing
-
-override_dh_strip:
-	dh_strip -plibqt5webkitwidgets5 --dbg-package=libqt5webkitwidgets5-dbg
-	dh_strip --remaining-packages --dbg-package=libqt5webkit5-dbg
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
