@@ -24,12 +24,6 @@ ifneq (,$(filter $(DEB_HOST_ARCH),alpha))
     export DEB_LDFLAGS_MAINT_APPEND := -Wl,--no-relax
 endif
 
-# Workaround FTBFS in 64 bits big endian archs.
-# See https://bugs.webkit.org/show_bug.cgi?id=113638
-ifneq (,$(filter $(DEB_BUILD_ARCH),alpha hppa ia64 powerpc ppc64 sparc sparc64 s390 s390x))
-    export DEB_CPPFLAGS_MAINT_APPEND += -DENABLE_JIT=0 -DENABLE_YARR_JIT=0 -DENABLE_ASSEMBLER=0
-endif
-
 %:
 	dh $@ --parallel --dbg-package=libqt5webkit5-dbg --with pkgkde_symbolshelper
 
