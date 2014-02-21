@@ -1,3 +1,6 @@
+# Upstream patches
+fix_ftbfs_in_archs_without_jit_support.patch
+
 # debian patches
 05_sparc_unaligned_access.diff
 stabs_format_debug_info.diff

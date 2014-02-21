@@ -1,5 +1,9 @@
 qtwebkit-opensource-src (5.2.1+dfsg-2) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport fix_ftbfs_in_archs_without_jit_support.patch to fix FTBFSs in
+    archs without JIT support.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 21 Feb 2014 13:21:40 -0300
 
 qtwebkit-opensource-src (5.2.1+dfsg-1) experimental; urgency=medium
