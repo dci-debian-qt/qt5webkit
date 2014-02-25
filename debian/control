@@ -82,7 +82,7 @@ Description: Qt WebKit QML plugin
 
 Package: libqt5webkit5-dbg
 Priority: extra
-Architecture: any
+Architecture: amd64 i386 powerpc s390x
 Multi-Arch: same
 Section: debug
 Depends: libqt5webkit5 (= ${binary:Version}), ${misc:Depends}

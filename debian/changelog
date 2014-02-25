@@ -5,6 +5,7 @@ qtwebkit-opensource-src (5.2.1+dfsg-3) UNRELEASED; urgency=medium
   * Only generate debugging symbols on selected archs.
     - Use gstabs on i386, powerpc and s390x.
     - Use full debugging only on amd64.
+    - Set libqt5webkit5-dbg's Architecture list accordingly.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 24 Feb 2014 23:37:15 -0300
 
