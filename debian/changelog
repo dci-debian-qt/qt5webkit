@@ -1,3 +1,7 @@
+qtwebkit-opensource-src (5.2.1+dfsg-3) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 24 Feb 2014 23:37:15 -0300
+
 qtwebkit-opensource-src (5.2.1+dfsg-2) experimental; urgency=medium
 
   * Backport fix_ftbfs_in_archs_without_jit_support.patch to fix FTBFSs in
