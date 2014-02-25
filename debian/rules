@@ -12,22 +12,30 @@ DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 DEB_BUILD_ARCH ?= $(shell dpkg-architecture -qDEB_BUILD_ARCH)
 
-# Filter -g from environment on troublesome arches. Replace it with -gstabs
-# See also: stabs_format_debug_info.diff
-ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel armhf mips mipsel m68k))
-    export DEB_CFLAGS_MAINT_STRIP := -g
-    export DEB_CFLAGS_MAINT_APPEND := -gstabs
-    export DEB_CXXFLAGS_MAINT_STRIP := -g
-    export DEB_CXXFLAGS_MAINT_APPEND := -gstabs
-endif
-ifneq (,$(filter $(DEB_HOST_ARCH),alpha))
-    export DEB_LDFLAGS_MAINT_APPEND := -Wl,--no-relax
-endif
+gstab_architectures := i386 powerpc s390x
+fulldebug_architectures := amd64
 
 %:
 	dh $@ --parallel --dbg-package=libqt5webkit5-dbg --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
+	# Run qmake once to create .qmake.conf and be sure to append the following values.
+	qmake
+
+# Enable gstabs debugging symbols only on gstab_architectures.
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(gstab_architectures)))
+	echo "QMAKE_CXXFLAGS -= -g" >> .qmake.conf
+	echo "QMAKE_CXXFLAGS += -gstabs" >> .qmake.conf
+# Enable normal debugging symbols only on fulldebug_architectures.
+else ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(fulldebug_architectures)))
+	echo "QMAKE_CXXFLAGS += -g" >> .qmake.conf
+else
+# Disable debugging symbols in all the other archs.
+	echo "QMAKE_CXXFLAGS -= -g" >> .qmake.conf
+	echo "QMAKE_CXXFLAGS -= -gstabs" >> .qmake.conf
+endif
+
+	# Run qmake again now with the proper values.
 	qmake
 
 override_dh_auto_build-arch:
