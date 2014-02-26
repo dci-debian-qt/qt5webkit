@@ -1,6 +1,5 @@
-qtwebkit-opensource-src (5.2.1+dfsg-3) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.2.1+dfsg-3) experimental; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Update symbols files with buildd's and current logs.
   * Only generate debugging symbols on selected archs.
     - Use gstabs on i386, powerpc and s390x.
@@ -8,7 +7,7 @@ qtwebkit-opensource-src (5.2.1+dfsg-3) UNRELEASED; urgency=medium
     - Set libqt5webkit5-dbg's Architecture list accordingly.
     - Remove stabs_format_debug_info.diff, no longer needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 24 Feb 2014 23:37:15 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 25 Feb 2014 21:51:37 -0300
 
 qtwebkit-opensource-src (5.2.1+dfsg-2) experimental; urgency=medium
 
