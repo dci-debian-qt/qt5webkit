@@ -3,6 +3,9 @@ qtwebkit-opensource-src (5.2.1+dfsg-4) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Backport dont_pollute_pri_and_pc_with_private_deps.patch to avoid
     propagating wrong linker flags (Closes: #711307).
+  * Create reduce_memory_usage.patch forcing ld to not cache the symbol tables
+    of input files in memory to avoid memory exhaustion during the linking
+    phase.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 05 Mar 2014 12:13:03 -0300
 

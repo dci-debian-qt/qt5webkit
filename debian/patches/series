@@ -3,6 +3,7 @@ fix_ftbfs_in_archs_without_jit_support.patch
 dont_pollute_pri_and_pc_with_private_deps.patch
 
 # debian patches
+reduce_memory_usage.patch
 05_sparc_unaligned_access.diff
 no_gc_sections.diff
 hurd.diff
