@@ -3,7 +3,7 @@ Description: force ld to not cache symbols tables.
  not be pushed upstream), forces ld to not cache the symbol tables of input
  files in memory to avoid memory exhaustion during the linking phase.
  .
- This might make linking slower but reducing the overall memory comsuption.
+ This might make linking slower but reducing the overall memory consumption.
 Author: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Forwarded: not-needed
 Last-Update: 2014-03-05
