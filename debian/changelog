@@ -1,5 +1,9 @@
 qtwebkit-opensource-src (5.2.1+dfsg-4) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport dont_pollute_pri_and_pc_with_private_deps.patch to avoid
+    propagating wrong linker flags (Closes: #711307).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 05 Mar 2014 12:13:03 -0300
 
 qtwebkit-opensource-src (5.2.1+dfsg-3) experimental; urgency=medium
