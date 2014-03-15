@@ -6,6 +6,7 @@ qtwebkit-opensource-src (5.2.1+dfsg-4) UNRELEASED; urgency=medium
   * Create reduce_memory_usage.patch forcing ld to not cache the symbol tables
     of input files in memory to avoid memory exhaustion during the linking
     phase.
+  * Disable JIT on armel, mips and mipsel.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 05 Mar 2014 12:13:03 -0300
 

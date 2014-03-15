@@ -14,6 +14,7 @@ DEB_BUILD_ARCH ?= $(shell dpkg-architecture -qDEB_BUILD_ARCH)
 
 gstab_architectures := i386 powerpc s390x
 fulldebug_architectures := amd64
+disabled_jit_architectures := armel mips mipsel
 
 %:
 	dh $@ --parallel --dbg-package=libqt5webkit5-dbg --with pkgkde_symbolshelper
@@ -33,6 +34,11 @@ else
 # Disable debugging symbols in all the other archs.
 	echo "QMAKE_CXXFLAGS -= -g" >> .qmake.conf
 	echo "QMAKE_CXXFLAGS -= -gstabs" >> .qmake.conf
+endif
+
+# Disable JIT on selected architectures
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(disabled_jit_architectures)))
+	echo "QMAKE_CXXFLAGS += -DENABLE_JIT=0" >> .qmake.conf
 endif
 
 	# Run qmake again now with the proper values.
