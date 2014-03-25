@@ -1,3 +1,43 @@
+qtwebkit-opensource-src (5.2.1+dfsg-4) experimental; urgency=medium
+
+  * Backport dont_pollute_pri_and_pc_with_private_deps.patch to avoid
+    propagating wrong linker flags (Closes: #711307).
+  * Create reduce_memory_usage.patch forcing ld to not cache the symbol tables
+    of input files in memory to avoid memory exhaustion during the linking
+    phase.
+  * Disable JIT on armel, mips and mipsel.
+  * Update symbols files with buildd's logs.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 16 Mar 2014 11:27:03 -0300
+
+qtwebkit-opensource-src (5.2.1+dfsg-3) experimental; urgency=medium
+
+  * Update symbols files with buildd's and current logs.
+  * Only generate debugging symbols on selected archs.
+    - Use gstabs on i386, powerpc and s390x.
+    - Use full debugging only on amd64.
+    - Set libqt5webkit5-dbg's Architecture list accordingly.
+    - Remove stabs_format_debug_info.diff, no longer needed.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 25 Feb 2014 21:51:37 -0300
+
+qtwebkit-opensource-src (5.2.1+dfsg-2) experimental; urgency=medium
+
+  * Backport fix_ftbfs_in_archs_without_jit_support.patch to fix FTBFSs in
+    archs without JIT support.
+  * Remove code in debian/rules that tried to fix the above unsuccessfully.
+  * Also remove disable_jit_llint.diff with the same purpose.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 21 Feb 2014 13:29:40 -0300
+
+qtwebkit-opensource-src (5.2.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update symbols files with buildd's logs.
+  * Bump Qt build dependencies to 5.2.1.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 20 Feb 2014 20:42:53 -0300
+
 qtwebkit-opensource-src (5.2.0+dfsg1-1) unstable; urgency=medium
 
   [ Pino Toscano ]
