@@ -1,3 +1,7 @@
+qtwebkit-opensource-src (5.2.1+dfsg-5) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 24 Mar 2014 22:46:00 -0300
+
 qtwebkit-opensource-src (5.2.1+dfsg-4) experimental; urgency=medium
 
   * Backport dont_pollute_pri_and_pc_with_private_deps.patch to avoid
