@@ -70,15 +70,28 @@ Description: Web content engine library for Qt
  This package contains the QtWebKit libraries.
 
 Package: libqt5webkit5-qmlwebkitplugin
+Architecture: all
+Section: oldlibs
+Depends: ${misc:Depends}, qml-module-qtwebkit
+Description: transitional dummy package for Qt WebKit QML module
+ QtWebKit provides a Web browser engine that makes it easy to embed content
+ from the World Wide Web into your Qt application.
+ .
+ This is a transitional dummy package which can be safely removed.
+
+Package: qml-module-qtwebkit
 Architecture: any
 Multi-Arch: same
 Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Qt WebKit QML plugin
+Breaks: libqt5webkit5-qmlwebkitplugin (<< 5.2.1+dfsg-6~)
+Replaces: libqt5webkit5-qmlwebkitplugin (<< 5.2.1+dfsg-6~)
+Description: Qt WebKit QML module
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
  .
- This package contains the WebKit QML plugin for QtDeclarative.
+ This package contains the WebKit QML module for QtDeclarative.
+
 
 Package: libqt5webkit5-dbg
 Priority: extra
