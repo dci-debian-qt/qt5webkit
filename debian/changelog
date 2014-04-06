@@ -1,3 +1,7 @@
+qtwebkit-opensource-src (5.2.1+dfsg-6) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 10:04:08 -0300
+
 qtwebkit-opensource-src (5.2.1+dfsg-5) unstable; urgency=medium
 
   * Upload to unstable.
