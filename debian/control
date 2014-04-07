@@ -4,40 +4,39 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>,
            Timo Jyrinki <timo@debian.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
-Build-Depends: debhelper (>= 9.0.0),
+Build-Depends: bison,
+               chrpath,
+               debhelper (>= 9.0.0),
                flex,
-               bison,
                gperf,
-               python-minimal,
-               python2.7,
-               ruby,
-               libgstreamer0.10-dev, 
-               libgstreamer-plugins-base0.10-dev,
-               libicu-dev,
-               libsqlite3-dev,
-               libxml2-dev,
-               mesa-common-dev,
+               libfontconfig1-dev,
                libgl1-mesa-dev [!armel !armhf] | libgl-dev [!armel !armhf],
                libgles2-mesa-dev [armel armhf] | libgles2-dev [armel armhf],
                libglib2.0-dev,
                libglu1-mesa-dev [!armel !armhf] | libglu-dev [!armel !armhf],
+               libgstreamer-plugins-base0.10-dev,
+               libgstreamer0.10-dev,
+               libicu-dev,
+               libjpeg-dev,
+               libpng-dev,
+               libqt5opengl5-dev (>= 5.2.1+dfsg~),
+               libqt5xmlpatterns5-private-dev (>= 5.2.1~),
+               libsqlite3-dev,
+               libwebp-dev,
+               libxcomposite-dev,
+               libxml2-dev,
                libxrender-dev,
                libxslt1-dev,
-               libqt5xmlpatterns5-private-dev (>= 5.2.1~),
-               qtbase5-private-dev (>= 5.2.1+dfsg~),
-               libqt5opengl5-dev (>= 5.2.1+dfsg~),
-               qtscript5-private-dev (>= 5.2.1~),
-               qtdeclarative5-private-dev (>= 5.2.1~),
+               mesa-common-dev,
                pkg-config,
                pkg-kde-tools (>= 0.6.4),
-               chrpath,
-               libpng-dev,
-               libjpeg-dev,
-               libfontconfig1-dev,
-               libwebp-dev,
-               libxcomposite-dev
-Build-Depends-Indep: libqt5sql5-sqlite,
-                     qttools5-dev-tools (>= 5.2.1~)
+               python-minimal,
+               python2.7,
+               qtbase5-private-dev (>= 5.2.1+dfsg~),
+               qtdeclarative5-private-dev (>= 5.2.1~),
+               qtscript5-private-dev (>= 5.2.1~),
+               ruby
+Build-Depends-Indep: libqt5sql5-sqlite, qttools5-dev-tools (>= 5.2.1~)
 Standards-Version: 3.9.5
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
@@ -73,7 +72,7 @@ Description: Web content engine library for Qt
 Package: libqt5webkit5-qmlwebkitplugin
 Architecture: all
 Section: oldlibs
-Depends: ${misc:Depends}, qml-module-qtwebkit
+Depends: qml-module-qtwebkit, ${misc:Depends}
 Description: transitional dummy package for Qt WebKit QML module
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
@@ -92,7 +91,6 @@ Description: Qt WebKit QML module
  from the World Wide Web into your Qt application.
  .
  This package contains the WebKit QML module for QtDeclarative.
-
 
 Package: libqt5webkit5-dbg
 Priority: extra
