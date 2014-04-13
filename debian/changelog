@@ -5,6 +5,7 @@ qtwebkit-opensource-src (5.2.1+dfsg-6) UNRELEASED; urgency=medium
     Break and Replaces.
   * Add qtdeclarative5-dev as a dependency of libqt5webkit5-dev as it seems
     to be a requirement for stuff building with webkit.
+  * Update symbols files with buildd's logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 10:04:08 -0300
 
