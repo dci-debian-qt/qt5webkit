@@ -1,5 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Source: http://releases.qt-project.org/qt5/5.0.1/submodules_tar/
+Files-Excluded: Source/WebInspectorUI/Scripts/jsmin.py
+                Source/WebInspectorUI/Tools/PrettyPrinting/populate/jquery.min.js
+                Tools/TestResultServer/static-dashboards/dygraph-combined.js
+# jsmin.py: see
+# http://lists.qt-project.org/pipermail/development/2013-December/014659.html
+# and https://wiki.debian.org/qa.debian.org/jsonevil
+#
+# jquery.min.js and dygraph-combined.js: minified javascript without source.
 
 Files: *
 Copyright: 2010 Apple Inc.
