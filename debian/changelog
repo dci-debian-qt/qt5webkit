@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.2.1+dfsg-6) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.2.1+dfsg1-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Rename libqt5webkit5-qmlwebkitplugin to qml-module-qtwebkit, adding proper
@@ -10,6 +10,7 @@ qtwebkit-opensource-src (5.2.1+dfsg-6) UNRELEASED; urgency=medium
     debian/copyright.
   * Remove dygraph-combined.js from the original tarball: minified javascript
     without source.
+  * Increase dfsg revision to 1 due to the new source tarball.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 10:04:08 -0300
 
