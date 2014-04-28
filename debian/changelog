@@ -1,6 +1,5 @@
-qtwebkit-opensource-src (5.2.1+dfsg1-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.2.1+dfsg1-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Rename libqt5webkit5-qmlwebkitplugin to qml-module-qtwebkit, adding proper
     Break and Replaces.
   * Add qtdeclarative5-dev as a dependency of libqt5webkit5-dev as it seems
@@ -12,7 +11,7 @@ qtwebkit-opensource-src (5.2.1+dfsg1-1) UNRELEASED; urgency=medium
     without source.
   * Increase dfsg revision to 1 due to the new source tarball.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 10:04:08 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 27 Apr 2014 22:23:04 -0300
 
 qtwebkit-opensource-src (5.2.1+dfsg-5) unstable; urgency=medium
 
