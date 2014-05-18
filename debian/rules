@@ -51,7 +51,7 @@ override_dh_auto_build-arch:
 	dh_auto_build
 
 override_dh_auto_build-indep:
-	dh_auto_build -Smakefile -- docs
+	dh_auto_build -Smakefile -- html_docs
 
 override_dh_auto_install-arch:
 	make install INSTALL_ROOT=$(CURDIR)/debian/tmp
@@ -75,7 +75,7 @@ override_dh_auto_install-arch:
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
 
 override_dh_auto_install-indep:
-	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
+	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_html_docs
 
 override_dh_install:
 	dh_install --fail-missing

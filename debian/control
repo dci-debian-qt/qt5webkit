@@ -36,7 +36,6 @@ Build-Depends: bison,
                qtdeclarative5-private-dev (>= 5.2.1~),
                qtscript5-private-dev (>= 5.2.1~),
                ruby
-Build-Depends-Indep: libqt5sql5-sqlite, qttools5-dev-tools (>= 5.2.1~)
 Standards-Version: 3.9.5
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
@@ -103,17 +102,6 @@ Description: Web content engine library for Qt - debugging symbols
  from the World Wide Web into your Qt application.
  .
  This package contains the debugging symbols for the Qt WebKit library.
-
-Package: qtwebkit5-doc
-Priority: extra
-Architecture: all
-Section: doc
-Depends: ${misc:Depends}
-Description: Qt 5 webkit documentation
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the documentation for the Qt 5 webkit libraries.
 
 Package: qtwebkit5-doc-html
 Priority: extra
