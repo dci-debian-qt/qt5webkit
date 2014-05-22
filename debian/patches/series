@@ -1,5 +1,4 @@
 # Upstream patches
-fix_ftbfs_in_archs_without_jit_support.patch
 dont_pollute_pri_and_pc_with_private_deps.patch
 
 # debian patches
