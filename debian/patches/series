@@ -1,5 +1,4 @@
 # Upstream patches
-dont_pollute_pri_and_pc_with_private_deps.patch
 
 # debian patches
 reduce_memory_usage.patch
