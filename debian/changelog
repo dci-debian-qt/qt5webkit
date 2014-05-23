@@ -10,7 +10,7 @@ qtwebkit-opensource-src (5.3.0+dfsg-1) UNRELEASED; urgency=medium
   * Remove fix_ftbfs_in_archs_without_jit_support.patch and
     dont_pollute_pri_and_pc_with_private_deps.patch, applied upstream.
   * Refresh no_gc_sections.diff.
-  * Install headers in their new multi-arch qualified path. Marhe the
+  * Install headers in their new multi-arch qualified path. Mark the
     development package as Multi-Arch: same.
   * Take into account the new multi-arch path for removing the private
     headers.
