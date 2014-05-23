@@ -14,6 +14,8 @@ qtwebkit-opensource-src (5.3.0+dfsg-1) UNRELEASED; urgency=medium
     development package as Multi-Arch: same.
   * Take into account the new multi-arch path for removing the private
     headers.
+  * Update symbols files with current log. The missing symbols are private
+    stuff not present in any static method.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 17 May 2014 23:25:31 -0300
 

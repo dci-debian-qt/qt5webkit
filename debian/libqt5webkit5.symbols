@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.2.1 amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sparc
+# SymbolsHelper-Confirmed: 5.3.0 amd64
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -1294,9 +1294,9 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN12QWebSettings31offlineWebApplicationCacheQuotaEv@Base 5.0.2
  _ZN12QWebSettings33setOfflineWebApplicationCachePathERK7QString@Base 5.0.2
  _ZN12QWebSettings34setOfflineWebApplicationCacheQuotaEx@Base 5.0.2
- _ZN12QWebSettingsC1EPN7WebCore8SettingsE@Base 5.0.2
+ _ZN12QWebSettingsC1EPN7WebCore8SettingsEPNS0_13GroupSettingsE@Base 5.3.0
  _ZN12QWebSettingsC1Ev@Base 5.0.2
- _ZN12QWebSettingsC2EPN7WebCore8SettingsE@Base 5.0.2
+ _ZN12QWebSettingsC2EPN7WebCore8SettingsEPNS0_13GroupSettingsE@Base 5.3.0
  _ZN12QWebSettingsC2Ev@Base 5.0.2
  _ZN12QWebSettingsD1Ev@Base 5.0.2
  _ZN12QWebSettingsD2Ev@Base 5.0.2
@@ -1428,6 +1428,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN15QWebPageAdapter18setContentEditableEb@Base 5.0.2
  _ZN15QWebPageAdapter18setVisibilityStateENS_15VisibilityStateE@Base 5.2.0
  _ZN15QWebPageAdapter18treatSchemeAsLocalERK7QString@Base 5.0.2
+ _ZN15QWebPageAdapter19setDevicePixelRatioEf@Base 5.3.0
  _ZN15QWebPageAdapter20networkAccessManagerEv@Base 5.0.2
  _ZN15QWebPageAdapter20updateActionInternalENS_10MenuActionEPKcPbS3_@Base 5.0.2
  _ZN15QWebPageAdapter21initializeWebCorePageEv@Base 5.0.2
@@ -3078,11 +3079,19 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=sparc)_ZNSt6vectorIP6TField14pool_allocatorIS1_EE13_M_insert_auxIIRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S4_EEDpOT_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZNSt6vectorIPN15DetectCallDepth12FunctionNodeE14pool_allocatorIS2_EE13_M_insert_auxIIRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S5_EEDpOT_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZNSt6vectorIPN2pp13MacroExpander12MacroContextESaIS3_EE13_M_insert_auxIIRKS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_@Base 5.2.1
+ (optional=templinst)_ZNSt6vectorIPcSaIS0_EE19_M_emplace_back_auxIIRKS0_EEEvDpOT_@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorIPcSaIS0_EE19_M_emplace_back_auxIIS0_EEEvDpOT_@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorIPcSaIS0_EE19_M_emplace_back_auxIJRKS0_EEEvDpOT_@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorIPcSaIS0_EE19_M_emplace_back_auxIJS0_EEEvDpOT_@Base 5.3.0
  (optional=templinst|arch=sparc)_ZNSt6vectorIS_IN2pp5TokenESaIS1_EESaIS3_EE13_M_insert_auxIIS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZNSt6vectorIS_IN2pp5TokenESaIS1_EESaIS3_EE7reserveEj@Base 5.2.1
  (optional=templinst|arch=sparc)_ZNSt6vectorISsSaISsEE13_M_insert_auxIIRKSsEEEvN9__gnu_cxx17__normal_iteratorIPSsS1_EEDpOT_@Base 5.2.1
  (optional=templinst|arch=!sparc)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIIRKSsEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIISsEEEvDpOT_@Base 5.3.0
  (optional=templinst|arch=!sparc)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIJRKSsEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorISsSaISsEE19_M_emplace_back_auxIJSsEEEvDpOT_@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorISsSaISsEED1Ev@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorISsSaISsEED2Ev@Base 5.3.0
  (optional=templinst)_ZNSt6vectorISsSaISsEEaSERKS1_@Base 5.0.2
  (optional=templinst|arch=sparc)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE13_M_insert_auxIIS9_EEEvN9__gnu_cxx17__normal_iteratorIPS9_SB_EEDpOT_@Base 5.2.1
  (optional=templinst|arch=!sparc)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE19_M_emplace_back_auxIIS9_EEEvDpOT_@Base 5.2.0
@@ -3090,9 +3099,15 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=sparc)_ZNSt6vectorIiSaIiEE13_M_insert_auxIIiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Base 5.2.1
  (optional=templinst|arch=!sparc)_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIIiEEEvDpOT_@Base 5.2.0
  (optional=templinst|arch=!sparc)_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIJiEEEvDpOT_@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorIjSaIjEE12emplace_backIIjEEEvDpOT_@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorIjSaIjEE12emplace_backIJjEEEvDpOT_@Base 5.3.0
  (optional=templinst|arch=sparc)_ZNSt6vectorIjSaIjEE13_M_insert_auxIIRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZNSt6vectorIjSaIjEE13_M_insert_auxIIjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Base 5.2.1
  (optional=templinst|subst)_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EE{size_t}RKj@Base 5.2.0
+ (optional=templinst)_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIIjEEEvDpOT_@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJjEEEvDpOT_@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorImSaImEE12emplace_backIImEEEvDpOT_@Base 5.3.0
+ (optional=templinst)_ZNSt6vectorImSaImEE12emplace_backIJmEEEvDpOT_@Base 5.3.0
  (optional=templinst|subst|arch=!sparc)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxIIRK{size_t}EEEvDpOT_@Base 5.2.0
  (optional=templinst|subst|arch=!sparc)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxII{size_t}EEEvDpOT_@Base 5.2.0
  (optional=templinst|subst|arch=!sparc)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxIJRK{size_t}EEEvDpOT_@Base 5.2.0
@@ -3151,9 +3166,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=!sparc)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE24_M_get_insert_unique_posERS1_@Base 5.2.0
  (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 5.0.2
+ (optional=templinst)_ZNSt8_Rb_treeISt4pairIimES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE16_M_insert_uniqueIS1_EES0_ISt17_Rb_tree_iteratorIS1_EbEOT_@Base 5.3.0
+ (optional=templinst)_ZNSt8_Rb_treeISt4pairIimES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 5.3.0
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIiSt4pairIKiP12TGraphSymbolESt10_Select1stIS4_ESt4lessIiE14pool_allocatorIS4_EE10_M_insert_IRS0_IiS3_EEESt17_Rb_tree_iteratorIS4_EPKSt18_Rb_tree_node_baseSJ_OT_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIiSt4pairIKiP12TGraphSymbolESt10_Select1stIS4_ESt4lessIiE14pool_allocatorIS4_EE16_M_insert_uniqueIRS0_IiS3_EEES0_ISt17_Rb_tree_iteratorIS4_EbEOT_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIiSt4pairIKiP12TGraphSymbolESt10_Select1stIS4_ESt4lessIiE14pool_allocatorIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 5.2.1
+ (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE16_M_insert_uniqueIRKmEESt4pairISt17_Rb_tree_iteratorImEbEOT_@Base 5.3.0
+ (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE4findERKm@Base 5.3.0
+ (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE5eraseERKm@Base 5.3.0
+ (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE7_M_copyEPKSt13_Rb_tree_nodeImEPS7_@Base 5.3.0
+ (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE8_M_eraseEPSt13_Rb_tree_nodeImE@Base 5.3.0
  (optional=templinst|arch=sparc)_ZSt10__pop_heapIPN3WTF6RefPtrIN7WebCore21CustomFilterParameterEEEPFbRKS4_S7_EEvT_SA_SA_T0_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt10__pop_heapIPN3WTF6StringEPFbRKS1_S4_EEvT_S7_S7_T0_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt11__push_heapIN7WebCore17TimerHeapIteratorEiPNS0_9TimerBaseENS0_25TimerHeapLessThanFunctionEEvT_T0_S6_T1_T2_@Base 5.2.1
@@ -3168,6 +3190,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=sparc)_ZSt12partial_sortIPjEvT_S1_S1_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt13__adjust_heapIN7WebCore17TimerHeapIteratorEiPNS0_9TimerBaseENS0_25TimerHeapLessThanFunctionEEvT_T0_S6_T1_T2_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIP13TVariableInfoSt6vectorIS2_SaIS2_EEEEiS2_21TVariableInfoComparerEvT_T0_SA_T1_T2_@Base 5.2.1
+ (optional=templinst)_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEElmEvT_T0_S8_T1_@Base 5.3.0
  (optional=templinst|arch=sparc)_ZSt13__adjust_heapIPN3WTF6RefPtrIN7WebCore16MutationObserverEEEiS4_NS3_16ObserverLessThanEEvT_T0_S8_T1_T2_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt13__adjust_heapIPN3WTF6RefPtrIN7WebCore21CustomFilterParameterEEEiS4_PFbRKS4_S7_EEvT_T0_SB_T1_T2_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt13__adjust_heapIPN3WTF6StringEiS1_PFbRKS1_S4_EEvT_T0_S8_T1_T2_@Base 5.2.1
@@ -3201,6 +3224,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=sparc)_ZSt13move_backwardIPN7WebCore20CSSGradientColorStopES2_ET0_T_S4_S3_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt13move_backwardIPSt4pairIN7WebCore4KURLES2_ES4_ET0_T_S6_S5_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIP13TVariableInfoSt6vectorIS2_SaIS2_EEEE21TVariableInfoComparerEvT_S9_T0_@Base 5.2.1
+ (optional=templinst)_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEEEvT_S7_@Base 5.3.0
  (optional=templinst|arch=sparc)_ZSt16__insertion_sortIPN3WTF6RefPtrIN7WebCore16MutationObserverEEENS3_16ObserverLessThanEEvT_S7_T0_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt16__insertion_sortIPN3WTF6RefPtrIN7WebCore21CustomFilterParameterEEEPFbRKS4_S7_EEvT_SA_T0_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt16__insertion_sortIPN3WTF6StringEPFbRKS1_S4_EEvT_S7_T0_@Base 5.2.1
@@ -3226,6 +3250,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst)_ZSt16__insertion_sortIPiEvT_S1_@Base 5.0.2
  (optional=templinst)_ZSt16__insertion_sortIPjEvT_S1_@Base 5.0.2
  (optional=templinst|arch=sparc)_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIP13TVariableInfoSt6vectorIS2_SaIS2_EEEEi21TVariableInfoComparerEvT_S9_T0_T1_@Base 5.2.1
+ (optional=templinst)_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEElEvT_S7_T0_@Base 5.3.0
  (optional=templinst|arch=sparc)_ZSt16__introsort_loopIPN3WTF6RefPtrIN7WebCore16MutationObserverEEEiNS3_16ObserverLessThanEEvT_S7_T0_T1_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt16__introsort_loopIPN3WTF6RefPtrIN7WebCore21CustomFilterParameterEEEiPFbRKS4_S7_EEvT_SA_T0_T1_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZSt16__introsort_loopIPN3WTF6StringEiPFbRKS1_S4_EEvT_S7_T0_T1_@Base 5.2.1
@@ -3385,6 +3410,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZTIN3JSC8DebuggerE@Base 5.0.2
  (arch=sparc)_ZTISt15basic_stringbufIcSt11char_traitsIcE14pool_allocatorIcEE@Base 5.2.1
  (arch=sparc)_ZTISt19basic_ostringstreamIcSt11char_traitsIcE14pool_allocatorIcEE@Base 5.2.1
+ _ZTIZ26leveldb_writebatch_iterateE1H@Base 5.3.0
+ _ZTIZ33leveldb_filterpolicy_create_bloomE7Wrapper@Base 5.3.0
  _ZTS11QWebKitTest@Base 5.0.2
  _ZTS13QQuickWebPage@Base 5.0.2
  _ZTS13QQuickWebView@Base 5.0.2
