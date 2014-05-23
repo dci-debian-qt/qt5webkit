@@ -65,11 +65,11 @@ override_dh_auto_install-arch:
 	-exec sed -i -e 's/$(DEB_HOST_MULTIARCH)\/$(DEB_HOST_MULTIARCH)/$(DEB_HOST_MULTIARCH)/g' {} \;
 	
 	# Remove private headers
-	rm -rf debian/tmp/usr/include/qt5/QtWebKit/*/QtWebKit
-	rm -rf debian/tmp/usr/include/qt5/QtWebKitWidgets/*/QtWebKitWidgets
+	rm -rf debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)/qt5/QtWebKit/*/QtWebKit
+	rm -rf debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)/qt5/QtWebKitWidgets/*/QtWebKitWidgets
 	# And associated files
-	rm -fv debian/tmp/usr/lib/*/qt5/mkspecs/modules/qt_lib_webkit_private.pri
-	rm -fv debian/tmp/usr/lib/*/qt5/mkspecs/modules/qt_lib_webkitwidgets_private.pri
+	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/modules/qt_lib_webkit_private.pri
+	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/modules/qt_lib_webkitwidgets_private.pri
 	
 	# Remove libtool-like files
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
