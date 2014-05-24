@@ -17,6 +17,8 @@ qtwebkit-opensource-src (5.3.0+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files with current log. The missing symbols are private
     stuff not present in any static method.
   * Remove the transitional package libqt5webkit5-qmlwebkitplugin.
+  * Switch debugging symbols for amd64 to gstabs until we are able to build
+    normal symbols again.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 17 May 2014 23:25:31 -0300
 
