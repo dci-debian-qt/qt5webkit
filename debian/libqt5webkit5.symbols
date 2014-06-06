@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.3.0 amd64
+# SymbolsHelper-Confirmed: 5.3.0 amd64 s390x
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -3172,7 +3172,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIiSt4pairIKiP12TGraphSymbolESt10_Select1stIS4_ESt4lessIiE14pool_allocatorIS4_EE16_M_insert_uniqueIRS0_IiS3_EEES0_ISt17_Rb_tree_iteratorIS4_EbEOT_@Base 5.2.1
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIiSt4pairIKiP12TGraphSymbolESt10_Select1stIS4_ESt4lessIiE14pool_allocatorIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 5.2.1
  (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE16_M_insert_uniqueIRKmEESt4pairISt17_Rb_tree_iteratorImEbEOT_@Base 5.3.0
- (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE4findERKm@Base 5.3.0
+ (optional=templinst|arch=amd64)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE4findERKm@Base 5.3.0
  (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE5eraseERKm@Base 5.3.0
  (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE7_M_copyEPKSt13_Rb_tree_nodeImEPS7_@Base 5.3.0
  (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE8_M_eraseEPSt13_Rb_tree_nodeImE@Base 5.3.0
