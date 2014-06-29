@@ -2,7 +2,8 @@ qtwebkit-opensource-src (5.3.1+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
-  * Bump Qt build dependencies.
+  * Bump Qt build dependencies, using qtbase-private-dev >= 5.3.1 to get
+    qtbase-abi-5-3-1.
   * Update symbols files with buildds' logs.
   * Switch amd64's debugging symbols to stabs again. I can't build dwarf
     symbols anymore due to lack of RAM, and I doubt our buildds could too.

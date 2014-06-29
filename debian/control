@@ -32,7 +32,7 @@ Build-Depends: bison,
                pkg-kde-tools (>= 0.6.4),
                python-minimal,
                python2.7,
-               qtbase5-private-dev (>= 5.3.1+dfsg~),
+               qtbase5-private-dev (>= 5.3.1+dfsg-2~),
                qtdeclarative5-private-dev (>= 5.3.1~),
                qtscript5-private-dev (>= 5.3.1~),
                ruby
