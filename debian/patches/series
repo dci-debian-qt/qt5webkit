@@ -6,3 +6,4 @@ reduce_memory_usage.patch
 no_gc_sections.diff
 hurd.diff
 webkit_qt_hide_symbols.diff
+hppa_wtf-dtoa-utils.diff
