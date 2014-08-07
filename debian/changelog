@@ -1,3 +1,9 @@
+qtwebkit-opensource-src (5.3.1+dfsg-2.1) UNRELEASED; urgency=medium
+
+  * Link with -rt on hurd and kfreebsd. #757161
+
+ -- Sune Vuorela <sune@debian.org>  Thu, 07 Aug 2014 21:24:25 +0200
+
 qtwebkit-opensource-src (5.3.1+dfsg-2) unstable; urgency=medium
 
   * Add hppa_wtf-dtoa-utils.diff to solve a FTBFS in HPPA (Closes: #753409).
