@@ -1,8 +1,12 @@
-qtwebkit-opensource-src (5.3.1+dfsg-2.1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.3.1+dfsg-3) unstable; urgency=medium
 
+  [ Julián Moreno Patiño ]
+  * Team upload.
+
+  [ Sune Vuorela ]
   * Link with -rt on hurd and kfreebsd (Closes: #757161).
 
- -- Sune Vuorela <sune@debian.org>  Thu, 07 Aug 2014 21:24:25 +0200
+ -- Julián Moreno Patiño <julian@debian.org>  Mon, 11 Aug 2014 16:01:41 -0500
 
 qtwebkit-opensource-src (5.3.1+dfsg-2) unstable; urgency=medium
 
