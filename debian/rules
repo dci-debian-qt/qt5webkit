@@ -10,7 +10,6 @@ export QT_SELECT := qt5
 
 DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-DEB_BUILD_ARCH ?= $(shell dpkg-architecture -qDEB_BUILD_ARCH)
 
 gstab_architectures := amd64 i386 powerpc s390x
 fulldebug_architectures := none
@@ -43,12 +42,6 @@ endif
 
 	# Run qmake again now with the proper values.
 	qmake
-
-override_dh_auto_build-arch:
-	# This override may seem futile, but it helps us make sure that the tools
-	# needed for building the docs are built before calling them.
-	# If there's a better way, do not heasitate to tell us.
-	dh_auto_build
 
 override_dh_auto_build-indep:
 	dh_auto_build -Smakefile -- html_docs
