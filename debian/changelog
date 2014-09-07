@@ -2,6 +2,7 @@ qtwebkit-opensource-src (5.3.1+dfsg-4) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Remove unused code from debian/rules.
+  * Update Vcs-Browser field to point to cgit interface.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 07 Sep 2014 16:03:34 +0400
 
