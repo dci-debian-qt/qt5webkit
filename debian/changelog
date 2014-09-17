@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.3.2+dfsg-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.3.2+dfsg-1) experimental; urgency=medium
 
   [ Dmitry Shachnev ]
   * Remove unused code from debian/rules.
@@ -10,7 +10,7 @@ qtwebkit-opensource-src (5.3.2+dfsg-1) UNRELEASED; urgency=medium
   * Refresh patches.
   * Remove hppa_wtf-dtoa-utils.diff, applied upstream.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 07 Sep 2014 16:03:34 +0400
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 17 Sep 2014 00:23:05 -0300
 
 qtwebkit-opensource-src (5.3.1+dfsg-3) unstable; urgency=medium
 
