@@ -4,9 +4,6 @@ qtwebkit-opensource-src (5.3.1+dfsg-4) UNRELEASED; urgency=medium
   * Remove unused code from debian/rules.
   * Update Vcs-Browser field to point to cgit interface.
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Switch to GStreamer 1.0.
-
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 07 Sep 2014 16:03:34 +0400
 
 qtwebkit-opensource-src (5.3.1+dfsg-3) unstable; urgency=medium
