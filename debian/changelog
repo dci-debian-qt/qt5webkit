@@ -7,6 +7,7 @@ qtwebkit-opensource-src (5.3.2+dfsg-1) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Bump Qt build dependencies.
+  * Refresh patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 07 Sep 2014 16:03:34 +0400
 

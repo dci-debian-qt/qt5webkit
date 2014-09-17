@@ -8,9 +8,13 @@ Author: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Forwarded: not-needed
 Last-Update: 2014-03-05
 
+---
+ Tools/qmake/mkspecs/features/unix/default_post.prf |    3 +++
+ 1 file changed, 3 insertions(+)
+
 --- a/Tools/qmake/mkspecs/features/unix/default_post.prf
 +++ b/Tools/qmake/mkspecs/features/unix/default_post.prf
-@@ -66,3 +66,6 @@ CONFIG(debug, debug|release)|force_debug
+@@ -68,3 +68,6 @@ CONFIG(debug, debug|release)|force_debug
  }
  
  load(default_post)
