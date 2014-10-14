@@ -5,6 +5,8 @@ qtwebkit-opensource-src (5.3.2+dfsg-3) UNRELEASED; urgency=medium
     - do_not_use_jit_on_big_endian_machines.patch
     - fix_cloop_on_big_endian_machines.patch
     - fix_crash_when_a_network_request_is_aborted_while_forwarding_data.patch
+  * Backport blacklist_libkpartsplugin.patch to prevent a crash due to a plugin
+    built against Qt4 (Closes: #744006).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 14 Oct 2014 15:47:33 -0300
 
