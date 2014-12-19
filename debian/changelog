@@ -3,6 +3,8 @@ qtwebkit-opensource-src (5.4.0+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream release.
   * Bump Qt build-dependencies to 5.4.0.
+  * Add qtbase5-doc-html to Build-Depends-Indep to make sure docs
+    are properly linked with qtbase.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 19 Dec 2014 14:52:47 +0300
 
