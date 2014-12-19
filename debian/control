@@ -37,7 +37,7 @@ Build-Depends: bison,
                qtscript5-private-dev (>= 5.4.0~),
                ruby
 Build-Depends-Indep: qtbase5-doc-html (>= 5.4.0+dfsg~)
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qt5webkit.git
