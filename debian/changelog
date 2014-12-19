@@ -5,6 +5,11 @@ qtwebkit-opensource-src (5.4.0+dfsg-1) UNRELEASED; urgency=medium
   * Bump Qt build-dependencies to 5.4.0.
   * Add qtbase5-doc-html to Build-Depends-Indep to make sure docs
     are properly linked with qtbase.
+  * Drop these patches, applied upstream:
+    - do_not_use_jit_on_big_endian_machines.patch
+    - fix_cloop_on_big_endian_machines.patch
+    - fix_crash_when_a_network_request_is_aborted_while_forwarding_data.patch
+    - blacklist_libkpartsplugin.patch
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 19 Dec 2014 14:52:47 +0300
 

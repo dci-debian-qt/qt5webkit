@@ -1,9 +1,3 @@
-# Upstream patches
-do_not_use_jit_on_big_endian_machines.patch
-fix_cloop_on_big_endian_machines.patch
-fix_crash_when_a_network_request_is_aborted_while_forwarding_data.patch
-blacklist_libkpartsplugin.patch
-
 # debian patches
 reduce_memory_usage.patch
 05_sparc_unaligned_access.diff
