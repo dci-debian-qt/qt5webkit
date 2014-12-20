@@ -11,6 +11,7 @@ qtwebkit-opensource-src (5.4.0+dfsg-1) UNRELEASED; urgency=medium
     - fix_crash_when_a_network_request_is_aborted_while_forwarding_data.patch
     - blacklist_libkpartsplugin.patch
   * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update symbols files.
 
   [ Harald Sitter ]
   * Disable precompiled headers on amd64, powerpc and s390x.
