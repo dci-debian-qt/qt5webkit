@@ -12,6 +12,7 @@ qtwebkit-opensource-src (5.4.0+dfsg-1) UNRELEASED; urgency=medium
     - blacklist_libkpartsplugin.patch
   * Bump Standards-Version to 3.9.6, no changes needed.
   * Update symbols files.
+  * Add myself to Uploaders.
 
   [ Harald Sitter ]
   * Disable precompiled headers on amd64, powerpc and s390x.
