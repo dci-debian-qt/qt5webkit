@@ -12,6 +12,9 @@ qtwebkit-opensource-src (5.4.0+dfsg-1) UNRELEASED; urgency=medium
     - blacklist_libkpartsplugin.patch
   * Bump Standards-Version to 3.9.6, no changes needed.
 
+  [ Harald Sitter ]
+  * Disable precompiled headers on amd64, powerpc and s390x.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 19 Dec 2014 14:52:47 +0300
 
 qtwebkit-opensource-src (5.3.2+dfsg-3) unstable; urgency=medium
