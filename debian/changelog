@@ -4,6 +4,7 @@ qtwebkit-opensource-src (5.4.1+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Update debian/watch to use https://download.qt.io/.
   * Bump Qt build-dependencies to 5.4.1.
+  * Refresh patches for the new release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 27 Feb 2015 11:10:34 +0300
 
