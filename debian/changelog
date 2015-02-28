@@ -4,6 +4,8 @@ qtwebkit-opensource-src (5.4.1+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Update debian/watch to use https://download.qt.io/.
   * Bump Qt build-dependencies to 5.4.1.
+  * Build-depend on libleveldb-dev so that the system leveldb copy
+    is used, and not the private one.
   * Refresh patches for the new release.
   * Minor debian/copyright updates.
 
