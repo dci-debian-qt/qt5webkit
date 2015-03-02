@@ -1,6 +1,5 @@
-qtwebkit-opensource-src (5.4.1+dfsg-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.4.1+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Update debian/watch to use https://download.qt.io/.
   * Bump Qt build-dependencies to 5.4.1.
@@ -10,7 +9,7 @@ qtwebkit-opensource-src (5.4.1+dfsg-1) UNRELEASED; urgency=medium
   * Refresh patches for the new release.
   * Minor debian/copyright updates.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 27 Feb 2015 11:10:34 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 01 Mar 2015 19:43:59 +0300
 
 qtwebkit-opensource-src (5.4.0+dfsg-1) experimental; urgency=medium
 
