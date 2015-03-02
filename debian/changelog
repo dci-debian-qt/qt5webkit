@@ -1,5 +1,8 @@
 qtwebkit-opensource-src (5.4.1+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Comment out libleveldb-dev build-dependency for now, it causes
+    linking errors on some architectures.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 02 Mar 2015 15:00:28 +0300
 
