@@ -1,5 +1,8 @@
 qtwebkit-opensource-src (5.3.2+dfsg-4) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Backport upstream fix that adds missing checks for HTMLUnknownElement.
+    Closes: #781194.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Apr 2015 11:51:03 +0300
 
