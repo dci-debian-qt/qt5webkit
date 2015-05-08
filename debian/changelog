@@ -5,6 +5,11 @@ qtwebkit-opensource-src (5.4.1+dfsg-4) UNRELEASED; urgency=medium
   * Fix some substitutions in debian/libqt5webkit5.symbols.
   * Remove all obsolete sparc-specific symbols.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Clear up the list in Uploaders removing people who hasn't commited to the
+    repo in more than a year. They can re add themselves whenever they want
+    (and we really hope to see you back really soon!).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 05 Mar 2015 11:03:23 +0300
 
 qtwebkit-opensource-src (5.4.1+dfsg-3) experimental; urgency=medium
