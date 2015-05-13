@@ -1,5 +1,7 @@
 qtwebkit-opensource-src (5.3.2+dfsg-5) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Update symbols files from buildds’ logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 13 May 2015 20:18:17 +0300
 
