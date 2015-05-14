@@ -3134,6 +3134,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (c++)"non-virtual thunk to QQuickWebPage::~QQuickWebPage()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::componentComplete()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::~QQuickWebView()@Base" 5.0.2
+# SymbolsHelper-Confirmed: 5.3.2 armel armhf hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc ppc64el sparc
 libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZN13QWebInspector10closeEventEP11QCloseEvent@Base 5.0.2
  _ZN13QWebInspector11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.0.2
