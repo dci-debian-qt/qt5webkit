@@ -3,7 +3,7 @@ qtwebkit-opensource-src (5.4.2+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Sort debian/qml-module-qtwebkit.install.
   * Fix some substitutions in debian/libqt5webkit5.symbols.
-  * Remove all obsolete sparc-specific symbols.
+  * Remove all obsolete sparc-specific symbols (Closes: #782063).
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
