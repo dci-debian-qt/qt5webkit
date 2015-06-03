@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.4.2+dfsg-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.4.2+dfsg-1) experimental; urgency=medium
 
   [ Dmitry Shachnev ]
   * Sort debian/qml-module-qtwebkit.install.
@@ -13,7 +13,7 @@ qtwebkit-opensource-src (5.4.2+dfsg-1) UNRELEASED; urgency=medium
     (and we really hope to see you back really soon!).
   * Expose HTML documentation (Closes: #751186).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 05 Mar 2015 11:03:23 +0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 02 Jun 2015 23:00:28 -0300
 
 qtwebkit-opensource-src (5.4.1+dfsg-3) experimental; urgency=medium
 
