@@ -6,7 +6,7 @@ qtwebkit-opensource-src (5.4.2+dfsg-1) UNRELEASED; urgency=medium
   * Remove all obsolete sparc-specific symbols (Closes: #782063).
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
-  * New upstream release.
+  * New upstream release (Closes: 778359).
     - Bump Qt build dependencies to 5.4.2.
   * Clear up the list in Uploaders removing people who hasn't committed to the
     repo in more than a year. They can re add themselves whenever they want
