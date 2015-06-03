@@ -20,8 +20,8 @@ Build-Depends: bison,
                libjpeg-dev,
 #              libleveldb-dev,
                libpng-dev,
-               libqt5opengl5-dev (>= 5.4.1+dfsg~),
-               libqt5xmlpatterns5-private-dev (>= 5.4.1~),
+               libqt5opengl5-dev (>= 5.4.2+dfsg~),
+               libqt5xmlpatterns5-private-dev (>= 5.4.2~),
                libsqlite3-dev,
                libwebp-dev,
                libxcomposite-dev,
@@ -33,11 +33,11 @@ Build-Depends: bison,
                pkg-kde-tools (>= 0.6.4),
                python-minimal,
                python2.7,
-               qtbase5-private-dev (>= 5.4.1+dfsg~),
-               qtdeclarative5-private-dev (>= 5.4.1~),
-               qtscript5-private-dev (>= 5.4.1+dfsg~),
+               qtbase5-private-dev (>= 5.4.2+dfsg~),
+               qtdeclarative5-private-dev (>= 5.4.2~),
+               qtscript5-private-dev (>= 5.4.2+dfsg~),
                ruby
-Build-Depends-Indep: qtbase5-doc-html (>= 5.4.1+dfsg~)
+Build-Depends-Indep: qtbase5-doc-html (>= 5.4.2+dfsg~)
 Standards-Version: 3.9.6
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
