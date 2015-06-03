@@ -11,6 +11,7 @@ qtwebkit-opensource-src (5.4.2+dfsg-1) UNRELEASED; urgency=medium
   * Clear up the list in Uploaders removing people who hasn't committed to the
     repo in more than a year. They can re add themselves whenever they want
     (and we really hope to see you back really soon!).
+  * Expose HTML documentation (Closes: #751186).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 05 Mar 2015 11:03:23 +0300
 
