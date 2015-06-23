@@ -14,6 +14,7 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 gstab_architectures := amd64 i386 powerpc s390x
 fulldebug_architectures := none
 disabled_jit_architectures := armel mips mipsel
+disabled_pch_architectures := amd64 powerpc s390x
 
 %:
 	dh $@ --parallel --dbg-package=libqt5webkit5-dbg --with pkgkde_symbolshelper
@@ -38,6 +39,12 @@ endif
 # Disable JIT on selected architectures
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(disabled_jit_architectures)))
 	echo "QMAKE_CXXFLAGS += -DENABLE_JIT=0" >> .qmake.conf
+endif
+
+# Disable header precompliation as it creates invalid includes on certain
+# architectures causing build failure. LP: 1395661
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(disabled_pch_architectures)))
+	echo "CONFIG -= precompile_header" >> .qmake.conf
 endif
 
 	# Run qmake again now with the proper values.

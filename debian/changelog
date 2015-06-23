@@ -1,9 +1,67 @@
-qtwebkit-opensource-src (5.3.2+dfsg-5) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.4.2+dfsg-1) experimental; urgency=medium
 
   [ Dmitry Shachnev ]
-  * Update symbols files from buildds’ logs.
+  * Sort debian/qml-module-qtwebkit.install.
+  * Fix some substitutions in debian/libqt5webkit5.symbols.
+  * Remove all obsolete sparc-specific symbols (Closes: #782063).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 13 May 2015 20:18:17 +0300
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release (Closes: 778359).
+    - Bump Qt build dependencies to 5.4.2.
+  * Clear up the list in Uploaders removing people who hasn't committed to the
+    repo in more than a year. They can re add themselves whenever they want
+    (and we really hope to see you back really soon!).
+  * Expose HTML documentation (Closes: #751186).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 02 Jun 2015 23:00:28 -0300
+
+qtwebkit-opensource-src (5.4.1+dfsg-3) experimental; urgency=medium
+
+  * Comment out libleveldb-dev build-dependency for now, it causes
+    linking errors on some architectures.
+  * Disable leveldb_memenv_path.diff as well.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 02 Mar 2015 17:03:48 +0300
+
+qtwebkit-opensource-src (5.4.1+dfsg-2) experimental; urgency=medium
+
+  * Update leveldb_memenv_path.diff to make it really work.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 02 Mar 2015 11:28:50 +0300
+
+qtwebkit-opensource-src (5.4.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update debian/watch to use https://download.qt.io/.
+  * Bump Qt build-dependencies to 5.4.1.
+  * Build-depend on libleveldb-dev so that the system leveldb copy
+    is used, and not the private one.
+    - Add a patch to use Debian path to memenv.h.
+  * Refresh patches for the new release.
+  * Minor debian/copyright updates.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 01 Mar 2015 19:43:59 +0300
+
+qtwebkit-opensource-src (5.4.0+dfsg-1) experimental; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.4.0.
+  * Add qtbase5-doc-html to Build-Depends-Indep to make sure docs
+    are properly linked with qtbase.
+  * Drop these patches, applied upstream:
+    - do_not_use_jit_on_big_endian_machines.patch
+    - fix_cloop_on_big_endian_machines.patch
+    - fix_crash_when_a_network_request_is_aborted_while_forwarding_data.patch
+    - blacklist_libkpartsplugin.patch
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update symbols files.
+  * Add myself to Uploaders.
+
+  [ Harald Sitter ]
+  * Disable precompiled headers on amd64, powerpc and s390x.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 20 Dec 2014 19:30:06 +0300
 
 qtwebkit-opensource-src (5.3.2+dfsg-4) unstable; urgency=medium
 
