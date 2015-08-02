@@ -2889,8 +2889,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK25QQuickWebViewExperimental9userAgentEv@Base 5.0.2
  _ZNK3JSC10JSFunction10sourceCodeEv@Base 5.0.2
  _ZNK3JSC10JSFunction23isHostFunctionNonInlineEv@Base 5.0.2
- (optional=gccinternal|arch=ppc64el)_ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiRlRN3WTF6StringERNS_7JSValueE@Base 5.3.1
- (optional=gccinternal|arch=!ppc64el)_ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiS3_RN3WTF6StringERNS_7JSValueE@Base 5.3.2
+ (optional=gccinternal)_ZNK3JSC11Interpreter18retrieveLastCallerEPNS_9ExecStateERiRlRN3WTF6StringERNS_7JSValueE@Base 5.3.1
  _ZNK3JSC12JSRopeString11resolveRopeEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC12PropertySlot14functionGetterEPNS_9ExecStateE@Base 5.0.2
  _ZNK3JSC17DebuggerCallFrame10thisObjectEv@Base 5.0.2
