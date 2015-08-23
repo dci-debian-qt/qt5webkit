@@ -3384,6 +3384,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZNK17QWebHitTestResult12boundingRectEv@Base 5.0.2
  _ZNK17QWebHitTestResult13alternateTextEv@Base 5.0.2
  _ZNK17QWebHitTestResult15linkTargetFrameEv@Base 5.0.2
+ _ZNK17QWebHitTestResult15linkTitleStringEv@Base 5.5.0
  _ZNK17QWebHitTestResult17isContentEditableEv@Base 5.0.2
  _ZNK17QWebHitTestResult17isContentSelectedEv@Base 5.0.2
  _ZNK17QWebHitTestResult21enclosingBlockElementEv@Base 5.0.2
