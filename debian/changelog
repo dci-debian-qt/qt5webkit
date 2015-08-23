@@ -6,6 +6,7 @@ qtwebkit-opensource-src (5.5.0-1) UNRELEASED; urgency=medium
   * Build with GStreamer 1.0 (closes: #762158).
   * Update and simplify symbols file.
   * Refresh no_gc_sections.diff.
+  * Minor debian/copyright updates.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Aug 2015 20:17:30 +0300
 

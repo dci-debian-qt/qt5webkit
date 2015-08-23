@@ -2214,13 +2214,16 @@ License: LGPL-2+
 Files:
  Source/WebCore/platform/graphics/qt/*
  Source/WebCore/platform/network/qt/*
- Source/WebCore/platform/qt/FontQt.cpp
+ Source/WebCore/platform/qt/QStyleFacade.h
  Tools/qmake/config.tests/*
- Tools/QtTestBrowser/qttestbrowser.cpp
- Tools/MiniBrowser/qt/MiniBrowserApplication.cpp
- Tools/TestWebKitAPI/qt/*
-Copyright: 2012-2014 Digia Plc. and/or its subsidiary(-ies)
+Copyright: 2015 The Qt Company Ltd.
 License: LGPL-2+
+
+Files: Tools/MiniBrowser/qt/MiniBrowserApplication.cpp
+ Tools/QtTestBrowser/qttestbrowser.cpp
+ Tools/TestWebKitAPI/qt/*
+Copyright: 2015 The Qt Company Ltd.
+License: BSD-2-clause
 
 Files: Source/WebCore/html/HTMLImageElement.cpp
 Copyright: 1999 Lars Knoll <knoll@kde.org>
