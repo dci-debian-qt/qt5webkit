@@ -1,6 +1,5 @@
-qtwebkit-opensource-src (5.5.0-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.5.0+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Bump Qt build-dependencies to 5.5.0.
   * Build with GStreamer 1.0 (closes: #762158).
@@ -8,7 +7,7 @@ qtwebkit-opensource-src (5.5.0-1) UNRELEASED; urgency=medium
   * Refresh no_gc_sections.diff.
   * Minor debian/copyright updates.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Aug 2015 20:17:30 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 23 Aug 2015 14:33:40 +0300
 
 qtwebkit-opensource-src (5.4.2+dfsg-3) unstable; urgency=medium
 
