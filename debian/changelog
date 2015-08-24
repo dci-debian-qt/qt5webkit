@@ -2,6 +2,8 @@ qtwebkit-opensource-src (5.5.0+dfsg-2) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Add empty override_dh_auto_test target to make indep builds work.
+  * Remove copyright entries for generated files that are not present in the
+    tarball.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 23 Aug 2015 16:34:24 +0300
 

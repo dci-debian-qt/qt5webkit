@@ -5653,18 +5653,6 @@ Files: Source/WebCore/bridge/npruntime_internal.h
 Copyright: 2007-2008 Collabora Ltd.
 License: LGPL-2+
 
-Files: Source/WebCore/generated/tokenizer.cpp
-Copyright: 2003 Lars Knoll <knoll@kde.org>
-License: LGPL-2+
-
-Files: Source/WebCore/generated/CSSGrammar.cpp
-Copyright: 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
- 2002-2003 Lars Knoll <knoll@kde.org>
- 2004, 2005, 2006, 2007, 2008, 2009, 2010 Apple Inc.
- 2006 Alexey Proskuryakov <ap@nypop.com>
- 2008 Eric Seidel <eric@webkit.org>
-License: LGPL-2+
-
 Files: Source/WebCore/svg/SVGDefsElement.cpp
  Source/WebCore/svg/SVGFEFuncRElement.cpp
  Source/WebCore/svg/SVGTitleElement.cpp
@@ -9013,7 +9001,6 @@ Files: Source/WebCore/page/ContentSecurityPolicy.h
  Source/WebCore/page/ContentSecurityPolicy.cpp
  Source/WebCore/platform/URLString.h
  Source/WebCore/platform/text/UnicodeBidi.h
- Source/WebCore/generated/Inspector.idl
 Copyright: 2011 Google, Inc.
 License: BSD-2-clause
 
@@ -9151,7 +9138,6 @@ Files: Source/WebCore/loader/DocumentLoadTiming.h
  Source/WebCore/platform/network/ResourceLoadTiming.h
  Source/WebCore/platform/network/ResourceLoadInfo.h
  Source/WebCore/platform/image-decoders/cg/ImageDecoderCG.cpp
- Source/WebCore/generated/HTMLEntityTable.cpp
  Source/WebCore/html/parser/HTMLViewSourceParser.cpp
  Source/WebCore/html/parser/TextViewSourceParser.cpp
  Source/WebCore/html/parser/HTMLInputStream.h
@@ -10918,33 +10904,6 @@ Files: Source/WebCore/history/HistoryItem.cpp
 Copyright: 2005, 2006, 2008, 2011 Apple Inc.
 License: BSD-2-clause
 
-Files: Source/WebCore/generated/HTMLElementFactory.cpp
- Source/WebCore/generated/SVGNames.h
- Source/WebCore/generated/SVGNames.cpp
- Source/WebCore/generated/SVGElementFactory.cpp
- Source/WebCore/generated/HTMLElementFactory.h
- Source/WebCore/generated/XMLNames.cpp
- Source/WebCore/generated/HTMLNames.cpp
- Source/WebCore/generated/JSHTMLElementWrapperFactory.cpp
- Source/WebCore/generated/XMLNames.h
- Source/WebCore/generated/SVGElementFactory.h
- Source/WebCore/generated/JSSVGElementWrapperFactory.h
- Source/WebCore/generated/HTMLNames.h
- Source/WebCore/generated/XMLNSNames.h
- Source/WebCore/generated/XLinkNames.cpp
- Source/WebCore/generated/XLinkNames.h
- Source/WebCore/generated/MathMLNames.cpp
- Source/WebCore/generated/JSMathMLElementWrapperFactory.h
- Source/WebCore/generated/MathMLNames.h
- Source/WebCore/generated/MathMLElementFactory.cpp
- Source/WebCore/generated/MathMLElementFactory.h
- Source/WebCore/generated/JSHTMLElementWrapperFactory.h
- Source/WebCore/generated/JSSVGElementWrapperFactory.cpp
- Source/WebCore/generated/JSMathMLElementWrapperFactory.cpp
- Source/WebCore/generated/XMLNSNames.cpp
-Copyright: 2005, 2006, 2007, 2008, 2009 Apple Inc.
-License: BSD-2-clause
-
 Files: Source/WebCore/plugins/PluginView.cpp
 Copyright: 2006, 2007, 2008, 2009, 2010 Apple Inc.
  2008 Collabora Ltd.
@@ -11281,8 +11240,7 @@ Copyright: 2003, 2006, 2008 Apple Inc.
  2010, The Android Open Source Project
 License: BSD-2-clause
 
-Files: Source/WebCore/generated/WebKitVersion.h
- Source/JavaScriptCore/API/JSContextRefPrivate.h
+Files: Source/JavaScriptCore/API/JSContextRefPrivate.h
 Copyright: 2009 Apple Computer, Inc.
 License: BSD-2-clause
 
@@ -12223,10 +12181,7 @@ Copyright: 1999-2000 Harri Porten <porten@kde.org>
  1998 Netscape Communications Corporation
 License: LGPL-2+
 
-Files: Source/WebCore/generated/XPathGrammar.h
- Source/WebCore/generated/CSSGrammar.h
- Source/WebCore/generated/XPathGrammar.cpp
- Source/ThirdParty/ANGLE/src/compiler/glslang_tab.h
+Files: Source/ThirdParty/ANGLE/src/compiler/glslang_tab.h
 Copyright: 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
 License: GPL-2+
 
