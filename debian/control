@@ -1,6 +1,7 @@
 Source: qtwebkit-opensource-src
 Priority: optional
-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Timo Jyrinki <timo@debian.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Dmitry Shachnev <mitya57@debian.org>
@@ -23,7 +24,6 @@ Build-Depends: bison,
                libqt5opengl5-dev (>= 5.5.0+dfsg~),
                libqt5xmlpatterns5-private-dev (>= 5.5.0~),
                libsqlite3-dev,
-               libwebp-dev,
                libxcomposite-dev,
                libxml2-dev,
                libxrender-dev,
@@ -70,6 +70,16 @@ Description: Web content engine library for Qt
  from the World Wide Web into your Qt application.
  .
  This package contains the QtWebKit libraries.
+
+Package: libqt5webkit5-qmlwebkitplugin
+Architecture: all
+Section: oldlibs
+Depends: qml-module-qtwebkit, ${misc:Depends}
+Description: transitional dummy package for Qt WebKit QML module
+ QtWebKit provides a Web browser engine that makes it easy to embed content
+ from the World Wide Web into your Qt application.
+ .
+ This is a transitional dummy package which can be safely removed.
 
 Package: qml-module-qtwebkit
 Architecture: any

@@ -21,7 +21,7 @@ disabled_pch_architectures := amd64 powerpc s390x
 
 override_dh_auto_configure:
 	# Run qmake once to create .qmake.conf and be sure to append the following values.
-	qmake
+	qmake WEBKIT_CONFIG-=use_webp
 
 # Enable gstabs debugging symbols only on gstab_architectures.
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(gstab_architectures)))
