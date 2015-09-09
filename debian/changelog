@@ -1,3 +1,13 @@
+qtwebkit-opensource-src (5.5.0+dfsg-2ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * Sync with Debian packaging, remaining changes:
+    - Build without WebP (in universe)
+    - Transitional package for 14.04 LTS -> 16.04 LTS
+    - Own .symbols file
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 09 Jul 2015 15:59:12 +0000
+
 qtwebkit-opensource-src (5.5.0+dfsg-2) experimental; urgency=medium
 
   * Add empty override_dh_auto_test target to make indep builds work.
@@ -37,6 +47,28 @@ qtwebkit-opensource-src (5.4.2+dfsg-2) unstable; urgency=medium
 
  -- Felix Geyer <fgeyer@debian.org>  Tue, 23 Jun 2015 19:20:46 +0200
 
+qtwebkit-opensource-src (5.4.2+dfsg-1ubuntu2.1) wily; urgency=medium
+
+  * Build using ICU 55.1.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sat, 18 Jul 2015 12:26:43 +0200
+
+qtwebkit-opensource-src (5.4.2+dfsg-1ubuntu2) wily; urgency=medium
+ 
+  * Rebuild for GCC5 transition.
+  * Update symbols.
+ 
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Sun, 12 Jul 2015 15:33:28 +0300
+ 
+qtwebkit-opensource-src (5.4.2+dfsg-1ubuntu1) wily; urgency=medium
+
+  * New upstream release.
+  * Drop upstream patches:
+    - fix_unsafe_memory_load_store_on_arm.patch
+    - fix_gmutexlocker.patch
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 11 Jun 2015 09:37:58 +0000
+
 qtwebkit-opensource-src (5.4.2+dfsg-1) experimental; urgency=medium
 
   [ Dmitry Shachnev ]
@@ -62,6 +94,16 @@ qtwebkit-opensource-src (5.4.1+dfsg-3) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Mon, 02 Mar 2015 17:03:48 +0300
 
+qtwebkit-opensource-src (5.4.1+dfsg-2ubuntu1) vivid; urgency=medium
+
+  * New upstream release.
+  * Merge with Debian's 5.4.1+dfsg-2.
+  * debian/patches/fix_gmutexlocker.patch:
+    - Fix FTBFS due to new glib
+  * Comment out libleveldb-dev build-dep
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Tue, 10 Mar 2015 11:39:12 +0000
+
 qtwebkit-opensource-src (5.4.1+dfsg-2) experimental; urgency=medium
 
   * Update leveldb_memenv_path.diff to make it really work.
@@ -80,6 +122,22 @@ qtwebkit-opensource-src (5.4.1+dfsg-1) experimental; urgency=medium
   * Minor debian/copyright updates.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Sun, 01 Mar 2015 19:43:59 +0300
+
+qtwebkit-opensource-src (5.4.0+dfsg-1ubuntu1) vivid; urgency=medium
+
+  [ Timo Jyrinki ]
+  * New upstream release.
+  * Bump build dependencies
+  * Drop debian/patches/LLIntCLoop32BigEndian.patch
+
+  [ Dmitry Shachnev ]
+  * Merge with Debian experimental, remaining changes:
+    - Build with GStreamer 1.0 and without WebP (in universe)
+    - Keep the transitional QML package
+    - Keep additional patches from webkit.org upstream
+    - Keep Ubuntu device pixel ratio patches
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Fri, 13 Feb 2015 06:34:49 +0000
 
 qtwebkit-opensource-src (5.4.0+dfsg-1) experimental; urgency=medium
 
@@ -102,19 +160,6 @@ qtwebkit-opensource-src (5.4.0+dfsg-1) experimental; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Sat, 20 Dec 2014 19:30:06 +0300
 
-qtwebkit-opensource-src (5.3.2+dfsg-4) unstable; urgency=medium
-
-  [ Dmitry Shachnev ]
-  * Backport upstream fix that adds missing checks for HTMLUnknownElement.
-    Closes: #781194.
-
-  [ Felix Geyer ]
-  * Backport upstream fix that prevents recording visited URLs to its favicon
-    database while using private browsing mode.
-    Closes: #780748.
-
- -- Felix Geyer <fgeyer@debian.org>  Wed, 01 Apr 2015 19:44:29 +0200
-
 qtwebkit-opensource-src (5.3.2+dfsg-3) unstable; urgency=medium
 
   * Backport three patches to fix crashes:
@@ -125,6 +170,18 @@ qtwebkit-opensource-src (5.3.2+dfsg-3) unstable; urgency=medium
     built against Qt4 (Closes: #744006).
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 17 Oct 2014 02:04:39 -0300
+
+qtwebkit-opensource-src (5.3.2+dfsg-2ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Sync with Debian 5.3.2+dfsg-2, remaining changes:
+    - Build with GStreamer 1.0 and without WebP (in universe)
+    - Keep the transitional QML package
+    - Keep additional patches from webkit.org upstream
+    - Keep Ubuntu device pixel ratio patches
+  * Update symbols
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Wed, 16 Jul 2014 13:39:04 +0000
 
 qtwebkit-opensource-src (5.3.2+dfsg-2) unstable; urgency=medium
 
@@ -187,6 +244,30 @@ qtwebkit-opensource-src (5.3.0+dfsg-2) unstable; urgency=medium
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 06 Jun 2014 00:31:56 -0300
 
+qtwebkit-opensource-src (5.3.0+dfsg-1ubuntu2) utopic; urgency=medium
+
+  * Update symbols.
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 05 Jun 2014 11:42:21 +0000
+
+qtwebkit-opensource-src (5.3.0+dfsg-1ubuntu1) utopic; urgency=medium
+
+  [ Timo Jyrinki ]
+  * New upstream release
+  * Change include directories
+  * Drop patches merged upstream:
+    - debian/patches/aarch64.patch
+    - debian/patches/dont_pollute_pri_and_pc_with_private_deps.patch
+    - debian/patches/fix_ftbfs_in_archs_without_jit_support.patch
+  * Update symbols file.
+  * Sync with Debian's 5.3.0 packaging
+    - Remaining changes building with GStreamer 1.0 and without WebP
+    - Drop sensors and location b-d, not critical and Oxide provides those
+    - Keep the transitional QML package
+    - Keep additional patches from webkit.org upstream
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 05 Jun 2014 06:51:34 +0000
+
 qtwebkit-opensource-src (5.3.0+dfsg-1) experimental; urgency=medium
 
   * New upstream release.
@@ -209,6 +290,37 @@ qtwebkit-opensource-src (5.3.0+dfsg-1) experimental; urgency=medium
     normal symbols again.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 23 May 2014 21:53:24 -0300
+
+qtwebkit-opensource-src (5.2.1+dfsg1-1ubuntu2) utopic; urgency=medium
+
+  * Update arm64 and ppc64el symbols
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Wed, 04 Jun 2014 09:03:36 +0000
+
+qtwebkit-opensource-src (5.2.1+dfsg1-1ubuntu1) utopic; urgency=medium
+
+  * debian/control: Sort build-dependencies.
+  * Merge with unreleased debian Git, remaining changes:
+    - Build against qtsensors and qtlocation for additional features.
+    - Build-depend on libudev-dev.
+    - Build against GStreamer 1.0.
+    - Disable WebP support since webp not in main.
+    - Make libqt5webkit5-dev on some additional dev packages.
+    - Backport upstream patches:
+      + LLIntCLoop32BigEndian.patch
+      + bug_118860_qtwebkit_511.patch
+      + fix_unsafe_memory_load_store_on_arm.patch
+      + aarch64.patch
+    - Add Ubuntu-specific patches:
+      + devicePixelResolution.patch
+      + add_experimentalDevicePixelRatio.patch
+    - Add Vcs-Bzr field.
+  * Drop private headers, touch apps using them got ported to Oxide.
+  * Refresh all Ubuntu patches.
+  * Update symbols file.
+  * Update for qtsensors5-dev → libqt5sensors5-dev renaming.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Sun, 11 May 2014 11:05:04 +0400
 
 qtwebkit-opensource-src (5.2.1+dfsg1-1) unstable; urgency=medium
 
@@ -272,6 +384,39 @@ qtwebkit-opensource-src (5.2.1+dfsg-1) experimental; urgency=medium
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 20 Feb 2014 20:42:53 -0300
 
+qtwebkit-opensource-src (5.2.1+dfsg-0ubuntu2) trusty; urgency=medium
+
+  [ Ricardo Salveti de Araujo ]
+  * Refresh add_experimentalDevicePixelRatio.patch based on latest changes
+    from upstream
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Tue, 11 Mar 2014 07:22:25 +0000
+
+qtwebkit-opensource-src (5.2.1+dfsg-0ubuntu1) trusty; urgency=low
+
+  * New release
+  * Bump dependencies to 5.2.1, also for qtsensors and qtlocation
+  * Refresh patches:
+    - bug_118860_qtwebkit_511.patch
+    - no_gc_sections.diff
+  * Enable debug temporarily
+  * Disable patches temporarily (need rebasing):
+    - add_experimentalDevicePixelRatio.patch
+  * Drop patches merged upstream:
+    - file_access.patch
+    - gstreamer-build-issue-gst10.patch
+  * Add build dependency on libudev-dev
+  * Add fix_unsafe_memory_load_store_on_arm.patch:
+    - Cherry-pick from upstream to fix ARM crash (LP: #1275961)
+  * Sync with Debian 5.2.0+dfsg1-1, remaining changes:
+    - Build against qtsensors and qtlocation for additional features
+    - Patches
+    - Keep private headers for webbrowser-app
+    - Build against GStreamer 1.0
+    - Disable WebP support since webp not in main
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Fri, 28 Feb 2014 11:06:17 +0000
+
 qtwebkit-opensource-src (5.2.0+dfsg1-1) unstable; urgency=medium
 
   [ Pino Toscano ]
@@ -331,6 +476,88 @@ qtwebkit-opensource-src (5.1.1-2) unstable; urgency=medium
     with bison 3 (closes: #731979).
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 22 Dec 2013 16:35:23 -0300
+
+qtwebkit-opensource-src (5.1.1-1ubuntu8) trusty; urgency=medium
+
+  * Copy dont_pollute_pri_and_pc_with_private_deps.patch from Debian
+    (LP: #1134745).
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Wed, 19 Mar 2014 14:07:02 +0400
+
+qtwebkit-opensource-src (5.1.1-1ubuntu7) trusty; urgency=medium
+
+  * Backport upstream patch to add AArch64 support.
+  * Add a patch to disable JIT and YARR JIT when they are not needed.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 15 Mar 2014 11:43:38 +0400
+
+qtwebkit-opensource-src (5.1.1-1ubuntu6) trusty; urgency=medium
+
+  * Rebuild in correct landing PPA.
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 13 Mar 2014 19:04:22 +0000
+
+qtwebkit-opensource-src (5.1.1-1ubuntu5) trusty; urgency=medium
+
+  * Backporting fixes from QtWebKit 5.2 and rebuilding against the
+    Qt 5.2 stack (avoid regressions with QtWebKit 5.2 on Touch)
+
+ -- Ricardo Salveti de Araujo <ricardo.salveti@canonical.com>  Thu, 13 Mar 2014 00:37:53 -0300
+
+qtwebkit-opensource-src (5.1.1-1ubuntu4) trusty; urgency=medium
+
+  * No change rebuild against libicu52
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Fri, 27 Dec 2013 08:32:20 +0000
+
+qtwebkit-opensource-src (5.1.1-1ubuntu3) trusty; urgency=medium
+
+  * Cherrypick patch from upstream/qt/webkit/ANGLE to fix FTBFS with bison
+    3.0.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Tue, 24 Dec 2013 14:26:17 +0000
+
+qtwebkit-opensource-src (5.1.1-1ubuntu2) saucy; urgency=low
+
+  * Drop libwebp-dev dependency and disable it, not in main.
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 19 Sep 2013 16:18:00 +0300
+
+qtwebkit-opensource-src (5.1.1-1ubuntu1) saucy; urgency=low
+
+  [ Loïc Minier ]
+  * FFE is LP: #1219695.
+
+  [ Timo Jyrinki ]
+  * New upstream release
+  * Drop patches now in upstream:
+    - fixTriggerOSKonWebPages.patch
+    - fix_gcc48.patch
+    - add_module_version.patch
+    - DidFirstLayout.patch
+  * Drop disable_geolocation_501.diff, builds again fine with the support
+  * Refresh no_gc_sections.diff and LLIntCLoop32BigEndian.patch
+  * Fix watch file
+  * Sync with Debian 5.1.1-1, remaining changes:
+    - Build-depend on qtsensors and qtlocation
+    - Keep the LLIntCLoop32BigEndian, file_access patches
+    - Keep private headers
+    - Keep workaround for a upstream dependency problem
+  * Enable JIT again on armhf (drop disabling_jit_for_arm.patch)
+  * debian/patches/bug_118860_qtwebkit_511.patch
+    - Add isMainFrame property (LP: #1217683)
+
+  [ Ricardo Salveti de Araujo ]
+  * Refresh add_experimentalDevicePixelRatio.patch based on latest changes
+    from upstream
+  * debian/patches/gstreamer-build-issue-gst10.patch:
+    - Fixing build issue with gstreamer 1.0 as fullscreen window is not yet
+      support but it gets used via moc
+  * debian/control:
+    - Changing qt build-deps to depend on >= 5.0.2
+    - Build-dep on gstreamer-1.0 instead of 0.10
+
+ -- Loïc Minier <loic.minier@ubuntu.com>  Thu, 19 Sep 2013 14:47:16 +0200
 
 qtwebkit-opensource-src (5.1.1-1) unstable; urgency=low
 
