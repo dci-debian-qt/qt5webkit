@@ -1,0 +1,17 @@
+# This are all lintian false positives. See #802028.
+qtwebkit-opensource-src source: source-contains-prebuilt-javascript-object Source/WebInspectorUI/UserInterface/ActivateButtonNavigationItem.js line length is 272 characters (>256)
+qtwebkit-opensource-src source: source-is-missing Source/WebInspectorUI/UserInterface/ActivateButtonNavigationItem.js
+qtwebkit-opensource-src source: source-contains-prebuilt-javascript-object Source/WebInspectorUI/UserInterface/ConsoleMessageImpl.js line length is 260 characters (>256)
+qtwebkit-opensource-src source: source-is-missing Source/WebInspectorUI/UserInterface/ConsoleMessageImpl.js
+qtwebkit-opensource-src source: source-contains-prebuilt-javascript-object Source/WebInspectorUI/UserInterface/DOMTree.js line length is 283 characters (>256)
+qtwebkit-opensource-src source: source-is-missing Source/WebInspectorUI/UserInterface/DOMTree.js
+qtwebkit-opensource-src source: source-contains-prebuilt-javascript-object Source/WebInspectorUI/UserInterface/DebuggerSidebarPanel.js line length is 266 characters (>256)
+qtwebkit-opensource-src source: source-is-missing Source/WebInspectorUI/UserInterface/DebuggerSidebarPanel.js
+qtwebkit-opensource-src source: source-contains-prebuilt-javascript-object Source/WebInspectorUI/UserInterface/InspectorBackendCommands.js line length is 362 characters (>256)
+qtwebkit-opensource-src source: source-is-missing Source/WebInspectorUI/UserInterface/InspectorBackendCommands.js
+qtwebkit-opensource-src source: source-contains-prebuilt-javascript-object Source/WebInspectorUI/UserInterface/LogContentView.js line length is 325 characters (>256)
+qtwebkit-opensource-src source: source-is-missing Source/WebInspectorUI/UserInterface/LogContentView.js
+qtwebkit-opensource-src source: source-contains-prebuilt-javascript-object Source/WebInspectorUI/UserInterface/ProfileView.js line length is 284 characters (>256)
+qtwebkit-opensource-src source: source-is-missing Source/WebInspectorUI/UserInterface/ProfileView.js
+qtwebkit-opensource-src source: source-contains-prebuilt-javascript-object Source/WebInspectorUI/UserInterface/ResourceSidebarPanel.js line length is 520 characters (>256)
+qtwebkit-opensource-src source: source-is-missing Source/WebInspectorUI/UserInterface/ResourceSidebarPanel.js

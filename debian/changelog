@@ -3,6 +3,8 @@ qtwebkit-opensource-src (5.5.1+dfsg-1) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
     - Bump Qt build dependencies.
+  * Override lintian false positives for javascript files. Long lines do not
+    mean minified javascript.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Oct 2015 17:42:52 -0300
 
