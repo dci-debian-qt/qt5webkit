@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.5.0+dfsg-2ubuntu1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.5.1+dfsg-1ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Sync with Debian packaging, remaining changes:
@@ -7,6 +7,15 @@ qtwebkit-opensource-src (5.5.0+dfsg-2ubuntu1) UNRELEASED; urgency=medium
     - Own .symbols file
 
  -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 09 Jul 2015 15:59:12 +0000
+
+qtwebkit-opensource-src (5.5.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Bump Qt build dependencies.
+  * Override lintian false positives for javascript files. Long lines do not
+    mean minified javascript.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 16 Oct 2015 23:08:49 -0300
 
 qtwebkit-opensource-src (5.5.0+dfsg-2) experimental; urgency=medium
 
