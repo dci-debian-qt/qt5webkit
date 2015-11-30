@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.5.1+dfsg-2ubuntu1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.5.1+dfsg-2ubuntu1) xenial; urgency=medium
 
   * New upstream release.
   * Sync with Debian packaging, remaining changes:
@@ -6,7 +6,7 @@ qtwebkit-opensource-src (5.5.1+dfsg-2ubuntu1) UNRELEASED; urgency=medium
     - Transitional package for 14.04 LTS -> 16.04 LTS
     - Own .symbols file
 
- -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 09 Jul 2015 15:59:12 +0000
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Mon, 30 Nov 2015 09:27:17 +0000
 
 qtwebkit-opensource-src (5.5.1+dfsg-2) unstable; urgency=medium
 
