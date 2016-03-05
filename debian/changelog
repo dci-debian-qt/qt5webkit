@@ -3,6 +3,7 @@ qtwebkit-opensource-src (5.6.0~rc+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream release candidate.
   * Bump Qt build-dependencies to 5.6.0~rc.
+  * Add back qtwebkit5-doc package.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 05 Mar 2016 21:41:44 +0300
 

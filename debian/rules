@@ -51,7 +51,7 @@ endif
 	qmake
 
 override_dh_auto_build-indep:
-	dh_auto_build -Smakefile -- html_docs
+	dh_auto_build -- docs
 
 override_dh_auto_install-arch:
 	make install INSTALL_ROOT=$(CURDIR)/debian/tmp
@@ -75,7 +75,7 @@ override_dh_auto_install-arch:
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
 
 override_dh_auto_install-indep:
-	$(MAKE) -f Source/Makefile.api INSTALL_ROOT=$(CURDIR)/debian/tmp install_html_docs
+	dh_auto_build -- -f Source/Makefile.api INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
 override_dh_install:
 	dh_install --fail-missing
