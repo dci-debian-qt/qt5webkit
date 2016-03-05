@@ -43,8 +43,8 @@ Build-Depends-Indep: libqt5sql5-sqlite (>= 5.6.0~rc+dfsg~),
 Standards-Version: 3.9.6
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
-Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qt5webkit.git
-Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/qt/qt5webkit.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qt5webkit.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/qt/qt5webkit.git
 
 Package: libqt5webkit5-dev
 Section: libdevel
