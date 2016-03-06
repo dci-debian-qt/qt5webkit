@@ -54,7 +54,7 @@ endif
 	/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/bin/syncqt.pl Source -version 5.6.0
 
 override_dh_auto_build-indep:
-	dh_auto_build -- docs
+	dh_auto_build -- -CSource -fMakefile.api docs
 
 override_dh_auto_install-arch:
 	make install INSTALL_ROOT=$(CURDIR)/debian/tmp
@@ -78,7 +78,7 @@ override_dh_auto_install-arch:
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
 
 override_dh_auto_install-indep:
-	dh_auto_build -- -f Source/Makefile.api INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
+	dh_auto_build -- -CSource -fMakefile.api INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
 override_dh_install:
 	dh_install --fail-missing
