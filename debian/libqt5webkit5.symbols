@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.5.1 amd64 arm64 ppc64 ppc64el s390x
+# SymbolsHelper-Confirmed: 5.6.0~rc ppc64el
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -895,6 +895,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesGetShowsURLsInToolTipsEnabled@Base 5.2.0
  WKPreferencesGetSmartInsertDeleteEnabled@Base 5.2.0
  WKPreferencesGetSnapshotAllPlugIns@Base 5.2.0
+ WKPreferencesGetSpatialNavigationEnabled@Base 5.6.0~rc
  WKPreferencesGetStorageBlockingPolicy@Base 5.0.2
  WKPreferencesGetSuppressesIncrementalRendering@Base 5.0.2
  WKPreferencesGetTabToLinksEnabled@Base 5.0.2
@@ -1004,6 +1005,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  WKPreferencesSetShowsURLsInToolTipsEnabled@Base 5.2.0
  WKPreferencesSetSmartInsertDeleteEnabled@Base 5.2.0
  WKPreferencesSetSnapshotAllPlugIns@Base 5.2.0
+ WKPreferencesSetSpatialNavigationEnabled@Base 5.6.0~rc
  WKPreferencesSetStandardFontFamily@Base 5.0.2
  WKPreferencesSetStorageBlockingPolicy@Base 5.0.2
  WKPreferencesSetSuppressesIncrementalRendering@Base 5.0.2
@@ -1499,10 +1501,14 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN15QWebPreferences27defaultFixedFontSizeChangedEv@Base 5.0.2
  _ZN15QWebPreferences27notificationsEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences27setNavigatorQtObjectEnabledEb@Base 5.0.2
+ _ZN15QWebPreferences27setSpatialNavigationEnabledEb@Base 5.6.0~rc
+ _ZN15QWebPreferences28setLinksIncludedInFocusChainEb@Base 5.6.0~rc
  _ZN15QWebPreferences29developerExtrasEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences29frameFlatteningEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences29privateBrowsingEnabledChangedEv@Base 5.0.2
  _ZN15QWebPreferences31navigatorQtObjectEnabledChangedEv@Base 5.0.2
+ _ZN15QWebPreferences31spatialNavigationEnabledChangedEv@Base 5.6.0~rc
+ _ZN15QWebPreferences32linksIncludedInFocusChainChangedEv@Base 5.6.0~rc
  _ZN15QWebPreferences32setFileAccessFromFileURLsAllowedEb@Base 5.2.0
  _ZN15QWebPreferences36fileAccessFromFileURLsAllowedChangedEv@Base 5.2.0
  _ZN15QWebPreferences36setOfflineWebApplicationCacheEnabledEb@Base 5.0.2
@@ -1848,6 +1854,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN25QQuickWebViewExperimental18didRelaunchProcessEv@Base 5.2.0
  _ZN25QQuickWebViewExperimental18evaluateJavaScriptERK7QStringRK8QJSValue@Base 5.0.2
  _ZN25QQuickWebViewExperimental18schemeDelegates_AtEP16QQmlListPropertyI23QQuickUrlSchemeDelegateEi@Base 5.0.2
+ _ZN25QQuickWebViewExperimental18setUserStyleSheetsERK5QListI4QUrlE@Base 5.6.0~rc
  _ZN25QQuickWebViewExperimental18userScriptsChangedEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental19colorChooserChangedEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental19deviceHeightChangedEv@Base 5.0.2
@@ -1860,6 +1867,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN25QQuickWebViewExperimental21schemeDelegates_CountEP16QQmlListPropertyI23QQuickUrlSchemeDelegateE@Base 5.0.2
  _ZN25QQuickWebViewExperimental22schemeDelegates_AppendEP16QQmlListPropertyI23QQuickUrlSchemeDelegateEPS1_@Base 5.0.2
  _ZN25QQuickWebViewExperimental22setDatabaseQuotaDialogEP13QQmlComponent@Base 5.0.2
+ _ZN25QQuickWebViewExperimental22userStyleSheetsChangedEv@Base 5.6.0~rc
  _ZN25QQuickWebViewExperimental23exitFullScreenRequestedEv@Base 5.0.2
  _ZN25QQuickWebViewExperimental23setAuthenticationDialogEP13QQmlComponent@Base 5.0.2
  _ZN25QQuickWebViewExperimental24enterFullScreenRequestedEv@Base 5.0.2
@@ -2765,6 +2773,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK15QWebPreferences22frameFlatteningEnabledEv@Base 5.0.2
  _ZNK15QWebPreferences22privateBrowsingEnabledEv@Base 5.0.2
  _ZNK15QWebPreferences24navigatorQtObjectEnabledEv@Base 5.0.2
+ _ZNK15QWebPreferences24spatialNavigationEnabledEv@Base 5.6.0~rc
+ _ZNK15QWebPreferences25linksIncludedInFocusChainEv@Base 5.6.0~rc
  _ZNK15QWebPreferences29fileAccessFromFileURLsAllowedEv@Base 5.2.0
  _ZNK15QWebPreferences33offlineWebApplicationCacheEnabledEv@Base 5.0.2
  _ZNK15QWebPreferences34universalAccessFromFileURLsAllowedEv@Base 5.2.0
@@ -2864,6 +2874,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK25QQuickWebViewExperimental12itemSelectorEv@Base 5.0.2
  _ZNK25QQuickWebViewExperimental12promptDialogEv@Base 5.0.2
  _ZNK25QQuickWebViewExperimental13confirmDialogEv@Base 5.0.2
+ _ZNK25QQuickWebViewExperimental15userStyleSheetsEv@Base 5.6.0~rc
  _ZNK25QQuickWebViewExperimental17navigationHistoryEv@Base 5.0.2
  _ZNK25QQuickWebViewExperimental18remoteInspectorUrlEv@Base 5.0.2
  _ZNK25QQuickWebViewExperimental19databaseQuotaDialogEv@Base 5.0.2
@@ -3040,6 +3051,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZTI19QtWebSecurityOrigin@Base 5.0.2
  _ZTI20QQuickNetworkRequest@Base 5.0.2
  _ZTI20QWebHistoryInterface@Base 5.0.2
+ _ZTI21QOpenGLExtraFunctions@Base 5.6.0~rc
  _ZTI21QQuickWebViewAttached@Base 5.0.2
  _ZTI21QWebIconImageProvider@Base 5.0.2
  _ZTI21QWebNavigationHistory@Base 5.0.2
@@ -3070,6 +3082,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZTS19QtWebSecurityOrigin@Base 5.0.2
  _ZTS20QQuickNetworkRequest@Base 5.0.2
  _ZTS20QWebHistoryInterface@Base 5.0.2
+ _ZTS21QOpenGLExtraFunctions@Base 5.6.0~rc
  _ZTS21QQuickWebViewAttached@Base 5.0.2
  _ZTS21QWebIconImageProvider@Base 5.0.2
  _ZTS21QWebNavigationHistory@Base 5.0.2
