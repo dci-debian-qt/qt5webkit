@@ -1,6 +1,5 @@
-qtwebkit-opensource-src (5.6.0~rc+dfsg-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.6.0~rc+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release candidate.
   * Bump Qt build-dependencies to 5.6.0~rc.
   * Add back qtwebkit5-doc package.
@@ -10,7 +9,7 @@ qtwebkit-opensource-src (5.6.0~rc+dfsg-1) UNRELEASED; urgency=medium
   * Call syncqt.pl in configure target.
   * Bump Standards-Version to 3.9.7, no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 05 Mar 2016 21:41:44 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 06 Mar 2016 13:12:22 +0300
 
 qtwebkit-opensource-src (5.5.1+dfsg-2) unstable; urgency=medium
 
