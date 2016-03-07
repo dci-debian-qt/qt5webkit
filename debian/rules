@@ -54,6 +54,7 @@ endif
 	/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/bin/syncqt.pl Source -version 5.6.0
 
 override_dh_auto_build-indep:
+	dh_auto_build -- sub-Source-QtWebKit-pro-clean
 	dh_auto_build -- -CSource -fMakefile.api docs
 
 override_dh_auto_install-arch:
