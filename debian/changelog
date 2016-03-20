@@ -1,6 +1,5 @@
-qtwebkit-opensource-src (5.6.0+dfsg-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.6.0+dfsg-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Make sure the Makefile needed for building docs is generated.
   * Update debian/watch for new tarballs location.
@@ -8,7 +7,7 @@ qtwebkit-opensource-src (5.6.0+dfsg-1) UNRELEASED; urgency=medium
   * Do not hardcode version number in debian/rules.
   * Update Lintian overrides for JS files with long lines.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 07 Mar 2016 22:31:23 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 20 Mar 2016 21:39:26 +0100
 
 qtwebkit-opensource-src (5.6.0~rc+dfsg-2) experimental; urgency=medium
 
