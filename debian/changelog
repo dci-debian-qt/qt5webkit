@@ -5,6 +5,7 @@ qtwebkit-opensource-src (5.6.0+dfsg-1) UNRELEASED; urgency=medium
   * Make sure the Makefile needed for building docs is generated.
   * Update debian/watch for new tarballs location.
   * Bump Qt build-dependencies to 5.6.0.
+  * Do not hardcode version number in debian/rules.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 07 Mar 2016 22:31:23 +0300
 
