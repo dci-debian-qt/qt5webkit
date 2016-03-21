@@ -1,8 +1,10 @@
-qtwebkit-opensource-src (5.6.0~rc+dfsg-3ubuntu1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.6.0+dfsg-1ubuntu1) UNRELEASED; urgency=medium
 
-  [ Timo Jyrinki ]
   * New upstream release.
   * Drop transitional package after 16.04 LTS is released.
+  * Sync with Debian packaging, remaining changes:
+    - Build without WebP (in universe)
+    - Own .symbols file
 
  -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Tue, 08 Mar 2016 09:35:31 +0000
 
