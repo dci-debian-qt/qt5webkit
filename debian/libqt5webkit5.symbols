@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.6.1 mips64el s390x
+# SymbolsHelper-Confirmed: 5.6.1 amd64 arm64 kfreebsd-amd64 mips64el ppc64 ppc64el s390x
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -3135,6 +3135,15 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (c++)"non-virtual thunk to QQuickWebView::~QQuickWebView()@Base" 5.0.2
 # SymbolsHelper-Confirmed: 5.6.0~rc ppc64el
 libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
+ (arch=!mips64el !s390x)Qt_5.0@Qt_5.0 5.6.1
+ (arch=!mips64el !s390x)Qt_5.1@Qt_5.1 5.6.1
+ (arch=!mips64el !s390x)Qt_5.2@Qt_5.2 5.6.1
+ (arch=!mips64el !s390x)Qt_5.3@Qt_5.3 5.6.1
+ (arch=!mips64el !s390x)Qt_5.4@Qt_5.4 5.6.1
+ (arch=!mips64el !s390x)Qt_5.5@Qt_5.5 5.6.1
+ (arch=!mips64el !s390x)Qt_5.6@Qt_5.6 5.6.1
+ (arch=!mips64el !s390x)Qt_5@Qt_5 5.6.1
+ (arch=!mips64el !s390x)Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.1
  _ZN13QWebInspector10closeEventEP11QCloseEvent@Qt_5 5.6.0~rc
  _ZN13QWebInspector11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0~rc
  _ZN13QWebInspector11qt_metacastEPKc@Qt_5 5.6.0~rc
