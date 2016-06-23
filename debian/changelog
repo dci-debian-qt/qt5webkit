@@ -1,9 +1,8 @@
-qtwebkit-opensource-src (5.6.1+dfsg-4) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.6.1+dfsg-4) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Update symbols files with buildd's logs (Closes: 827783).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 Jun 2016 22:07:19 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 23 Jun 2016 00:02:14 -0300
 
 qtwebkit-opensource-src (5.6.1+dfsg-3) unstable; urgency=medium
 
