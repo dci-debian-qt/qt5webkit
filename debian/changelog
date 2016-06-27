@@ -1,3 +1,31 @@
+qtwebkit-opensource-src (5.6.1+dfsg-4) unstable; urgency=medium
+
+  * Update symbols files with buildd's logs (Closes: 827783).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 23 Jun 2016 00:02:14 -0300
+
+qtwebkit-opensource-src (5.6.1+dfsg-3) unstable; urgency=medium
+
+  * Update symbols files with buildds' logs.
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 13 Jun 2016 10:12:19 -0300
+
+qtwebkit-opensource-src (5.6.1+dfsg-2) experimental; urgency=medium
+
+  * Update symbols files with buildds' logs.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 12 Jun 2016 20:33:02 -0300
+
+qtwebkit-opensource-src (5.6.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Bump Qt build dependencies.
+  * Refresh fix_pthread_linking.diff.
+  * Update Standards-Version to 3.9.8, no changes required.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 10 Jun 2016 15:12:20 -0300
+
 qtwebkit-opensource-src (5.6.0+dfsg-1) experimental; urgency=medium
 
   * New upstream release.
