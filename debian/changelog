@@ -7,6 +7,7 @@ qtwebkit-opensource-src (5.7.0+dfsg-1) UNRELEASED; urgency=medium
   * Refresh no_gc_sections.diff.
   * Bump Qt build-dependencies to 5.7.0.
   * Update the symbols files from 5.6.1 build logs.
+  * Drop the syncqt hack, the new tarballs are generated properly.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 Jul 2016 16:25:01 +0300
 
