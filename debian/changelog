@@ -6,6 +6,7 @@ qtwebkit-opensource-src (5.7.0+dfsg-1) UNRELEASED; urgency=medium
     in 5.6.1 and wrongly rebased in 5.6.1+dfsg-1 upload.
   * Refresh no_gc_sections.diff.
   * Bump Qt build-dependencies to 5.7.0.
+  * Update the symbols files from 5.6.1 build logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 Jul 2016 16:25:01 +0300
 
