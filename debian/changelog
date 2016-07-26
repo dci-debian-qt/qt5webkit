@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.6.1+dfsg-4ubuntu1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.6.1+dfsg-4ubuntu1~2) yakkety; urgency=medium
 
   * New upstream release.
   * Drop transitional package after 16.04 LTS is released.
