@@ -1,6 +1,7 @@
 qtwebkit-opensource-src (5.7.0+dfsg-1ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update symbols.
 
  -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Mon, 12 Sep 2016 10:46:51 +0000
 
