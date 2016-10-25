@@ -2986,44 +2986,26 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZNK3WTF9MediaTimemiERKS0_@Base 5.0.2
  _ZNK3WTF9MediaTimeplERKS0_@Base 5.0.2
  (optional=templinst)_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_9TBehaviorESt10_Select1stIS9_ESt4lessIS5_ESaIS9_EE4findERS7_@Base 5.4.2
- (optional=templinst)_ZNSt6vectorIN23BuiltInFunctionEmulator16TBuiltInFunctionESaIS1_EE19_M_emplace_back_auxIIRKS1_EEEvDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt6vectorIN23BuiltInFunctionEmulator16TBuiltInFunctionESaIS1_EE19_M_emplace_back_auxIJRKS1_EEEvDpOT_@Base 5.2.0
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIIRKS5_EEEvDpOT_@Base 5.4.2
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIIS5_EEEvDpOT_@Base 5.4.2
  (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJRKS5_EEEvDpOT_@Base 5.4.2
  (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJS5_EEEvDpOT_@Base 5.4.2
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev@Base 5.4.2
- (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev@Base 5.4.2
  (optional=templinst)_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEaSERKS7_@Base 5.4.2
- (optional=templinst)_ZNSt6vectorIPcSaIS0_EE19_M_emplace_back_auxIIRKS0_EEEvDpOT_@Base 5.3.0
- (optional=templinst)_ZNSt6vectorIPcSaIS0_EE19_M_emplace_back_auxIIS0_EEEvDpOT_@Base 5.3.0
  (optional=templinst)_ZNSt6vectorIPcSaIS0_EE19_M_emplace_back_auxIJRKS0_EEEvDpOT_@Base 5.3.0
  (optional=templinst)_ZNSt6vectorIPcSaIS0_EE19_M_emplace_back_auxIJS0_EEEvDpOT_@Base 5.3.0
- (optional=templinst)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE19_M_emplace_back_auxIIS9_EEEvDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt6vectorISt3mapI10TBasicType10TPrecisionSt4lessIS1_ESaISt4pairIKS1_S2_EEESaIS9_EE19_M_emplace_back_auxIJS9_EEEvDpOT_@Base 5.2.0
- (optional=templinst)_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIIiEEEvDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIJiEEEvDpOT_@Base 5.2.0
- (optional=templinst)_ZNSt6vectorIjSaIjEE12emplace_backIIjEEEvDpOT_@Base 5.3.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE12emplace_backIJjEEEvDpOT_@Base 5.3.0
  (optional=templinst|subst)_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EE{size_t}RKj@Base 5.2.0
- (optional=templinst)_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIIjEEEvDpOT_@Base 5.3.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJjEEEvDpOT_@Base 5.3.0
- (optional=templinst)_ZNSt6vectorImSaImEE12emplace_backIImEEEvDpOT_@Base 5.3.0
  (optional=templinst)_ZNSt6vectorImSaImEE12emplace_backIJmEEEvDpOT_@Base 5.3.0
- (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxIIRK{size_t}EEEvDpOT_@Base 5.2.0
- (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxII{size_t}EEEvDpOT_@Base 5.2.0
  (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxIJRK{size_t}EEEvDpOT_@Base 5.2.0
  (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE19_M_emplace_back_auxIJ{size_t}EEEvDpOT_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE24_M_get_insert_unique_posERS2_@Base 5.0.2
  (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 mips64el ppc64el sparc64 x32)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS2_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 5.0.2
- (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_9TBehaviorESt10_Select1stIS9_ESt4lessIS5_ESaIS9_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOS5_EESK_IIEEEEESt17_Rb_tree_iteratorIS9_ESt23_Rb_tree_const_iteratorIS9_EDpOT_@Base 5.4.2
- (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_9TBehaviorESt10_Select1stIS9_ESt4lessIS5_ESaIS9_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOS5_EESK_IJEEEEESt17_Rb_tree_iteratorIS9_ESt23_Rb_tree_const_iteratorIS9_EDpOT_@Base 5.4.2
  (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_9TBehaviorESt10_Select1stIS9_ESt4lessIS5_ESaIS9_EE24_M_get_insert_unique_posERS7_@Base 5.4.2
  (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 mips64el ppc64el sparc64 x32)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_9TBehaviorESt10_Select1stIS9_ESt4lessIS5_ESaIS9_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS9_ERS7_@Base 5.4.2
  (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_9TBehaviorESt10_Select1stIS9_ESt4lessIS5_ESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 5.4.2
- (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOS5_EESJ_IIEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_@Base 5.4.2
- (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOS5_EESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_@Base 5.4.2
  (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE24_M_get_insert_unique_posERS7_@Base 5.4.2
  (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 mips64el ppc64el sparc64 x32)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_@Base 5.4.2
  (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 5.4.2
@@ -3137,16 +3119,16 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (c++)"non-virtual thunk to QQuickWebView::~QQuickWebView()@Base" 5.0.2
 # SymbolsHelper-Confirmed: 5.7.0 ppc64el
 libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5.0@Qt_5.0 5.6.1
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5.1@Qt_5.1 5.6.1
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5.2@Qt_5.2 5.6.1
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5.3@Qt_5.3 5.6.1
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5.4@Qt_5.4 5.6.1
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5.5@Qt_5.5 5.6.1
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5.6@Qt_5.6 5.6.1
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5.7@Qt_5.7 5.7.0
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5@Qt_5 5.6.1
- (arch=!hppa !mips64el !s390x !sparc64)Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.0@Qt_5.0 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.1@Qt_5.1 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.2@Qt_5.2 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.3@Qt_5.3 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.4@Qt_5.4 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.5@Qt_5.5 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.6@Qt_5.6 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.7@Qt_5.7 5.7.0
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5@Qt_5 5.6.1
+ (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.1
  _ZN13QWebInspector10closeEventEP11QCloseEvent@Qt_5 5.6.0~rc
  _ZN13QWebInspector11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0~rc
  _ZN13QWebInspector11qt_metacastEPKc@Qt_5 5.6.0~rc
