@@ -4,6 +4,7 @@ qtwebkit-opensource-src (5.7.1~20161021+dfsg-1) UNRELEASED; urgency=medium
   * New upstream snapshot.
   * Merge 5.6.1+dfsg-5 upload from unstable.
   * Bump Qt build-dependencies to 5.7.1~20161021.
+  * Fix a Lintian warning about space in license name.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Oct 2016 14:52:21 +0300
 
