@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.7.0 ppc64el
+# SymbolsHelper-Confirmed: 5.7.1~20161021 amd64 arm64 kfreebsd-amd64 mips64el ppc64el s390x
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -3011,10 +3011,10 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 5.4.2
  (optional=templinst|subst)_ZNSt8_Rb_treeISt4pairIi{uint64_t}ES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE16_M_insert_uniqueIS1_EES0_ISt17_Rb_tree_iteratorIS1_EbEOT_@Base 5.4.1
  (optional=templinst|subst)_ZNSt8_Rb_treeISt4pairIi{uint64_t}ES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 5.4.1
+ (optional=templinst)_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE7_M_copyINS5_11_Alloc_nodeEEEPSt13_Rb_tree_nodeImEPKS9_PSt18_Rb_tree_node_baseRT_@Base 5.7.1~20161021
  (optional=templinst|arch=armel armhf)_ZNSt8_Rb_treeIyySt9_IdentityIyESt4lessIyESaIyEE4findERKy@Base 5.6.1
  (optional=templinst|subst)_ZNSt8_Rb_treeI{uint64_t}{uint64_t}St9_IdentityI{uint64_t}ESt4lessI{uint64_t}ESaI{uint64_t}EE16_M_insert_uniqueIRK{uint64_t}EESt4pairISt17_Rb_tree_iteratorI{uint64_t}EbEOT_@Base 5.3.0
  (optional=templinst|subst)_ZNSt8_Rb_treeI{uint64_t}{uint64_t}St9_IdentityI{uint64_t}ESt4lessI{uint64_t}ESaI{uint64_t}EE5eraseERK{uint64_t}@Base 5.3.0
- (optional=templinst|subst)_ZNSt8_Rb_treeI{uint64_t}{uint64_t}St9_IdentityI{uint64_t}ESt4lessI{uint64_t}ESaI{uint64_t}EE7_M_copyINS5_11_Alloc_nodeEEEPSt13_Rb_tree_nodeI{uint64_t}EPKS9_SA_RT_@Base 5.4.2
  (optional=templinst|subst)_ZNSt8_Rb_treeI{uint64_t}{uint64_t}St9_IdentityI{uint64_t}ESt4lessI{uint64_t}ESaI{uint64_t}EE8_M_eraseEPSt13_Rb_tree_nodeI{uint64_t}E@Base 5.3.0
  (optional=templinst|arch=armel armhf hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc)_ZSt4swapIN8QVariant7PrivateEEvRT_S3_@Base 5.2.0
  (optional=templinst)_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKNSt7__cxx1112basic_stringIS3_St11char_traitsIS3_ESaIS3_EEESE_@Base 5.5.1
@@ -3117,18 +3117,18 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (c++)"non-virtual thunk to QQuickWebPage::~QQuickWebPage()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::componentComplete()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::~QQuickWebView()@Base" 5.0.2
-# SymbolsHelper-Confirmed: 5.7.0 ppc64el
+# SymbolsHelper-Confirmed: 5.7.1~20161021 amd64 arm64 kfreebsd-amd64 mips64el ppc64el s390x
 libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.0@Qt_5.0 5.6.1
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.1@Qt_5.1 5.6.1
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.2@Qt_5.2 5.6.1
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.3@Qt_5.3 5.6.1
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.4@Qt_5.4 5.6.1
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.5@Qt_5.5 5.6.1
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.6@Qt_5.6 5.6.1
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5.7@Qt_5.7 5.7.0
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5@Qt_5 5.6.1
- (optional=linker|arch=!hppa !mips64el !s390x !sparc64)Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5.0@Qt_5.0 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5.1@Qt_5.1 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5.2@Qt_5.2 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5.3@Qt_5.3 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5.4@Qt_5.4 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5.5@Qt_5.5 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5.6@Qt_5.6 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5.7@Qt_5.7 5.7.0
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5@Qt_5 5.6.1
+ (optional=linker|arch=!hppa !s390x !sparc64)Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.1
  _ZN13QWebInspector10closeEventEP11QCloseEvent@Qt_5 5.6.0~rc
  _ZN13QWebInspector11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0~rc
  _ZN13QWebInspector11qt_metacastEPKc@Qt_5 5.6.0~rc
