@@ -1,3 +1,16 @@
+qtwebkit-opensource-src (5.7.0+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop debian/patches/fix_pthread_linking.diff, it was applied upstream
+    in 5.6.1 and wrongly rebased in 5.6.1+dfsg-1 upload.
+  * Refresh no_gc_sections.diff.
+  * Bump Qt build-dependencies to 5.7.0.
+  * Update the symbols files from 5.6.1 build logs.
+  * Drop the syncqt hack, the new tarballs are generated properly.
+  * Add Qt_5.7 version tag to debian/libqt5webkit5.symbols.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 07 Jul 2016 21:37:28 +0300
+
 qtwebkit-opensource-src (5.6.1+dfsg-4) unstable; urgency=medium
 
   * Update symbols files with buildd's logs (Closes: 827783).
