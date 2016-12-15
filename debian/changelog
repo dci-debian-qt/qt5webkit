@@ -1,12 +1,11 @@
-qtwebkit-opensource-src (5.7.1+dfsg-1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.7.1+dfsg-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
     - Bump only the necessary Qt build dependencies.
   * Update symbols files with buildds' logs.
   * Re mark 5.7.1~* symbols to 5.7.1.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 14 Dec 2016 17:22:44 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 15 Dec 2016 17:22:14 -0300
 
 qtwebkit-opensource-src (5.7.1~20161021+dfsg-2) unstable; urgency=medium
 
