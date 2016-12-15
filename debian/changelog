@@ -4,6 +4,7 @@ qtwebkit-opensource-src (5.7.1+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
     - Bump only the necessary Qt build dependencies.
   * Update symbols files with buildds' logs.
+  * Re mark 5.7.1~* symbols to 5.7.1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 14 Dec 2016 17:22:44 -0300
 
