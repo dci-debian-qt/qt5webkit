@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.6.1+dfsg-5ubuntu1) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.6.1+dfsg-5ubuntu1) zesty; urgency=medium
 
   * Re-sync with Debian unstable, no changes remaining.
   * Re-enable WebP, it is in main since Trusty (LP: #1652166).
