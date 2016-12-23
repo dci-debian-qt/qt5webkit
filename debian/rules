@@ -25,7 +25,7 @@ upstream_version = $(firstword $(subst +, ,$(debian_version)))
 
 override_dh_auto_configure:
 	# Run qmake once to create .qmake.conf and be sure to append the following values.
-	qmake WEBKIT_CONFIG-=use_webp
+	qmake
 
 # Enable gstabs debugging symbols only on gstab_architectures.
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(gstab_architectures)))
