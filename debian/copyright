@@ -12353,7 +12353,7 @@ License: BSD-2-clause
 Files: Source/ThirdParty/qunit/qunit/qunit.js
 Copyright: 2008 Ariel Flesler
            2011 John Resig, Jörn Zaefferer
-License: Mixed MIT + BSD
+License: mixed-MIT-BSD
  Copyright 2013 jQuery Foundation and other contributors
  http://jquery.com/
  .
