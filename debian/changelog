@@ -1,3 +1,10 @@
+qtwebkit-opensource-src (5.9.0+dfsg-1) UNRELEASED; urgency=medium
+
+  [ Simon Quigley ]
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Jun 2017 20:39:29 -0500
+
 qtwebkit-opensource-src (5.7.1+dfsg-1) unstable; urgency=medium
 
   * New upstream release.
