@@ -35,7 +35,7 @@ Build-Depends: bison,
                python2.7,
                qtbase5-private-dev (>= 5.9.0+dfsg~),
                qtdeclarative5-private-dev (>= 5.9.0~),
-               qtscript5-private-dev (>= 5.9.0+dfsg~),
+               qtscript5-private-dev (>= 5.9.0~beta3+dfsg~),
                ruby
 Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.0+dfsg~),
                      qtbase5-doc-html (>= 5.9.0+dfsg~),
