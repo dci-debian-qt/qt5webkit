@@ -3115,6 +3115,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (c++)"non-virtual thunk to QQuickWebPage::~QQuickWebPage()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::componentComplete()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::~QQuickWebView()@Base" 5.0.2
+# SymbolsHelper-Confirmed: 5.9.0 amd64
 libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  (optional=linker|arch=!hppa !s390x)Qt_5.0@Qt_5.0 5.6.1
  (optional=linker|arch=!hppa !s390x)Qt_5.1@Qt_5.1 5.6.1
