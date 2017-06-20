@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.7.1 amd64 arm64 kfreebsd-amd64 mips64el ppc64el s390x sparc64
+# SymbolsHelper-Confirmed: 5.9.0 amd64
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -1429,6 +1429,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN15QWebPageAdapter18setVisibilityStateENS_15VisibilityStateE@Base 5.2.0
  _ZN15QWebPageAdapter18treatSchemeAsLocalERK7QString@Base 5.0.2
  _ZN15QWebPageAdapter19setDevicePixelRatioEf@Base 5.3.0
+ _ZN15QWebPageAdapter19triggerCustomActionEiRK7QString@Base 5.9.0
  _ZN15QWebPageAdapter20networkAccessManagerEv@Base 5.0.2
  _ZN15QWebPageAdapter20updateActionInternalENS_10MenuActionEPKcPbS3_@Base 5.0.2
  _ZN15QWebPageAdapter21initializeWebCorePageEv@Base 5.0.2
@@ -3021,7 +3022,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZTI11QWebKitTest@Base 5.0.2
  _ZTI13QQuickWebPage@Base 5.0.2
  _ZTI13QQuickWebView@Base 5.0.2
- _ZTI13QSGRenderNode@Base 5.0.2
  _ZTI15QWebLoadRequest@Base 5.0.2
  _ZTI15QWebPageAdapter@Base 5.0.2
  _ZTI15QWebPreferences@Base 5.0.2
@@ -3052,7 +3052,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZTS11QWebKitTest@Base 5.0.2
  _ZTS13QQuickWebPage@Base 5.0.2
  _ZTS13QQuickWebView@Base 5.0.2
- _ZTS13QSGRenderNode@Base 5.0.2
  _ZTS15QWebLoadRequest@Base 5.0.2
  _ZTS15QWebPageAdapter@Base 5.0.2
  _ZTS15QWebPreferences@Base 5.0.2
@@ -3081,7 +3080,6 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZTV11QWebKitTest@Base 5.0.2
  _ZTV13QQuickWebPage@Base 5.0.2
  _ZTV13QQuickWebView@Base 5.0.2
- _ZTV13QSGRenderNode@Base 5.0.2
  _ZTV15QWebLoadRequest@Base 5.0.2
  _ZTV15QWebPageAdapter@Base 5.0.2
  _ZTV15QWebPreferences@Base 5.0.2
@@ -3117,7 +3115,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (c++)"non-virtual thunk to QQuickWebPage::~QQuickWebPage()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::componentComplete()@Base" 5.0.2
  (c++)"non-virtual thunk to QQuickWebView::~QQuickWebView()@Base" 5.0.2
-# SymbolsHelper-Confirmed: 5.7.1 amd64 arm64 kfreebsd-amd64 mips64el ppc64el s390x
+# SymbolsHelper-Confirmed: 5.9.0 amd64
 libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  (optional=linker|arch=!hppa !s390x)Qt_5.0@Qt_5.0 5.6.1
  (optional=linker|arch=!hppa !s390x)Qt_5.1@Qt_5.1 5.6.1
@@ -3127,6 +3125,8 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  (optional=linker|arch=!hppa !s390x)Qt_5.5@Qt_5.5 5.6.1
  (optional=linker|arch=!hppa !s390x)Qt_5.6@Qt_5.6 5.6.1
  (optional=linker|arch=!hppa !s390x)Qt_5.7@Qt_5.7 5.7.0
+ (optional=linker|arch=!hppa !s390x)Qt_5.8@Qt_5.8 5.9.0
+ (optional=linker|arch=!hppa !s390x)Qt_5.9@Qt_5.9 5.9.0
  (optional=linker|arch=!hppa !s390x)Qt_5@Qt_5 5.6.1
  (optional=linker|arch=!hppa !s390x)Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.1
  _ZN13QWebInspector10closeEventEP11QCloseEvent@Qt_5 5.6.0~rc
@@ -3411,6 +3411,7 @@ libQt5WebKitWidgets.so.5 libqt5webkit5 #MINVER#
  _ZNK8QWebPage10metaObjectEv@Qt_5 5.6.0~rc
  _ZNK8QWebPage10totalBytesEv@Qt_5 5.6.0~rc
  _ZNK8QWebPage12currentFrameEv@Qt_5 5.6.0~rc
+ _ZNK8QWebPage12customActionEi@Qt_5 5.9.0
  _ZNK8QWebPage12hasSelectionEv@Qt_5 5.6.0~rc
  _ZNK8QWebPage12selectedHtmlEv@Qt_5 5.6.0~rc
  _ZNK8QWebPage12selectedTextEv@Qt_5 5.6.0~rc
