@@ -3,6 +3,7 @@ qtwebkit-opensource-src (5.9.1+dfsg-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream release.
   * Update debian/watch to track official releases again.
+  * Manually update symbols files from buildds’ logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Jul 2017 11:56:23 +0300
 
