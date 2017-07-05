@@ -7,6 +7,7 @@ qtwebkit-opensource-src (5.9.1+dfsg-1) UNRELEASED; urgency=medium
   * Bump Qt build-dependencies to 5.9.1.
   * Drop qtxmlpatterns and qtscript build-dependencies, they have not been
     used for a long time.
+  * Drop obsolete Breaks/Replaces on pre-Jessie Qt packages.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Jul 2017 11:56:23 +0300
 
