@@ -47,6 +47,9 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(disabled_pch_architectur
 	echo "CONFIG -= precompile_header" >> .qmake.conf
 endif
 
+	# This warning makes the build logs 500 MB large
+	echo "QMAKE_CXXFLAGS += -Wno-expansion-to-defined" >> .qmake.conf
+
 	# Run qmake again now with the proper values.
 	qmake
 
