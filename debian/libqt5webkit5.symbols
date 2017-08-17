@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.9.1 amd64 arm64 kfreebsd-amd64 mips64el ppc64el s390x sparc64
+# SymbolsHelper-Confirmed: 5.9.1 amd64 arm64 hurd-i386 i386 kfreebsd-amd64 mips mips64el powerpc ppc64el s390x sparc64 x32
 libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  JSCheckScriptSyntax@Base 5.0.2
  JSClassCreate@Base 5.0.2
@@ -1909,8 +1909,8 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  _ZN3JSC10Identifier4fromEPNS_9ExecStateEj@Base 5.0.2
  _ZN3JSC10JSFunction11displayNameEPNS_9ExecStateE@Base 5.0.2
  _ZN3JSC10JSFunction4nameEPNS_9ExecStateE@Base 5.0.2
- (subst)_ZN3JSC10JSFunction6createEPNS_9ExecStateEPNS_14JSGlobalObjectEiRKN3WTF6StringEPF{int64_t}S2_ENS_9IntrinsicESA_@Base 5.2.0
- (arch=i386)_ZN3JSC10JSFunction6createEPNS_9ExecStateEPNS_14JSGlobalObjectEiRKN3WTF6StringEPU8fastcallFxS2_ENS_9IntrinsicESA_@Base 5.9.0
+ (subst|arch=!hurd-i386 !i386)_ZN3JSC10JSFunction6createEPNS_9ExecStateEPNS_14JSGlobalObjectEiRKN3WTF6StringEPF{int64_t}S2_ENS_9IntrinsicESA_@Base 5.9.1
+ (arch=hurd-i386 i386)_ZN3JSC10JSFunction6createEPNS_9ExecStateEPNS_14JSGlobalObjectEiRKN3WTF6StringEPU8fastcallFxS2_ENS_9IntrinsicESA_@Base 5.9.1
  _ZN3JSC10JSFunction6s_infoE@Base 5.0.2
  _ZN3JSC10JSFunctionC1EPNS_9ExecStateEPNS_14JSGlobalObjectEPNS_9StructureE@Base 5.0.2
  _ZN3JSC10JSFunctionC2EPNS_9ExecStateEPNS_14JSGlobalObjectEPNS_9StructureE@Base 5.0.2
@@ -2998,11 +2998,12 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst)_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_@Base 5.9.1
  (optional=templinst)_ZNSt6vectorIjSaIjEE12emplace_backIJjEEEvDpOT_@Base 5.3.0
  (optional=templinst|subst)_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EE{size_t}RKj@Base 5.2.0
+ (optional=templinst|arch=hurd-i386 i386 mips powerpc x32)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Base 5.9.1
  (optional=templinst)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Base 5.9.1
- (optional=templinst|arch=!armel !armhf !hppa !i386 !powerpcspe !x32)_ZNSt6vectorImSaImEE12emplace_backIJmEEEvDpOT_@Base 5.3.0
- (optional=templinst)_ZNSt6vectorImSaImEE17_M_realloc_insertIJRKmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_@Base 5.9.1
- (optional=templinst)_ZNSt6vectorImSaImEE17_M_realloc_insertIJmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_@Base 5.9.1
- (optional=templinst|arch=armel armhf hppa i386 powerpcspe x32)_ZNSt6vectorIySaIyEE19_M_emplace_back_auxIJRKyEEEvDpOT_@Base 5.9.0
+ (optional=templinst|arch=!armel !armhf !hppa !hurd-i386 !i386 !mips !powerpc !powerpcspe !x32)_ZNSt6vectorImSaImEE12emplace_backIJmEEEvDpOT_@Base 5.3.0
+ (optional=templinst|arch=!hurd-i386 !i386 !mips !powerpc !x32)_ZNSt6vectorImSaImEE17_M_realloc_insertIJRKmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_@Base 5.9.1
+ (optional=templinst|arch=!hurd-i386 !i386 !mips !powerpc !x32)_ZNSt6vectorImSaImEE17_M_realloc_insertIJmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_@Base 5.9.1
+ (optional=templinst|arch=hurd-i386 i386 mips powerpc x32)_ZNSt6vectorIySaIyEE17_M_realloc_insertIJRKyEEEvN9__gnu_cxx17__normal_iteratorIPyS1_EEDpOT_@Base 5.9.1
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE24_M_get_insert_unique_posERS2_@Base 5.0.2
  (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 mips64el ppc64el sparc64 x32)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS2_@Base 5.2.0
  (optional=templinst)_ZNSt8_Rb_treeI10TBasicTypeSt4pairIKS0_10TPrecisionESt10_Select1stIS4_ESt4lessIS0_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 5.0.2
@@ -3019,7 +3020,7 @@ libQt5WebKit.so.5 libqt5webkit5 #MINVER#
  (optional=templinst|subst)_ZNSt8_Rb_treeI{uint64_t}{uint64_t}St9_IdentityI{uint64_t}ESt4lessI{uint64_t}ESaI{uint64_t}EE5eraseERK{uint64_t}@Base 5.3.0
  (optional=templinst|subst)_ZNSt8_Rb_treeI{uint64_t}{uint64_t}St9_IdentityI{uint64_t}ESt4lessI{uint64_t}ESaI{uint64_t}EE7_M_copyINS5_11_Alloc_nodeEEEPSt13_Rb_tree_nodeI{uint64_t}EPKS9_PSt18_Rb_tree_node_baseRT_@Base 5.7.1
  (optional=templinst|subst)_ZNSt8_Rb_treeI{uint64_t}{uint64_t}St9_IdentityI{uint64_t}ESt4lessI{uint64_t}ESaI{uint64_t}EE8_M_eraseEPSt13_Rb_tree_nodeI{uint64_t}E@Base 5.3.0
- (optional=templinst|arch=armel armhf i386 powerpcspe)_ZSt4swapIN8QVariant7PrivateEENSt9enable_ifIXsrSt6__and_IJSt21is_move_constructibleIT_ESt18is_move_assignableIS5_EEE5valueEvE4typeERS5_SC_@Base 5.9.0
+ (optional=templinst|arch=hurd-i386 i386 mips powerpc)_ZSt4swapIN8QVariant7PrivateEENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS6_ESt18is_move_assignableIS6_EEE5valueEvE4typeERS6_SG_@Base 5.9.1
  _ZTI11QWebKitTest@Base 5.0.2
  _ZTI13QQuickWebPage@Base 5.0.2
  _ZTI13QQuickWebView@Base 5.0.2
