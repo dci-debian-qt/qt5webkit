@@ -3,6 +3,9 @@ qtwebkit-opensource-src (5.9.1+dfsg-4) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Update symbols files from buildds’ logs.
   * Build with -Wno-expansion-to-defined to avoid 500MB build logs.
+  * Build-depend on qtbase5-dev ≥ 5.9.1+dfsg-9~. We need a qtbase built
+    with bfd linker on armel/armhf, otherwise the build fails there.
+    Together with the symbols update, this closes: #872542.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 17 Aug 2017 16:21:29 +0300
 
