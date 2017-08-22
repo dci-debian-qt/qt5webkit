@@ -1,5 +1,7 @@
 qtwebkit-opensource-src (5.9.1+dfsg-5) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Update symbols files from buildds’ logs to fix build on armhf.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 Aug 2017 14:24:42 +0300
 
