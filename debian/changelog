@@ -6,8 +6,8 @@ qtwebkit-opensource-src (5.212.0~alpha2-1) UNRELEASED; urgency=medium
   * Stop repacking the upstream tarball. Two of three previously excluded
     files no longer exist, and the third one has changed license to Expat.
   * Drop all patches, they no longer apply to the new codebase.
-  * Add build-dependencies: cmake, libqt5sensors5-dev, libqt5webchannel5-dev
-    and qtpositioning5-dev.
+  * Add build-dependencies: cmake, libhyphen-dev, libqt5sensors5-dev,
+    libqt5webchannel5-dev and qtpositioning5-dev.
   * Drop unused build-dependency: libleveldb-dev.
   * Migrate to automatic dbgsym packages.
   * Update install files for the new release.
