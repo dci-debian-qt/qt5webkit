@@ -3,6 +3,8 @@ qtwebkit-opensource-src (5.212.0~alpha2-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream alpha release (closes: #862452).
   * Update debian/watch to track release tarballs on GitHub.
+  * Stop repacking the upstream tarball. Two of three previously excluded
+    files no longer exist, and the third one has changed license to Expat.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Aug 2017 20:50:49 +0300
 
