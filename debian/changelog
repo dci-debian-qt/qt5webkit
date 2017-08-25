@@ -10,6 +10,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-1) UNRELEASED; urgency=medium
     and qtpositioning5-dev.
   * Drop unused build-dependency: libleveldb-dev.
   * Migrate to automatic dbgsym packages.
+  * Update install files for the new release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Aug 2017 20:50:49 +0300
 
