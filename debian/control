@@ -7,7 +7,7 @@ Uploaders: Timo Jyrinki <timo@debian.org>,
 Build-Depends: bison,
                chrpath,
                cmake (>= 2.8.12),
-               debhelper (>= 9.0.0),
+               debhelper (>= 9.20160114~),
                flex,
                gperf,
                libfontconfig1-dev,
@@ -84,18 +84,6 @@ Description: Qt WebKit QML module
  from the World Wide Web into your Qt application.
  .
  This package contains the WebKit QML module for QtDeclarative.
-
-Package: libqt5webkit5-dbg
-Priority: extra
-Architecture: amd64 i386 powerpc s390x
-Multi-Arch: same
-Section: debug
-Depends: libqt5webkit5 (= ${binary:Version}), ${misc:Depends}
-Description: Web content engine library for Qt - debugging symbols
- QtWebKit provides a Web browser engine that makes it easy to embed content
- from the World Wide Web into your Qt application.
- .
- This package contains the debugging symbols for the Qt WebKit library.
 
 Package: qtwebkit5-doc
 Priority: extra

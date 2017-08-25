@@ -17,7 +17,7 @@ disabled_jit_architectures := armel mips mipsel
 disabled_pch_architectures := amd64 powerpc s390x
 
 %:
-	dh $@ --parallel --dbg-package=libqt5webkit5-dbg --with pkgkde_symbolshelper
+	dh $@ --parallel --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
 	# Run qmake once to create .qmake.conf and be sure to append the following values.
@@ -86,3 +86,6 @@ override_dh_install:
 
 override_dh_auto_test:
 	# Do not attempt to run anything to make build-indep work
+
+override_dh_strip:
+	dh_strip --dbgsym-migration='libqt5webkit5-dbg (<< 5.212.0~alpha2-1~)'
