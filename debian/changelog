@@ -12,6 +12,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-1) UNRELEASED; urgency=medium
   * Migrate to automatic dbgsym packages.
   * Update install files for the new release.
   * Update debian/rules to use CMake build system.
+  * Update to debhelper compat level 10.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Aug 2017 20:50:49 +0300
 

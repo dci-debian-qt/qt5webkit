@@ -22,7 +22,7 @@ ifneq (,$(filter $(DEB_HOST_ARCH_CPU),ppc64el s390x))
 endif
 
 %:
-	dh $@ --buildsystem=cmake --parallel --with pkgkde_symbolshelper
+	dh $@ --buildsystem=cmake --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
 	dh_auto_configure -- -DPORT=Qt $(EXTRA_CMAKE_ARGUMENTS)
@@ -41,8 +41,8 @@ override_dh_auto_install-arch:
 override_dh_auto_install-indep:
 	dh_auto_build -- -CSource -fMakefile.api INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
-override_dh_install:
-	dh_install --fail-missing
+override_dh_missing:
+	dh_missing --fail-missing
 
 override_dh_auto_test:
 	# Do not attempt to run anything to make build-indep work
