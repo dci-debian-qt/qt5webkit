@@ -15,6 +15,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-1) UNRELEASED; urgency=medium
   * Update to debhelper compat level 10.
   * Rewrite debian/copyright. The new file is based on decopy output, with
     lots of manual fixes.
+  * Drop unused Lintian overrides.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Aug 2017 20:50:49 +0300
 
