@@ -11,7 +11,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-1) UNRELEASED; urgency=medium
   * Drop unused build-dependency: libleveldb-dev.
   * Migrate to automatic dbgsym packages.
   * Update install files for the new release.
-  * Update debian/rules to use CMake build system.
+  * Update debian/rules to use CMake build system with ninja backend.
   * Update to debhelper compat level 10.
   * Rewrite debian/copyright. The new file is based on decopy output, with
     lots of manual fixes.

@@ -4,6 +4,7 @@
 #export DH_VERBOSE=1
 
 DEB_HOST_ARCH_CPU ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_CPU)
+DEB_HOST_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 gstab_architectures := amd64 i386 powerpc s390x
@@ -25,21 +26,25 @@ endif
 	dh $@ --buildsystem=cmake --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DPORT=Qt $(EXTRA_CMAKE_ARGUMENTS)
+	dh_auto_configure -- -G Ninja -DPORT=Qt $(EXTRA_CMAKE_ARGUMENTS)
+
+override_dh_auto_build-arch:
+	dh_auto_build --builddirectory=obj-$(DEB_HOST_GNU_TYPE) -O--buildsystem=ninja
 
 override_dh_auto_build-indep:
-	dh_auto_build -- sub-Source-QtWebKit-pro-clean
-	dh_auto_build -- -CSource -fMakefile.api docs
+	BUILDDIR=$(CURDIR)/obj-$(DEB_HOST_GNU_TYPE) \
+	dh_auto_build --builddirectory=obj-$(DEB_HOST_GNU_TYPE) -O--buildsystem=ninja -- docs
 
 override_dh_auto_install-arch:
-	dh_auto_install
+	dh_auto_install --builddirectory=obj-$(DEB_HOST_GNU_TYPE) -O--buildsystem=ninja
 
 	# Remove private headers
 	rm -rf debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)/qt5/QtWebKit/*/QtWebKit
 	rm -rf debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)/qt5/QtWebKitWidgets/*/QtWebKitWidgets
 
 override_dh_auto_install-indep:
-	dh_auto_build -- -CSource -fMakefile.api INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
+	install -d debian/tmp/usr/share/qt5/
+	cp -r obj-$(DEB_HOST_GNU_TYPE)/doc debian/tmp/usr/share/qt5/
 
 override_dh_missing:
 	dh_missing --fail-missing
