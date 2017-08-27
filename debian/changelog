@@ -18,6 +18,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-1) UNRELEASED; urgency=medium
   * Drop unused Lintian overrides.
   * Add a patch to hide WebCore and JSCore symbols from libQt5WebKit.so.5.
   * Update libqt5webkit5.symbols from the current ppc64el build log.
+  * Add a patch to properly detect whether OpenGL ES 2 should be used.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Aug 2017 20:50:49 +0300
 
