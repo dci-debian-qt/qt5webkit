@@ -7,10 +7,14 @@ DEB_HOST_ARCH_CPU ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_CPU)
 DEB_HOST_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
-gstab_architectures := amd64 i386 powerpc s390x
-fulldebug_architectures := none
-disabled_jit_architectures := armel mips mipsel
-disabled_pch_architectures := amd64 powerpc s390x
+gstabs_architectures := amd64 i386 powerpc ppc64el s390x
+
+export DEB_CXXFLAGS_MAINT_STRIP = -g
+
+# Enable gstabs debugging symbols only on gstabs_architectures
+ifneq (,$(filter $(DEB_HOST_ARCH_CPU),$(gstabs_architectures)))
+	export DEB_CXXFLAGS_MAINT_APPEND = -gstabs
+endif
 
 # JIT is only supported on x86 / armhf / aarch64 / mips32
 ifeq (,$(filter $(DEB_HOST_ARCH_CPU),amd64 arm64 armhf i386 mips mipsel sh4))
