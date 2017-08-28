@@ -22,6 +22,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-1) UNRELEASED; urgency=medium
   * Disable the use of gold linker (causes problems at least on i386).
   * Remove i386 from gstabs_architectures, add ppc64el.
   * Run upstream tests during build.
+  * Bump Standards-Version to 4.1.0, remove Priority: extra lines.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Aug 2017 20:50:49 +0300
 

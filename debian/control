@@ -44,7 +44,7 @@ Build-Depends: bison,
 Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.1+dfsg~),
                      qtbase5-doc-html (>= 5.9.1+dfsg~),
                      qttools5-dev-tools (>= 5.9.1~)
-Standards-Version: 3.9.8
+Standards-Version: 4.1.0
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qt5webkit.git
@@ -89,7 +89,6 @@ Description: Qt WebKit QML module
  This package contains the WebKit QML module for QtDeclarative.
 
 Package: qtwebkit5-doc
-Priority: extra
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
@@ -100,7 +99,6 @@ Description: Qt 5 webkit documentation
  This package contains the documentation for the Qt 5 webkit libraries.
 
 Package: qtwebkit5-doc-html
-Priority: extra
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
