@@ -9,6 +9,7 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 gstabs_architectures := amd64 powerpc ppc64el s390x
 
+export DEB_CPPFLAGS_MAINT_APPEND = -DNDEBUG
 export DEB_CXXFLAGS_MAINT_STRIP = -g
 
 # Enable gstabs debugging symbols only on gstabs_architectures
