@@ -4,6 +4,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-2) UNRELEASED; urgency=medium
   * Add -DNDEBUG to CPPFLAGS to disable debug output.
   * Use -g1 on less powerful architectures instead of no debug at all.
   * Disable JIT on sh4, it is broken and support was removed upstream.
+  * Backport upstream patch to add libatomic detection, fixes armel build.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 13 Sep 2017 18:44:14 +0300
 
