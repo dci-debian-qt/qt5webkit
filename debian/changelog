@@ -6,6 +6,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-3) UNRELEASED; urgency=medium
     (closes: #876999).
   * Bump Standards-Version to 4.1.1, no changes needed.
   * Update Homepage to point to GitHub.
+  * Bump Qt build-dependencies to 5.9.2.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Oct 2017 16:59:00 +0300
 
