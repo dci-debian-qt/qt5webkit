@@ -1,14 +1,14 @@
-qtwebkit-opensource-src (5.212.0~alpha2-3) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.212.0~alpha2-3) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Update symbols files from buildds’ logs.
   * Backport upstream patch to fix WTF::StringImpl::copyChars segfault
     (closes: #876999).
   * Bump Standards-Version to 4.1.1, no changes needed.
   * Update Homepage to point to GitHub.
   * Bump Qt build-dependencies to 5.9.2.
+  * Upload to unstable.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Oct 2017 16:59:00 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 27 Oct 2017 00:26:10 +0300
 
 qtwebkit-opensource-src (5.212.0~alpha2-2) experimental; urgency=medium
 
