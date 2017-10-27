@@ -1,9 +1,8 @@
-qtwebkit-opensource-src (5.212.0~alpha2-4) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.212.0~alpha2-4) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Fix qtbase build-dependencies after wrong bump.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 27 Oct 2017 09:49:38 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 27 Oct 2017 09:55:23 +0300
 
 qtwebkit-opensource-src (5.212.0~alpha2-3) unstable; urgency=medium
 
