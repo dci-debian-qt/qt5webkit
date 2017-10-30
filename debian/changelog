@@ -1,3 +1,8 @@
+qtwebkit-opensource-src (5.212.0~alpha2-5) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Oct 2017 19:50:02 +0300
+
 qtwebkit-opensource-src (5.212.0~alpha2-4) unstable; urgency=medium
 
   * Fix qtbase build-dependencies after wrong bump.
