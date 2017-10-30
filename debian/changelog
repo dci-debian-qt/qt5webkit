@@ -1,11 +1,10 @@
-qtwebkit-opensource-src (5.212.0~alpha2-5) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.212.0~alpha2-5) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Add a patch from Fedora to fix nullptr dereference in selectedHtml()
     (fix_selectedHtml_segfault.diff, closes: #880064).
   * Update the symbols file from buildds’ logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Oct 2017 19:50:02 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 30 Oct 2017 20:08:25 +0300
 
 qtwebkit-opensource-src (5.212.0~alpha2-4) unstable; urgency=medium
 
