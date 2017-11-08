@@ -3,9 +3,7 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-DEB_HOST_ARCH_CPU ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_CPU)
-DEB_HOST_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+include /usr/share/dpkg/architecture.mk
 
 export DEB_CPPFLAGS_MAINT_APPEND = -DNDEBUG
 
@@ -23,7 +21,7 @@ ifneq (,$(filter $(DEB_HOST_ARCH_CPU),mips mipsel))
 endif
 
 # JIT is only supported on x86 / armhf / aarch64 / mips32
-ifeq (,$(filter $(DEB_HOST_ARCH_CPU),amd64 arm64 armhf i386 mips mipsel))
+ifeq (,$(filter $(DEB_HOST_ARCH),amd64 arm64 armhf i386 mips mipsel))
 	EXTRA_CMAKE_ARGUMENTS += -DENABLE_JIT=OFF
 endif
 

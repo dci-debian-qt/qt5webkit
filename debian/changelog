@@ -1,5 +1,7 @@
 qtwebkit-opensource-src (5.212.0~alpha2-6) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Make sure JIT is not enabled on x32.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 08 Nov 2017 17:14:28 +0300
 
