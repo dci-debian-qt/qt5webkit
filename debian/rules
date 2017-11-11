@@ -21,7 +21,7 @@ ifneq (,$(filter $(DEB_HOST_ARCH_CPU),mips mipsel))
 endif
 
 # JIT is only supported on x86 / armhf / aarch64 / mips32
-ifeq (,$(filter $(DEB_HOST_ARCH),amd64 arm64 armhf i386 mips mipsel))
+ifeq (,$(filter $(DEB_HOST_ARCH),amd64 arm64 armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel))
 	EXTRA_CMAKE_ARGUMENTS += -DENABLE_JIT=OFF
 endif
 
