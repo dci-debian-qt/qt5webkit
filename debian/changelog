@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.9.2-0neon) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.9.2+dfsg-0neon) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * New upstream release.
