@@ -6,6 +6,11 @@ qtwebkit-opensource-src (5.212.0~alpha2-6) UNRELEASED; urgency=medium
     - Backport upstream patch to use JSVALUE32_64 on x32.
     - Use gold linker on x32, to avoid undefined reference error.
 
+  [ Pino Toscano ]
+  * Fix build on hurd-i386:
+    - workaround a PATH_MAX usage; patch path_max.diff
+    - update symbols file
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 08 Nov 2017 17:14:28 +0300
 
 qtwebkit-opensource-src (5.212.0~alpha2-5) unstable; urgency=medium
