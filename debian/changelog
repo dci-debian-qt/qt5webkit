@@ -1,14 +1,116 @@
-qtwebkit-opensource-src (5.9.1+dfsg-0neon) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.212.0~alpha2-6) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
+  * Fix build on x32 architecture (closes: #881055):
+    - Make sure JIT is not enabled on x32.
+    - Backport upstream patch to use JSVALUE32_64 on x32.
+    - Use gold linker on x32, to avoid undefined reference error.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 08 Nov 2017 17:14:28 +0300
+
+qtwebkit-opensource-src (5.212.0~alpha2-5) unstable; urgency=medium
+
+  * Add a patch from Fedora to fix nullptr dereference in selectedHtml()
+    (fix_selectedHtml_segfault.diff, closes: #880064).
+  * Update the symbols file from buildds’ logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 30 Oct 2017 20:08:25 +0300
+
+qtwebkit-opensource-src (5.212.0~alpha2-4) unstable; urgency=medium
+
+  * Fix qtbase build-dependencies after wrong bump.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 27 Oct 2017 09:55:23 +0300
+
+qtwebkit-opensource-src (5.212.0~alpha2-3) unstable; urgency=medium
+
+  * Update symbols files from buildds’ logs.
+  * Backport upstream patch to fix WTF::StringImpl::copyChars segfault
+    (closes: #876999).
+  * Bump Standards-Version to 4.1.1, no changes needed.
+  * Update Homepage to point to GitHub.
+  * Bump Qt build-dependencies to 5.9.2.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 27 Oct 2017 00:26:10 +0300
+
+qtwebkit-opensource-src (5.212.0~alpha2-2) experimental; urgency=medium
+
+  * Add -DNDEBUG to CPPFLAGS to disable debug output.
+  * Use -g1 on less powerful architectures instead of no debug at all.
+  * Disable JIT on sh4, it is broken and support was removed upstream.
+  * Backport upstream patch to add libatomic detection, fixes armel build.
+  * Build with -mfp32 on mips/mipsel, as LLInt uses odd float registers.
+  * Update symbols files from buildds’ and local build logs.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 16 Sep 2017 22:32:50 +0300
+
+qtwebkit-opensource-src (5.212.0~alpha2-1) experimental; urgency=medium
+
+  * New upstream alpha release (closes: #862452).
+  * Update debian/watch to track release tarballs on GitHub.
+  * Stop repacking the upstream tarball. Two of three previously excluded
+    files no longer exist, and the third one has changed license to Expat.
+  * Drop all patches, they no longer apply to the new codebase.
+  * Add build-dependencies: cmake, libhyphen-dev, libqt5sensors5-dev,
+    libqt5webchannel5-dev and qtpositioning5-dev.
+  * Drop unused build-dependency: libleveldb-dev.
+  * Migrate to automatic dbgsym packages.
+  * Update install files for the new release.
+  * Update debian/rules to use CMake build system with ninja backend.
+  * Update to debhelper compat level 10.
+  * Rewrite debian/copyright. The new file is based on decopy output, with
+    lots of manual fixes.
+  * Drop unused Lintian overrides.
+  * Add a patch to hide WebCore and JSCore symbols from libQt5WebKit.so.5.
+  * Update libqt5webkit5.symbols from the current ppc64el build log.
+  * Add a patch to properly detect whether OpenGL ES 2 should be used.
+  * Disable the use of gold linker (causes problems at least on i386).
+  * Remove i386 from gstabs_architectures, add ppc64el.
+  * Run upstream tests during build.
+  * Bump Standards-Version to 4.1.0, remove Priority: extra lines.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 28 Aug 2017 15:02:13 +0300
+
+qtwebkit-opensource-src (5.9.1+dfsg-5) unstable; urgency=medium
+
+  * Update symbols files from buildds’ logs to fix build on armhf.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 22 Aug 2017 14:35:55 +0300
+
+qtwebkit-opensource-src (5.9.1+dfsg-4) unstable; urgency=medium
+
+  * Update symbols files from buildds’ logs.
+  * Build with -Wno-expansion-to-defined to avoid 500MB build logs.
+  * Build-depend on qtbase5-dev ≥ 5.9.1+dfsg-9~. We need a qtbase built
+    with bfd linker on armel/armhf, otherwise the build fails there.
+    Together with the symbols update, this closes: #872542.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 21 Aug 2017 00:49:10 +0300
+
+qtwebkit-opensource-src (5.9.1+dfsg-3) unstable; urgency=medium
+
+  * Update symbols files with buildds' logs.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 17 Aug 2017 00:32:18 -0300
+
+qtwebkit-opensource-src (5.9.1+dfsg-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 15 Aug 2017 22:15:15 -0300
+
+qtwebkit-opensource-src (5.9.1+dfsg-1) experimental; urgency=medium
+
   * New upstream release.
   * Update debian/watch to track official releases again.
   * Manually update symbols files from buildds’ logs.
+  * Bump Qt build-dependencies to 5.9.1.
+  * Drop qtxmlpatterns and qtscript build-dependencies, they have not been
+    used for a long time.
+  * Drop obsolete Breaks/Replaces on pre-Jessie Qt packages.
 
-  [ Jonathan Riddell ]
-  * New release
-
- -- Jonathan Riddell <jr@jriddell.org>  Fri, 10 Nov 2017 11:41:39 +0000
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 05 Jul 2017 21:19:54 +0300
 
 qtwebkit-opensource-src (5.9.0+dfsg-1) experimental; urgency=medium
 
