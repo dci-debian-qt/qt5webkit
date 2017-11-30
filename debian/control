@@ -90,6 +90,7 @@ Description: Qt WebKit QML module
  This package contains the WebKit QML module for QtDeclarative.
 
 Package: qtwebkit5-doc
+Build-Profiles: <!nodoc>
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
@@ -100,6 +101,7 @@ Description: Qt 5 webkit documentation
  This package contains the documentation for the Qt 5 webkit libraries.
 
 Package: qtwebkit5-doc-html
+Build-Profiles: <!nodoc>
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
