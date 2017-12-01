@@ -4,8 +4,7 @@
 #export DH_VERBOSE=1
 
 include /usr/share/dpkg/architecture.mk
-export DEB_BUILD_OPTIONS := nodoc
-export DEB_BUILD_PROFILES := nodoc
+
 export DEB_CPPFLAGS_MAINT_APPEND = -DNDEBUG
 
 # The debug packages produced by webkit are huge and cause problems in
