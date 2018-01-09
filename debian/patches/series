@@ -5,3 +5,4 @@ fix_copyChars_segfault.diff
 fix_selectedHtml_segfault.diff
 fix_ftbfs_x32.diff
 path_max.diff
+fix_ftbfs_alpha.diff
