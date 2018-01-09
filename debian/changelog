@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.212.0~alpha2-6) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.212.0~alpha2-6) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Fix build on x32 architecture (closes: #881055):
@@ -15,7 +15,7 @@ qtwebkit-opensource-src (5.212.0~alpha2-6) UNRELEASED; urgency=medium
     - workaround a PATH_MAX usage; patch path_max.diff
     - update symbols file
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 08 Nov 2017 17:14:28 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 09 Jan 2018 18:38:23 +0300
 
 qtwebkit-opensource-src (5.212.0~alpha2-5) unstable; urgency=medium
 
