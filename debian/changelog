@@ -6,6 +6,8 @@ qtwebkit-opensource-src (5.212.0~alpha2-6) UNRELEASED; urgency=medium
     - Backport upstream patch to use JSVALUE32_64 on x32.
     - Use gold linker on x32, to avoid undefined reference error.
   * Backport upstream changes to fix build on Alpha (closes: #880640).
+  * Backport upstream changes to add descriptions to pkg-config files
+    (closes: #884035).
 
   [ Pino Toscano ]
   * Fix build on hurd-i386:
