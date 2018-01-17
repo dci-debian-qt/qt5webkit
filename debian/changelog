@@ -1,5 +1,7 @@
 qtwebkit-opensource-src (5.212.0~alpha2-7) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Build with -O1 instead of -O2 on sh3/sh4 (closes: #887462).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 17 Jan 2018 14:33:04 +0300
 
