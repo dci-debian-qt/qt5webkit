@@ -1,11 +1,10 @@
-qtwebkit-opensource-src (5.212.0~alpha2-7) UNRELEASED; urgency=medium
+qtwebkit-opensource-src (5.212.0~alpha2-7) unstable; urgency=medium
 
-  [ Dmitry Shachnev ]
   * Build with -O1 instead of -O2 on sh3/sh4 (closes: #887462).
   * Update symbols files with buildds’ and sh4 logs (closes: #887463).
   * Fix the rules syntax to make sure we build with -g1 on mips/mipsel.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 17 Jan 2018 14:33:04 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 18 Jan 2018 11:33:51 +0300
 
 qtwebkit-opensource-src (5.212.0~alpha2-6) unstable; urgency=medium
 
